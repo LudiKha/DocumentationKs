@@ -163,7 +163,7 @@ The idea was to slice a larger feature into its identifiable component parts (e.
 Modules can hook into these lifecycle events to provide constraints that gate the operations, terminate the procedure, or perform specific actions when they occur.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>See the <a href="Documentation~/LifeCycle.html">Lifecycle documentation</a> for a detailed overview of the procedure lifecycle.</p>
+<p>See the <a href="Documentation/LifeCycle.html">Lifecycle documentation</a> for a detailed overview of the procedure lifecycle.</p>
 </div>
 <h4 id="the-weight-property">The Weight Property</h4>
 <p>The <code>Weight</code> property is a simple but powerful addition to the lifecycle, allowing for more nuanced control over procedure behaviour and state.</p>
@@ -177,7 +177,7 @@ Modules can hook into these lifecycle events to provide constraints that gate th
 <h5>Important</h5>
 <p>A common use case is for <code>Procedures</code> to manage their internal <code>Active</code> state based on a timer, such as a cooldown, duration or progress. To avoid opaque and hard-to-debug conflicting state changes by having each such component keep its own internal state, the <code>Weight</code> is used as a single source of truth for these behaviours.</p>
 </div>
-<p>See the <a href="Documentation~/GettingStarted.html">Getting Started</a> guide for a simple example of using weight, and how it ties into the lifecycle. The <a href="Documentation~/CarSample.html">Car Sample</a> also demonstrates a more complex use case.</p>
+<p>See the <a href="Documentation/GettingStarted.html">Getting Started</a> guide for a simple example of using weight, and how it ties into the lifecycle. The <a href="Documentation/CarSample.html">Car Sample</a> also demonstrates a more complex use case.</p>
 <!-- 
 > [!Tip]
 > For example, an animation output module could use the weight to control the influence of an animation layer. -->
@@ -194,7 +194,7 @@ Modules can hook into these lifecycle events to provide constraints that gate th
 <p>Think of playing a sound effect when a procedure starts, or checking a condition before allowing it to start or stop.</p>
 </div>
 <p>Provided in this package are several built-in <code>Modules</code>, based on common use cases.</p>
-<p>See the <a href="Documentation~/CarSample.html">Car Sample</a> for an example of using modules and instructions.</p>
+<p>See the <a href="Documentation/CarSample.html">Car Sample</a> for an example of using modules and instructions.</p>
 <h3 id="built-in-modules">Built-in Modules</h3>
 <ul>
 <li><h4 id="outputmodule">OutputModule</h4>
@@ -207,7 +207,7 @@ The <code>LinkedProcedureModule</code> enables you to link the lifecycle of one 
 <li><h4 id="4-statemachinemodule">4. StateMachineModule</h4>
 The <code>StateMachineModule</code> provides a way to manage states within a procedure by defining different states (and optionally) transitions between them. A common use case is to use other procedures as states, allowing for nested procedure execution.
 <ul>
-<li><a href="Documentation~/Modules/StateMachine.html">See the State Machine documentation</a> for more details.</li>
+<li><a href="Documentation/Modules/StateMachine.html">See the State Machine documentation</a> for more details.</li>
 </ul>
 </li>
 <li><h4 id="5-activatormodule">5. ActivatorModule</h4>
