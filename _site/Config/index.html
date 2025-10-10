@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Kinstrife Config | Kinstrife </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Kinstrife Config | Kinstrife ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../articles/packages/toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/Config/index.md&amp;version=GBmaster&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="kinstrife-config">Kinstrife Config</h1>
+
+<blockquote>
+<p><code>&quot;com.kinstrife.core.config&quot;: &quot;file:/GameDev/Core/Packages/Config&quot;</code></p>
+</blockquote>
+<p>Config data is (kind of) global/static data. But unlike database entries, config data has a 'singleton' characteristic to it:
+It wouldn't make sense for multiple (contradictory) versions of this data to exist.</p>
+<h3 id="when-to-use-it">When to use it</h3>
+<p>If your data is...</p>
+<ul>
+<li>Singleton-like</li>
+<li>Global data</li>
+<li>Read-only (-ish, hot swapping is possible and values <em>may</em> be modified at runtime)</li>
+</ul>
+<p>... it's a good fit for the config system. Be creative! Many things can become more flexible/moddable when based on config data.</p>
+<h2 id="creating-config-data-types">Creating config data types</h2>
+<ol>
+<li>Make sure that the package/module you're working on has the Config Package (from the Core repository) as a dependency.</li>
+<li>Create a config type script via &quot;Create/Kinstrife/Script Templates/Config Type&quot;</li>
+<li>Add (serialized) data fields as needed and configure the ConfigMenu attribute to define where in the Config menu it is shown.</li>
+</ol>
+<h2 id="modifying-config-data-values">Modifying config data values</h2>
+<ol>
+<li>Open the config editor window (located at the top bar via Kinstrife -&gt; Config). Navigate to the type you want to chnange in the menu on the left and click on it.</li>
+<li>If there is no instance/data set yet, you will see a warning in the main window on the right - enter a path at the bottom of the window. The path must be in a Resources/Config/ folder. You can enter either a name for a directory, or a file-name (which will need to end with '.asset'). Once you've done so, a Create button will appear, which creates an instance at the path upon clicking. If it doesn't, make sure to check the console for errors.</li>
+<li>You can now modify your config data anytime through that window.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>You can copy a path by selecting a folder in the project view and hitting ctrl+alt+c.</p>
+</div>
+<h2 id="how-to-access-config-data-in-code">How to access config data in code</h2>
+<ol>
+<li>Add the <a href="ConfigRegistry.prefab">ConfigRegistry prefab</a> to a relevant context, usually the global context</li>
+<li>The ConfigRegistry now loads any ConfigData instances located in a <em>Resources/Config</em> folder of the project.</li>
+<li>As a consumer class, simply add the config data type as a dependency in the Inject method and inject via the DI system</li>
+</ol>
+<h2 id="behaviour-in-builds">Behaviour in builds</h2>
+<p>In builds, the config package will serialize configs to JSON and store them as files in a <em>Config</em> subfolder of the streaming assets folder. This allows players to modify these values and see changes even in builds. Changing these files while running is possible, the package checks regularly (once a second) whether any of these files have been modified.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/Config/index.md&amp;version=GBmaster&amp;line=1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Dependency Injection (DI) basics | Kinstrife </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Dependency Injection (DI) basics | Kinstrife ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../articles/packages/toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/DependencyInjection/index.md&amp;version=GBmaster&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<hr>
+<h2 id="uid-dependencyinjectionbasics">uid: dependencyinjectionbasics</h2>
+<h1 id="dependency-injection-di-basics">Dependency Injection (DI) basics</h1>
+<blockquote>
+<p><code>&quot;com.kinstrife.core.dependency-injection&quot;: &quot;file:/GameDev/Core/Packages/Dependency Injection&quot;</code></p>
+</blockquote>
+<br>
+This package contains a lightweight, performant dependency injection framework. It can be used to turn your application into a collection of loosely-coupled parts with highly segmented responsibilities.
+<h2 id="why-a-custom-solution">Why a custom solution?</h2>
+<p>We used Zenject before and it was creating increasingly long delays when starting up scenes due to it traversing entire scenes and solutions via reflection. This is unacceptably slow, so we created a custom lightweight solution instead that uses a mixture of more direct dependency declaration and a sprinkle of reflection for convenience without slowing things down too much.</p>
+<hr>
+<ul>
+<li><a href="#dependency-injection-di-basics">Dependency Injection (DI) basics</a>
+<ul>
+<li><a href="#why-a-custom-solution">Why a custom solution?</a></li>
+<li><a href="#core-concepts">Core concepts</a></li>
+<li><a href="#quickstart--recipes">Quickstart &amp; 'Recipes'</a>
+<ul>
+<li><a href="#adding-di-to-a-standalone-scene">Adding DI to a standalone scene</a></li>
+<li><a href="#creating-an-object-or-prefab-with-dependencies">Creating an object or prefab with dependencies</a></li>
+<li><a href="#adding-di-to-a-module">Adding DI to a module</a></li>
+</ul>
+</li>
+<li><a href="#creating-injectable-types">Creating injectable types</a></li>
+<li><a href="#creating-installers">Creating Installers</a></li>
+<li><a href="#further-reading">Further reading</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<br>
+<h2 id="core-concepts">Core concepts</h2>
+<p>Dependency Injection requires a <code>Context</code> , a <code>InjectableSource</code>, and a controller to direct the application flow. If the scene exists outside of an application flow environment, the standalone variant of the <code>InjectableSource</code> is used (<code>DIInitializer</code>).</p>
+<h2 id="quickstart--recipes">Quickstart &amp; 'Recipes'</h2>
+<p>When using DI, you will likely want to do one of the following things:</p>
+<h3 id="adding-di-to-a-standalone-scene">Adding DI to a standalone scene</h3>
+<ol>
+<li>Set up an <code>InjectableSource</code></li>
+<li>Create a GameObject with a <code>DIInitializer</code></li>
+<li>A <code>Context</code> will be added automatically.</li>
+<li>Enable <code>InitializeOnAwake</code> or <code>InitializeOnStart</code> in the <code>DIInitializer</code></li>
+<li>The <code>DIInitializer</code> will now <code>locate</code> MonoBehaviours that are <code>IDependents</code> within the transform hierarchy</li>
+<li>To locate <code>IDependents</code> <em>outside</em> of the direct hierarchy of a context, use the <code>ContextLocator</code> to mark that hierarchy as searchable.</li>
+</ol>
+<h3 id="creating-an-object-or-prefab-with-dependencies">Creating an object or prefab with dependencies</h3>
+<ol>
+<li>Set up your prefab as usual, ensure that your classes <a href="#creating-injectable-types">were created to be injectable</a>.</li>
+<li>Add a <code>LinkedHierarchy</code> MonoBehaviour so that it will be picked up by dependency injection</li>
+<li><strong>Specify context?</strong></li>
+</ol>
+<h3 id="adding-di-to-a-module">Adding DI to a module</h3>
+<ol>
+<li>TODO</li>
+<li></li>
+</ol>
+<br>
+<h2 id="creating-injectable-types">Creating injectable types</h2>
+<p>Classes that require dependencies should implement one of the following interfaces:</p>
+<ul>
+<li><code>IInjectable</code>: Add a <code>public void Inject</code> method that can take any number of dependency objects as parameters and assign them to your class variables</li>
+<li><code>IInitializable</code>: Same as above, except that it is called <strong>??when??</strong></li>
+<li><code>ILateInitializable</code>: Same as above, except it is called <strong>??when??</strong></li>
+</ul>
+<h2 id="creating-installers">Creating Installers</h2>
+<p><a href="Documentation/installers.html">See here.</a></p>
+<h2 id="further-reading">Further reading</h2>
+<p><a href="Documentation/details.html">See here.</a></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/DependencyInjection/index.md&amp;version=GBmaster&amp;line=1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

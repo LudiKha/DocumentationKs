@@ -1,0 +1,159 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: ActorCore
+  name: Actor Core
+  href: Actor/index.html
+- uid: ActorInterfaces
+  name: Actor Interfaces
+  href: ActorInterfaces/index.html
+- uid: Animation
+  name: Animation
+  href: Animation/index.html
+- uid: Atomics
+  name: Atomics
+  href: Atomics/index.html
+- uid: Blueprints
+  name: Blueprints
+  href: ProcedureGraph/index.html
+- uid: Camera
+  name: Camera
+  href: Camera/Index.html
+- uid: CampaignCore
+  name: Campaign Core
+  href: CampaignCore/index.html
+- uid: DataContainers
+  name: Data Containers
+  href: DataContainers/index.html
+- uid: DataStructures
+  name: Data Structures
+  href: DataStructures/index.html
+- uid: Distribution
+  name: Distribution
+  href: Distribution/index.html
+- uid: EditorEssentials
+  name: Editor Essentials
+  href: EditorEssentials/index.html
+- uid: EntityBehaviours
+  name: Entity Behaviours
+  href: EntityProcedures/index.html
+- uid: GameState
+  name: Game State
+  href: GameState/index.html
+- uid: GameState_internals
+  name: Game State Package Implementation
+  href: GameState/Documentation~/internals.html
+- uid: GraphTools
+  name: GraphTools
+  href: GraphTools/index.html
+- uid: InspectorSerializables
+  name: Inspector Serializables
+  href: InspectorSerializables/index.html
+- uid: LevelOfDetail
+  name: Level of Detail
+  href: LevelOfDetail/index.html
+- uid: LowLevel
+  name: LowLevel
+  href: LowLevel/index.html
+- uid: NotificationSystem
+  name: Notification System
+  href: NotificationSystem/index.html
+- uid: ObjectInteraction
+  name: ObjectInteraction
+  href: ObjectInteraction/index.html
+- uid: PhysicsSensors
+  name: Physics Sensors
+  href: PhysicsToolkit/index.html
+- uid: Procedures
+  name: Procedures
+  href: Procedures/index.html
+- uid: ProceduresToolkit
+  name: ProceduresToolkit
+  href: ProceduresToolkit/index.html
+- uid: Randomization
+  name: Randomization
+  href: Randomization/index.html
+- uid: Renderers
+  name: Renderers
+  href: Renderers/index.html
+- uid: RiggingTools
+  name: Rigging Tools
+  href: Rigging/index.html
+- uid: Rigs
+  name: Rigs
+  href: Rigs/index.html
+- uid: Runtime AssetDatabase
+  name: Runtime AssetDatabase
+  href: RuntimeContentDatabase/index.html
+- uid: SceneTools
+  name: Scene Tools
+  href: SceneMarkup/index.html
+- uid: Settings
+  name: Settings
+  href: Settings/index.html
+- uid: SpatialPartitioning
+  name: Spatial Partitioning
+  href: SpatialPartitioning/index.html
+- uid: SplineNetwork
+  name: Spline Network
+  href: SplineNetwork/index.html
+- uid: Systems
+  name: Systems
+  href: Systems/index.html
+- uid: TechArt Core
+  name: TechArt Core
+  href: TechArt%20Core/index.html
+- uid: UnityExtensions
+  name: Unity Extensions
+  href: UnityExtensions/index.html
+- uid: UserInterface
+  name: UserInterface
+  href: UserInterface/index.html
+- uid: WebMercator
+  name: Web Mercator
+  href: WebMercator/index.html
+- uid: application_flow_index
+  name: Kinstrife Application flow
+  href: ApplicationFlow/index.html
+- uid: artPipeline
+  name: Art Pipeline
+  href: ArtPipeline/index.html
+- uid: creating_packages
+  name: Creating packages
+  href: articles/packages/creating.html
+- uid: database_intro
+  name: Kinstrife Database Basics
+  href: Database/index.html
+- uid: dependencyinjectionbasics
+  name: Dependency Injection (DI) basics
+  href: DOTSExtensions/index.html
+- uid: devmanual_packages
+  name: Packages and Unity Package Manager
+  href: articles/devmanual/packages.html
+- uid: documenting_packages
+  name: Documenting packages
+  href: articles/packages/documenting.html
+- uid: examplePackage
+  name: Example Package
+  href: ExamplePackage/index.html
+- uid: guidSteamroll
+  name: GUID/Database reference steamrolling
+  href: GuidSteamroll/index.html
+- uid: inventory_management
+  name: Inventory Basics
+  href: InventoryManagement/index.html
+- uid: packages_intro
+  name: Kinstrife Packages
+  href: articles/packages/intro.html
+- uid: reflectionHelpers
+  name: Reflection Helpers
+  href: ReflectionHelper/index.html
+- uid: someinfo
+  name: Additional information
+  href: ExamplePackage/Documentation/someinfo.html
+- uid: unity_projects
+  name: Managing Unity projects
+  href: articles/devmanual/unity_projects.html
+- uid: using_packages
+  name: Using packages
+  href: articles/packages/using.html

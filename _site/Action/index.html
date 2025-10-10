@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Kinstrife Blueprints &amp; Mechanics | Kinstrife </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Kinstrife Blueprints &amp; Mechanics | Kinstrife ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../articles/packages/toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/Action/index.md&amp;version=GBmaster&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="kinstrife-blueprints--mechanics">Kinstrife Blueprints &amp; Mechanics</h1>
+
+<blockquote>
+<p><code>&quot;com.kinstrife.core.mechanics&quot;: &quot;file:/GameDev/Core/Packages/Mechanics&quot;</code>
+The purpose of this package is to provide a system that handles most boilerplate and authoring needs for (for now linear) state-based behaviours, sequenced events and (semi-)complex interactions.</p>
+</blockquote>
+<h2 id="intro">Intro</h2>
+<p>If building a game's mechanics is building various cars for various functions, then using this package is to build cars of the same brand, from the same blueprint and stock components. Whether it's a 4WD, an automatic or manual, you will still use a combustion engine, a steering wheel and brakes.</p>
+<p>Much in the same way, we can boil down a game's mechanics, large and small, into its base components, all using a shared dataset and universal 'language' set expressed into standardized components, systems and authoring &amp; development work flow.</p>
+<p>In Unity terminology, it combines the Animator with a bit of Timeline and a lite visual scripting solution.</p>
+<p>This package consists of two parts - Blueprints (authoring) and Mechanics (runtime).</p>
+<p>Blueprints provides an extensible data framework and visual authoring workflow to define the data and their relationships as expressed through the games mechanics.</p>
+<p>Mechanics converts the blueprints into runtime entities from a conversion step. Although it uses ECS at its core and is fully multi threaded, its full functionality is exposed for managed components through an event broadcaster.</p>
+<p>In order to keep Mechanics general-purpose and applicable to as many in game mechanics as possible, game mechanics are boiled down into the following standardized principles:</p>
+<p>Context (Owner, root)
+Mechanic (action, behavior, state)
+Input/Output
+Resource Provider/Resource
+Signaling (external)
+It is highly encouraged to build custom logic by hooking into mechanics' many callbacks in custom systems/components, using helper systems and extending its blueprint dataset where relevant.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/Action/index.md&amp;version=GBmaster&amp;line=1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

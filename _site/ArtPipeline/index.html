@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Art Pipeline | Kinstrife </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Art Pipeline | Kinstrife ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../articles/packages/toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/ArtPipeline/index.md&amp;version=GBmaster&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="artPipeline">
+<h1 id="art-pipeline">Art Pipeline</h1>
+
+<blockquote>
+<p><code>&quot;com.kinstrife.core.art-pipeline&quot;: &quot;file:/GameDev/Core/Packages/ArtPipeline&quot;</code></p>
+</blockquote>
+<p>TODO</p>
+<hr>
+<h2 id="assetpostprocessor">AssetPostprocessor</h2>
+<p>This package contains a system with which you can author your own custom <a href="https://docs.unity3d.com/ScriptReference/AssetPostprocessor.html">asset postprocessors</a>, using import rules based on <a href="https://blog.innogames.com/building-a-custom-asset-pipeline-for-a-unity-project/">this blog post</a>.</p>
+<h3 id="quickstart">Quickstart</h3>
+<ol>
+<li>Browse to the folder or parent folder of the asset(s) you want to target</li>
+<li>Create a <code>PostProcessAsset</code> (<code>Create/Kinstrife/PostProcessAsset</code>)</li>
+<li>Target specific assets by configuring the file filter (name and/or file type)</li>
+<li>Select an existing, or create your own <code>IPostProcessStep</code> processor and add it to the asset</li>
+<li>Reimport the asset(s)</li>
+</ol>
+<hr>
+<h3 id="how-it-works">How it works</h3>
+<p>Instead of writing custom <code>UnityEditor.AssetPostProcessor</code> scripts and hard-coding filters and processors, you can author what import processing using <code>PostProcessAsset</code> ScriptableObjects, each containing a configurable <code>FileFilter</code>, and a list of <code>IPostprocessStep</code> containing the actual processing you want to do.</p>
+<h4 id="filtering">Filtering</h4>
+<p>Upon a file's (re-)import, all <code>PostprocessAssets</code> between a file's folder and its root directory (<code>Assets</code>/<code>Packages</code>) are gathered. Then, starting with the topmost assets, we filter the file's <code>assetPath</code> on name and file type.</p>
+<blockquote>
+<p>ℹ️ Filtering is inclusive, meaning that partial name matches and case-insensitive are considered a match. If a name or file type are empty, we skip the check and default to a match.</p>
+</blockquote>
+<h4 id="ipostprocessstep">IPostprocessStep</h4>
+<p>Currently the <code>OnPostProcessMeshHierarchy</code> and <code>OnPostProcessModel</code> callbacks are supported through implementing <code>IPostprocessMeshHierarchyStep</code> and <code>IPostprocessModelStep</code>.</p>
+<pre><code>public class MyCustomPostprocessStep : IPostprocessModel, IPostProcessMeshHierarchy
+{
+	// This method gets called during the corresponding native callback
+	public void OnPostprocessMeshHierarchy(GameObject root, KinstrifePostProcessors context)
+	{
+		// My custom processing here
+	}
+
+	// We can implement multiple callbacks into a single type
+	public void OnPostprocessModel(GameObject root, KinstrifePostProcessors context)
+	{
+		// Custom processing here, we can keep state from any previous callback
+	}
+}
+</code></pre>
+<hr>
+<h2 id="skinned-mesh-combiner">Skinned Mesh Combiner</h2>
+<p>TODO</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/ArtPipeline/index.md&amp;version=GBmaster&amp;line=1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

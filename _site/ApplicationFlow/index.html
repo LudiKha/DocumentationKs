@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Kinstrife Application flow | Kinstrife </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Kinstrife Application flow | Kinstrife ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../articles/packages/toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/ApplicationFlow/index.md&amp;version=GBmaster&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="application_flow_index">
+<h1 id="kinstrife-application-flow">Kinstrife Application flow</h1>
+
+<blockquote>
+<p><code>&quot;com.kinstrife.core.application-flow&quot;: &quot;file:/GameDev/Core/Packages/ApplicationFlow#1.0.0&quot;</code></p>
+</blockquote>
+<p> </p>
+<p>The application flow package enables large-scale modularization of Unity projects. At the same time, it enforces top-down control/calling of the code, which is difficult to maintain with traditional (MonoBehaviour) Unity projects. Lastly, in combination with the dependency injection package, it utilizes the principle of 'inversion of control' - a generic framework is the 'skeleton' of an application and more concrete implementations are filled in to create the 'meat' of the application.</p>
+<p>TL;DR: Main reasons</p>
+<ul>
+<li>Project modularization</li>
+<li>Top-down flow of control</li>
+<li>Generic extensible skeleton/framework</li>
+</ul>
+<p> </p>
+<h2 id="building-blocks">Building blocks</h2>
+<h3 id="game-modes">Game Modes</h3>
+<p>The application/game is essentially a sequence of multiple states, like the campaign map, combat, dialogue etc. Each of these states is a <em>GameMode</em>, which forms a meaningful combination of features - these features are not implemented by the <em>GameMode</em> itself though, but rather the <em>Modules</em> of which it consists.</p>
+<h3 id="modules">Modules</h3>
+<p>Modules are stand-alone parts of the game: They are modular, large-scale features. They should work by themselves, i. e. they should not require other modules to be present in a Unity project in order to run and should not directly reference other modules. Modules need to reside in a single scene. When the game transitions to another mode, scenes of needed but not yet loaded modules will be loaded and vice versa (unloaded).</p>
+<p>Modules will need to communicate with each other at times. However, they should also not require each other to be in the same project or, in fact, exist. This cam be achieved through the messaging package via messages and services.</p>
+<p>A key aspect of modules and this entire package is that initialization and control of low are top-down. Initialization and the beginning of gameplay loops  should not be triggered by individual MonoBehaviours in <code>Start()</code> - instead, module handles (a MonoBehaviour called <code>Module</code>) should coordinate initialization. In a first initialization round, it should ensure that its inner workings are set up correctly. This should be split up over multiple frames and/or be multithreaded if it is work intensive: the rendering thread should not be blocked while loading/initializing. In the second initialization round, additional setup that requires communication with other modules may happen. This ensures that all modules are properly initialized before trying to trigger/access each other's functionalities via messaging.</p>
+<h3 id="module-packages">Module Packages</h3>
+<p>Modules commonly utilize multiple packages, particularly from the Core repository. However, they should have at least a single package that is dedicated to their specific functionality and that can be used to test/run a module in isolation.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The independence of modules should not be circumvented this by creating ‘linking' packages that closely couple modules together.</p>
+</div>
+<p>Packages may be included in multiple Modules, but a shared package dependency should ideally not lead to tight coupling between these modules. Each module should instead probably contain separate instances of whatever exists in those packages. The core functionality of a module should be contained in one or more packages that are only used by that respective module. While these will likely link various packages, it should not lead to tight coupling between them, which would make them unusable for other packages!</p>
+<h3 id="locations">Locations</h3>
+<p>Modules are focused around <em>functionality</em> and <em>features</em>. However, a large part of games consists of statically authored environments - these are <em>Locations</em> in the context of this package.</p>
+<h2 id="application-flow">Application flow</h2>
+<p>TODO flow
+TODO loading</p>
+<h2 id="common-use-cases">Common use cases</h2>
+<h3 id="creating-a-module">Creating a module</h3>
+<p>TODO</p>
+<h3 id="create-a-mode">Create a mode</h3>
+<p>TODO</p>
+<h3 id="creating-a-location">Creating a location</h3>
+<p>TODO</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/ApplicationFlow/index.md&amp;version=GBmaster&amp;line=1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

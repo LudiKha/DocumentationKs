@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Kinstrife Database Basics | Kinstrife </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Kinstrife Database Basics | Kinstrife ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../articles/packages/toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/Database/index.md&amp;version=GBmaster&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="database_intro">
+<h1 id="kinstrife-database-basics">Kinstrife Database Basics</h1>
+
+<blockquote>
+<p><code>&quot;com.kinstrife.core.database&quot;: &quot;file:/GameDev/Core/Packages/Database&quot;</code></p>
+</blockquote>
+<p>Games contain a lot of static data, i. e. data that does not change at runtime. This can be
+essentially anything, such as definitions/'stats' of gameplay elements (items, buildings etc.)
+This information should be conveniently accessible at runtime throughout the entire project.
+The database offers both convenient authoring and runtime accessing of static data.</p>
+<h3 id="when-to-use-it">When to use it</h3>
+<ul>
+<li>Static data</li>
+<li>Read-only</li>
+<li>Multiple instances of an ‘archetype’</li>
+<li>Be creative! Many things can become more flexible when based on database entries</li>
+</ul>
+<h2 id="accessing-entries">Accessing entries</h2>
+<p>Get the <a href="xref:Kinstrife.Database.DatabaseAccessor">DatabaseAccessor</a> (via <a class="xref" href="../DOTSExtensions/index.html">dependency injection</a>)
+and use its methods <code>TryGetEntry</code> and/or <code>TryGetEntriesOfType</code>.</p>
+<h2 id="create-and-edit-entries">Create and edit entries</h2>
+<ol>
+<li>Open the database editor window (located at the top bar via Kinstrife -&gt; Database) and navigate to your new type via the type picker at the top left.</li>
+<li>The menu on the left will now show all instances of that type it can find on the left. You can either select one and edit its values, or create a new one (which is the bottom most option.)</li>
+<li>Clicking the 'Add New' option will create a new preview instance which you can modify. But you will see a warning that it is not yet created - to do so, enter a path at the bottom of the window. The path must be in a Resources/Database/ folder. You can enter either a name for a directory, or a file name (which will need to end with '.asset'). Once you've done so, a <em>Create</em> button will appear, which creates an instance at the path upon clicking. If it doesn't, make sure to check the console for errors.</li>
+<li>Once you created the instance, it will show up in the project view in the path you specified and will also be modifiable via the database editor.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>You can copy a path by selecting a folder in the project view and hitting <code>CTRL + ALT + C</code>.</p>
+</div>
+<h2 id="create-database-entry-types">Create database entry types</h2>
+<p>Create an new database type script via the editor menu <em>Create/Kinstrife/Script Templates/Database Type</em>. In this script, you must make sure that the data is immutable during runtime (but still editable in the editor.) A good way to do this is to create private backing fields decorated with the [SerializeField] attribute and allow public access via a get-only property.
+Because this is a lot of boilerplate writing, this package contains three visual studio code snippets, PropertyWithBackingField and PropertyListWithBackingField. <a href="https://docs.microsoft.com/en-us/visualstudio/ide/walkthrough-creating-a-code-snippet?view=vs-2019" title="Visual Studio snippet documentation">Read the section ‘Add a code snippet to visual studio’ on how to install snippets if you don’t know yet.</a> To use them, type src or srf, respectively, and hit tab twice. You can then edit the type and name of the field &amp; property.</p>
+<p>Remember to update the database creation menu in your newly created script file!</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/Database/index.md&amp;version=GBmaster&amp;line=1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

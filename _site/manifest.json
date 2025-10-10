@@ -1,0 +1,1024 @@
+{
+  "source_base_path": "D:/GameDev/Core/Packages",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Action/Documentation/authoring.md",
+      "output": {
+        ".html": {
+          "relative_path": "Action/Documentation/authoring.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Action/Documentation/authoring.md.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Action/Documentation/authoring.md.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Action/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Action/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Action/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Action/toc.html"
+        },
+        ".json": {
+          "relative_path": "Action/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Actor/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Actor/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ActorInterfaces/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "ActorInterfaces/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Animation/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Animation/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ApplicationFlow/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "ApplicationFlow/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ArtPipeline/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "ArtPipeline/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "ArtPipeline/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ArtPipeline/toc.html"
+        },
+        ".json": {
+          "relative_path": "ArtPipeline/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Atomics/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Atomics/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Audio/Documentation/apiBasics.md",
+      "output": {
+        ".html": {
+          "relative_path": "Audio/Documentation/apiBasics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Audio/Documentation/apiBasics.md.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Audio/Documentation/apiBasics.md.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Audio/Documentation/authoring.md",
+      "output": {
+        ".html": {
+          "relative_path": "Audio/Documentation/authoring.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Audio/Documentation/authoring.md.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Audio/Documentation/authoring.md.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Audio/Documentation/internals.md",
+      "output": {
+        ".html": {
+          "relative_path": "Audio/Documentation/internals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Audio/Documentation/internals.md.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Audio/Documentation/internals.md.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Audio/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Audio/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Audio/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Audio/toc.html"
+        },
+        ".json": {
+          "relative_path": "Audio/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Camera/Index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Camera/Index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "CampaignCore/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "CampaignCore/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Config/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Config/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DOTSExtensions/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "DOTSExtensions/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DataContainers/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "DataContainers/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DataStructures/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "DataStructures/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Database/Documentation/internals.md",
+      "output": {
+        ".html": {
+          "relative_path": "Database/Documentation/internals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Database/Documentation/internals.md.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Database/Documentation/internals.md.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Database/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Database/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Database/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Database/toc.html"
+        },
+        ".json": {
+          "relative_path": "Database/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DependencyInjection/Documentation/details.md",
+      "output": {
+        ".html": {
+          "relative_path": "DependencyInjection/Documentation/details.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "DependencyInjection/Documentation/details.md.meta",
+      "output": {
+        "resource": {
+          "relative_path": "DependencyInjection/Documentation/details.md.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DependencyInjection/Documentation/installers.md",
+      "output": {
+        ".html": {
+          "relative_path": "DependencyInjection/Documentation/installers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "DependencyInjection/Documentation/installers.md.meta",
+      "output": {
+        "resource": {
+          "relative_path": "DependencyInjection/Documentation/installers.md.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DependencyInjection/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "DependencyInjection/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "DependencyInjection/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "DependencyInjection/toc.html"
+        },
+        ".json": {
+          "relative_path": "DependencyInjection/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Distribution/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Distribution/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Documentation/api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/articles/devmanual/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/devmanual/intro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/articles/devmanual/packages.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/devmanual/packages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Documentation/articles/devmanual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/devmanual/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/devmanual/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/articles/devmanual/unity_projects.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/devmanual/unity_projects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/articles/packages/creating.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/packages/creating.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/articles/packages/documenting.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/packages/documenting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/articles/packages/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/packages/intro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/articles/packages/packages.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/packages/packages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Documentation/articles/packages/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/packages/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/packages/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/articles/packages/using.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/packages/using.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Documentation/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "EditorEssentials/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "EditorEssentials/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "EntityProcedures/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "EntityProcedures/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "ExamplePackage/Documentation/eyepatch.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "ExamplePackage/Documentation/eyepatch.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ExamplePackage/Documentation/someinfo.md",
+      "output": {
+        ".html": {
+          "relative_path": "ExamplePackage/Documentation/someinfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "ExamplePackage/Documentation/xzibit.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "ExamplePackage/Documentation/xzibit.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ExamplePackage/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "ExamplePackage/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "ExamplePackage/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ExamplePackage/toc.html"
+        },
+        ".json": {
+          "relative_path": "ExamplePackage/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "GameState/Documentation~/internals.md",
+      "output": {
+        ".html": {
+          "relative_path": "GameState/Documentation~/internals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "GameState/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "GameState/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "GameState/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "GameState/toc.html"
+        },
+        ".json": {
+          "relative_path": "GameState/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "GraphTools/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "GraphTools/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "GuidSteamroll/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "GuidSteamroll/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Identification/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Identification/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "InspectorSerializables/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "InspectorSerializables/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "InventoryManagement/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "InventoryManagement/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "LevelOfDetail/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "LevelOfDetail/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "LowLevel/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "LowLevel/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Messaging/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Messaging/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "NotificationSystem/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "NotificationSystem/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ObjectInteraction/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "ObjectInteraction/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ParticleVfx/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "ParticleVfx/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "PhysicsToolkit/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "PhysicsToolkit/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ProcedureGraph/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "ProcedureGraph/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Procedures/Documentation~/CarSample.md",
+      "output": {
+        ".html": {
+          "relative_path": "Procedures/Documentation~/CarSample.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Procedures/Documentation~/GettingStarted copy.md",
+      "output": {
+        ".html": {
+          "relative_path": "Procedures/Documentation~/GettingStarted copy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Procedures/Documentation~/GettingStarted.md",
+      "output": {
+        ".html": {
+          "relative_path": "Procedures/Documentation~/GettingStarted.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Procedures/Documentation~/LifeCycle.md",
+      "output": {
+        ".html": {
+          "relative_path": "Procedures/Documentation~/LifeCycle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Procedures/Documentation~/Modules/StateMachine.md",
+      "output": {
+        ".html": {
+          "relative_path": "Procedures/Documentation~/Modules/StateMachine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Procedures/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Procedures/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Procedures/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Procedures/toc.html"
+        },
+        ".json": {
+          "relative_path": "Procedures/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ProceduresToolkit/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "ProceduresToolkit/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Randomization/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Randomization/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ReflectionHelper/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "ReflectionHelper/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Renderers/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Renderers/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Rigging/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Rigging/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Rigs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Rigs/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "RuntimeContentDatabase/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "RuntimeContentDatabase/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SceneMarkup/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "SceneMarkup/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Settings/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Settings/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SpatialPartitioning/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "SpatialPartitioning/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SplineNetwork/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "SplineNetwork/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "StateFlow/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "StateFlow/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Systems/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Systems/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "TechArt Core/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "TechArt Core/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "UnityExtensions/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "UnityExtensions/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "UserInterface/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "UserInterface/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "WebMercator/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "WebMercator/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "obj/Documentation/api/index.json",
+      "output": {
+        "resource": {
+          "relative_path": "obj/Documentation/api/index.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "obj/Documentation/index.json",
+      "output": {
+        "resource": {
+          "relative_path": "obj/Documentation/index.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

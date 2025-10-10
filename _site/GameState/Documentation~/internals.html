@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Game State Package Implementation | Kinstrife </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Game State Package Implementation | Kinstrife ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../../articles/packages/toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/GameState/Documentation~/internals.md&amp;version=GBmaster&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GameState_internals">
+<h1 id="game-state-package-implementation">Game State Package Implementation</h1>
+
+<p> </p>
+<p>The internal implementation consists of multiple important subsystems and processes:</p>
+<ul>
+<li><strong>GameState:</strong> Is essentially only a wrapper around Unity's ECS, with the addition of adding an instance of a <code>Persistent</code> component so that each entity has a corresponding <code>System.Guid</code> assigned. Supported data types are either specialized ECS components (inheriting from GameState's <code>IPersistentComponent</code> interface) or any type that implements GameState's <code>ISingletonData</code>.</li>
+<li><strong>DiskFormat:</strong> Rather than marking the GameState directly as a serializable MessagePack object, the disk format consists of special types that essentially just hold dictionaries of GUIDs, strings (for serialized types) and byte arrays for each serialized object.</li>
+<li><strong>Serialization:</strong> Relatively straightforward: 1) Find all serializable types, i.e. all types that inherit from <code>IPersistentComponent</code> or <code>ISingletonData</code>. Then iterate through these types, serialize the singleton instances, or in the case of components, find all components of that type and serialize them. Types are serialized to strings.</li>
+<li><strong>Deserialization:</strong> A bit trickier, but essentially the same in reverse. The disk format class <code>SerializedGameState</code> handily already divides its serialized objects into singletons and component arrays. Deserialization then iterates through the singletons, deserializes them and adds them to the provided <code>GameState</code> instance. Similarly to serialization, we iterate through all component types. For each component type, we deserialize all component instances/byte arrays and add them to the GameState. The probably trickiest part here, deserializing types is explained below in more detail.</li>
+<li><strong>ReferenceResolver:</strong> Probably the trickiest part here. We can't just serialize <code>IPersistentComponent</code> instances or database entries every time they are referenced - this issue is addressed with GameState's generic <code>Reference&lt;&gt;</code> type. They get serialized and deserialized automatically - however, this only covers their GUID property. So after deserializing, we need to find and re-link which objects the references were pointing to before serialization. This happens in the reference resolver. Going through all Singleton and Component types, we first find all members of those types (via reflection) that have MessagePack's <code>Key</code> attribute and then check which are either a <code>Reference&lt;&gt;</code> or a collection of references (<code>List&lt;Reference&lt;&gt;&gt;</code> or Dictionary with a reference as a key and/or value type). Through ReflectionHelper, we can then set the Reference members' <code>Value</code> once we retrieved it: We need to figure out whether it points to a database or a dynamic type, in which case we either retrieve it from our <code>DatabaseAccessor</code> or <code>GameState</code> instance. This is done for every singleton instance and component instance that has been added to the GameState in the deserialization process.</li>
+</ul>
+<hr>
+<h2 id="gotchas">Gotchas</h2>
+<h4 id="invoking-generic-methods">Invoking generic methods</h4>
+<p>A recurring issue is the need to invoke generic methods (such as GameState's/EntityManager's <code>GetComponent&lt;&gt;</code>), even though we only have a Type <em>reference</em> (i.e. an instance of <code>System.Type</code>) rather than a Type <em>symbol</em> (a <code>T</code>, rather than a <code>typeof(T)</code>). A utility class was added to ReflectionHelper (<code>GenericMethodInfoHelper</code>) to address this issue. You will see it being used in multiple places. Unfortunately, this makes debugging the package a lot harder because it obscures the call stack and the code location when exceptions are thrown. It is, however, unfortunately necessary and there is no other way to go about this.</p>
+<h4 id="type-serialization">Type serialization</h4>
+<p>Serializing types is easy: We simply convert the full type name (including namespaces) to a string and serialize that. Deserializing is a bit trickier: We find all potentially serialized types (implementing <code>IPersistentComponent</code> or <code>ISingletonData</code>) and add them to a dictionary with their (string) name as keys. In order to allow name changes in assembly definitions and individual types (<strong>but not namespaces</strong>), there is a <code>PreviouslyNamed</code> attribute. We also check each type for such an attribute and also add keys as specified in the instance of the <code>PreviouslyNamed</code> attribute.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/GameState/Documentation~/internals.md&amp;version=GBmaster&amp;line=1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

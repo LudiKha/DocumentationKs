@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Inspector Serializables | Kinstrife </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Inspector Serializables | Kinstrife ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../articles/packages/toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/InspectorSerializables/index.md&amp;version=GBmaster&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="InspectorSerializables">
+<h1 id="inspector-serializables">Inspector Serializables</h1>
+
+<blockquote>
+<p><code>&quot;com.kinstrife.core.inspector-serializables&quot;: &quot;file:/GameDev/Core/Packages/InspectorSerializables&quot;</code></p>
+</blockquote>
+<p> </p>
+<p>Adds common types that are not serialized by Unity out of the box, such as dictionaries as well as type and interface references. These can now be serialized and displayed in the editor (via workarounds).</p>
+<p> </p>
+<h3 id="serializable-dictionary">Serializable dictionary</h3>
+<p>Inherit from <code>SerializableDictionary&lt;TKey, TValue&gt;</code> (from the <code>Kinstrife.Core.InspectorSerializables</code> namespace) with the concrete types you want to use, e.g. <code>IntStringDictionary : SerializableDictionary&lt;int, string&gt;</code>. The newly created class must be decorated with the <code>[System.Serializable]</code>attribute. The concrete subclass can then be serialized as expected.</p>
+<p> </p>
+<h3 id="serializable-interfaces">Serializable interfaces</h3>
+<p>Based on the <a href="https://assetstore.unity.com/packages/tools/localization/iunified-12117">IUnified asset</a>. If there are tricky bugs, try checking if there has been an update on the asset store and/or try contacting the asset author.</p>
+<p>Inherit from <code>IUnifiedContainer&lt;TInterface&gt;</code> to create a concrete subclass for the interface you want to reference. The newly created class must be decorated with the <code>[System.Serializable]</code>attribute. The concrete subclass can then be serialized as expected. The interface reference can be retrieved and set via the <code>Result</code> property.
+Keep in mind that when using this in the editor, this only works for referencing classes that 1) implement the interface and 2) inherit from <code>UnityEngine.Object</code>, other object references cannot be serialized by Unity.</p>
+<p><strong>For collections:</strong> When iterating over collections of <code>IUnifiedContainer</code> subclasses, you can access values directly as interfaces instead of using the <code>Result</code> property, for example:</p>
+<pre><code class="lang-csharp">interface ISomeInterface { void DoX(); }
+
+[System.Serializable]
+class SomeInterfaceContainer : IUnifiedContainer&lt;ISomeInterface&gt; { }
+
+List&lt;SomeInterfaceContainer&gt; myInterfaceList = new List&lt;SomeInterfaceContainer&gt;();
+
+void Test()
+{
+    foreach (ISomeInterface someInterface in myInterfaceList)
+        someInterface.DoX();
+}
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/InspectorSerializables/index.md&amp;version=GBmaster&amp;line=1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Getting Started Guide | Kinstrife </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Getting Started Guide | Kinstrife ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/Procedures/Documentation~/GettingStarted.md&amp;version=GBmaster&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="getting-started-guide">Getting Started Guide</h1>
+
+<p>A <code>Procedure</code> is a building block you can use to author short-lived, interdependent behaviors in a standardized way. For example, a character combat stance, equipping an item, opening a door for 5 seconds, or entering a tutorial state.</p>
+<h2 id="1-create-the-context">1. Create the Context</h2>
+<p>Create a new <code>GameObject</code> and add the <code>ProceduresManager</code> component to it.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The <code>ProceduresManager</code> is what &quot;owns&quot; and runs all the procedures for a specific character or system. Think of it as the car 🚗 that will hold all the parts.</p>
+</div>
+<h2 id="2-create-the-procedure-asset">2. Create the Procedure Asset</h2>
+<ol>
+<li>In the project window, navigate to the folder you want to store the asset.</li>
+<li>Right click and select <code>Create/Procedures/Procedure</code></li>
+<li>Give your <code>Procedure</code> a name, like <em>&quot;Jump&quot;</em>.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>This asset is like a <strong>blueprint</strong>📜 for a part, such as an engine.</p>
+</div>
+<h2 id="3-connect-the-procedure-to-the-manager">3. Connect the Procedure to the Manager</h2>
+<ol>
+<li>Select the <code>ProceduresManager</code> GameObject in the hierarchy.</li>
+<li>In the inspector, find the <code>Source Data</code> list.</li>
+<li>Drag your newly created <code>Procedure</code> asset into this list.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>We can only add each <code>Procedure</code> asset once. The <code>ProceduresManager</code> will create a unique <strong>instance</strong> of this <code>Procedure</code> at runtime. Think of the instance as the <strong>engine</strong>⚙️ built from the blueprint.</p>
+</div>
+<h2 id="4-manually-control-a-procedure-at-runtime">4. Manually Control a Procedure at Runtime</h2>
+<p>The <code>Weight</code> determines if a procedure is active (starts) or inactive (stops). A weight greater than <code>0</code> makes it active, while a weight of <code>0</code> makes it inactive.</p>
+<h3 id="test-the-procedures-state">Test the Procedure's State</h3>
+<ol>
+<li>In the hierarchy, select the <code>ProceduresManager</code> GameObject.</li>
+<li>Enter Play Mode (<code>Ctrl+P</code>).</li>
+<li>In the inspector, find your <code>Jump</code> procedure. Notice its status icon is <strong>green</strong> 🟢, meaning it's active by default.</li>
+<li>Drag the <code>Weight</code> slider to <code>0</code>. The status icon should turn <strong>grey</strong> ⚪️ (inactive).</li>
+<li>Drag the <code>Weight</code> slider back to <code>1</code>. The status icon will turn <strong>green</strong> 🟢 again (active).</li>
+</ol>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p><strong>Instance vs. Asset</strong>: When modifying a <code>Procedure</code> at runtime, make sure you have selected its <strong>instance</strong> in the <code>ProceduresManager</code>. The instance is the running engine ⚙️ in your car. The <code>Procedure</code> asset in your Project folder is the blueprint 📜; changing the blueprint will affect all future engines built from it.</p>
+</div>
+<h2 id="5-next-steps">5. Next Steps</h2>
+<p>Now that you have a basic understanding of how to create and control a <code>Procedure</code>, you can explore more advanced features in one of the samples:</p>
+<ul>
+<li>The <a href="CarSample.html">Car Sample</a> demonstrates how to use <code>Procedures</code> to model a simple car with ignition, engine, steering and lights.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://kinstrife.visualstudio.com/Core/_git/Core?path=Packages/Procedures/Documentation~/GettingStarted.md&amp;version=GBmaster&amp;line=1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
