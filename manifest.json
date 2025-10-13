@@ -5,6 +5,85 @@
   "files": [
     {
       "type": "Conceptual",
+      "source_relative_path": "../../Packages/Core/Graphene/Documentation~/About.md",
+      "output": {
+        ".html": {
+          "relative_path": "Graphene/Documentation~/About.html",
+          "hash": "H1jY+VZ04NgEiaTcX6hnU/YbeBJ2QZ7LmvDnydekEQE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../Packages/Core/Graphene/Documentation~/_config.yml",
+      "output": {
+        "resource": {
+          "relative_path": "Graphene/Documentation~/_config.yml"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../../Packages/Core/Graphene/Documentation~/howto.md",
+      "output": {
+        ".html": {
+          "relative_path": "Graphene/Documentation~/howto.html",
+          "hash": "IRnk0WvoLaJ4zM1Sm8fUK4V+Q2MKkK8RQKZ6hh4V8xU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../Packages/Core/Graphene/Documentation~/images/graphene-logo-full.png",
+      "output": {
+        "resource": {
+          "relative_path": "Graphene/Documentation~/images/graphene-logo-full.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../Packages/Core/Graphene/Documentation~/images/graphene-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "Graphene/Documentation~/images/graphene-logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../Packages/Core/Graphene/Documentation~/images/installation/git.png",
+      "output": {
+        "resource": {
+          "relative_path": "Graphene/Documentation~/images/installation/git.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../Packages/Core/Graphene/Documentation~/images/installation/installation_upm_git_extension.png",
+      "output": {
+        "resource": {
+          "relative_path": "Graphene/Documentation~/images/installation/installation_upm_git_extension.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "../../Packages/Core/Procedures/Documentation~/CarSample.md",
       "output": {
         ".html": {
@@ -58,6 +137,18 @@
         ".html": {
           "relative_path": "Procedures/Documentation~/StateMachine.html",
           "hash": "1VaClhZTpJgAJ143GMc6wGfBFW+vfaygq4yLzU4DLS4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../../Packages/Core/ReflectionHelper/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "ReflectionHelper/index.html",
+          "hash": "g++LMBNwXVtZMUwFvPiji6sJyQgCr/ba6R4+QPwFjyU="
         }
       },
       "is_incremental": false,
@@ -175,12 +266,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "Site/articles/packages/toc.yml",
       "output": {
         ".html": {
           "relative_path": "articles/packages/toc.html",
-          "hash": "PLxVWKqbhUSAZh6B7dQn9uIQhoI2I1mPxhBSsGiBPB0="
+          "hash": "GwM7GyGjsz3IO1uo5oJELfonHfMkRX1eyodhDS3F8cM="
         }
       },
       "is_incremental": false,
@@ -237,7 +331,14 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 15,
+          "total_file_count": 18,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

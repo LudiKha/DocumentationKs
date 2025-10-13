@@ -13,6 +13,9 @@ references:
 - uid: packages_intro
   name: Kinstrife Packages
   href: articles/packages/intro.html
+- uid: reflectionHelpers
+  name: Reflection Helpers
+  href: ReflectionHelper/index.html
 - uid: unity_projects
   name: Managing Unity projects
   href: articles/devmanual/unity_projects.html
