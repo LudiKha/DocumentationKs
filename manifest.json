@@ -121,6 +121,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "../../Packages/Core/CampaignCore/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "CampaignCore/index.html",
+          "hash": "bDzBQzWekpSKSGW630p87klxp8I9tEi3NyrexChnu9c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "log_codes": [
         "InvalidFileLink"
       ],
@@ -7745,6 +7757,66 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.Campaign.CampaignSystemDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.Campaign.CampaignSystemDefinition.html",
+          "hash": "1dcHWAAUL73X/g3777U2davP8tPYkTOmrmOFl8Q6Qb4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.Campaign.CampaignSystems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.Campaign.CampaignSystems.html",
+          "hash": "J4Tnk8F/a2kQu91LQ3rTrUe3Tu5l1z4jsk/7HvayZRA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.Campaign.OverrideOnlyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.Campaign.OverrideOnlyAttribute.html",
+          "hash": "b1xfgcoeLTXt3mSBSLdoCPTaWpuRS0Qa+fIHus1jNvk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.Campaign.SyncStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.Campaign.SyncStep.html",
+          "hash": "MdobXlhBuomBG5o+Jv+cD5lmfaymB662t/zFcxZSdPQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.Campaign.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.Campaign.html",
+          "hash": "LRDsWousS95kbp/d4juEHGjxLiYhssFm17fyNN2HN3k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "Site/api/Kinstrife.Core.Config.ConfigData.yml",
       "output": {
         ".html": {
@@ -9789,7 +9861,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.DataContainers.ScriptableObjectComponent.html",
-          "hash": "vkazFIegh9JkQvdpDs41RA+kexLStcWb8ZK5itSpzj0="
+          "hash": "kHZ1ENMSsLjUZp0xA2lEfY3COj+nmmSsX81RK4rLuwc="
         }
       },
       "is_incremental": false,
@@ -20076,7 +20148,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/toc.html",
-          "hash": "pN0+CXryN5u69Qd7qeMW08R56MAyZtjhm8dNE7XGKRQ="
+          "hash": "OVjzx3a+8bvaJk95xOUIxFDRhHHq/lkZpVhq0RHVC0w="
         }
       },
       "is_incremental": false,
@@ -20184,7 +20256,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/packages/toc.html",
-          "hash": "CjElEMnDgSLQ197guZX2gJcaJuJX6k3ZjcfMBT8jTT0="
+          "hash": "OOIjYTwJ+qBsTEezlXqpx6AvmKBaJ7y3DsXS6/3T/E0="
         }
       },
       "is_incremental": false,
@@ -20241,13 +20313,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 51,
+          "total_file_count": 52,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1625,
+          "total_file_count": 1630,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
