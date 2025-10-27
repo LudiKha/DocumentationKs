@@ -5,6 +5,18 @@
   "files": [
     {
       "type": "Conceptual",
+      "source_relative_path": "../../Packages/Core/Actor/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Actor/index.html",
+          "hash": "jBVIOlMcYQP3EtbhkZ0O5YHKt+LycnzAYBfsVqihKrY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "../../Packages/Core/Animation/index.md",
       "output": {
         ".html": {
@@ -2669,6 +2681,1290 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.ActorCameraTargets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.ActorCameraTargets.html",
+          "hash": "LpimEAVh88BRJUMvAsc2I7a/Q230ntVGMzoFrmUXKsU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.ActorConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.ActorConfig.html",
+          "hash": "G54L6WeCdiXJIxBQW7xgjFXpMp9RCYwPiAQ0i5nbIds="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.ActorController.MotorDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.ActorController.MotorDelegate.html",
+          "hash": "cSWoe29LNJ0cZ6oFTW/JukEiXGex8dsPb7rFTEdw358="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.ActorController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.ActorController.html",
+          "hash": "GdPgyMohP+lrJeRSxpRCQsRzd6ZpAF1l7DoQN+SF88g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.ActorDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.ActorDefinition.html",
+          "hash": "W9YCGqPUCB3ePXfzdmtChemn32w5hcR2ERqiyU3BOJA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.ActorMovementSystem.FillSphereCastCommandJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.ActorMovementSystem.FillSphereCastCommandJob.html",
+          "hash": "9Usrt0p5coji7TpZkgJ+YHukfiYaKFT/Zm2N1GMLasY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.ActorMovementSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.ActorMovementSystem.html",
+          "hash": "Ea5G0k+vDtKizuIw0Oepnx70bEUjC43E4N4u0xovges="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.ActorProcedure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.ActorProcedure.html",
+          "hash": "WEpZczFY2Y3Sy46Tmi2bYcp2XQQSIZtWFwW0H16voo0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.ActorProcedureComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.ActorProcedureComponent.html",
+          "hash": "I7XZCyiiyCuG/eUEGzNH956bOCmLern+KyQyJLu5UOk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.ActorRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.ActorRoot.html",
+          "hash": "iQ18LF4HFz88k/qCfl5ACd8lOt5dtIDTIRNoVssAILM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.ActorSpawnService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.ActorSpawnService.html",
+          "hash": "A3gh+zEYTfG1JHATUb5Wf2UF+IqHxoLX1nu5/kIw6/Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.ActorTickingSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.ActorTickingSystem.html",
+          "hash": "b7oTxw/PuZLG/YRtFj8fK0Ah/7//PjECZHxQ7NuzQ/0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.AnimalController.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.AnimalController.State.html",
+          "hash": "fF4W+UJ3vytOFZVx5LhCY2WC+1IQhTeHvXeNB1poOnc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.AnimalController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.AnimalController.html",
+          "hash": "5/N048jI0RpY1gn/lW4lbcXoUzOT9fcfIEFBEf3ILRA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.AnimalEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.AnimalEntity.html",
+          "hash": "lM1MG22tzuqmF2VXn3X9RMNJl4kWKCyi5UoLCv/lDmk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.AnimalEntityManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.AnimalEntityManager.html",
+          "hash": "uVpB5mFC62UMn4gVcMwGnm6oKXBlkERrMCgQaz3vzGM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.AnimalMoveSettings.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.AnimalMoveSettings.State.html",
+          "hash": "PnjlBwjv0XF8h+nAjbG5CWkU6+urmfEolcwrI5sNvtM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.AnimalMoveSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.AnimalMoveSettings.html",
+          "hash": "G967+m0svy7he7njw4PkEB/tzRXjpUTNRCPak+UtgDQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.AnimalMovementJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.AnimalMovementJob.html",
+          "hash": "ipz51P+7RJ5jJKbFqGRj4cgvTqm658z/gwh35MAvwPY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.AnimalPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.AnimalPool.html",
+          "hash": "MCiqB5qoQr5XbMYEe1cRFjXXrfdJlNquHtv0h3QFFC4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.AnimalSpawner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.AnimalSpawner.html",
+          "hash": "Eqw7tG7NPoExlFev0yGogD8UWrMMlJ+JcL8y9TUPIEo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.AnimalSystem.FillSphereCastCommandJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.AnimalSystem.FillSphereCastCommandJob.html",
+          "hash": "SlAbM+EFwc7CDvG6gcsjeQUx4dNTAo394+ibINdnDZk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.AnimalSystem.GroundSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.AnimalSystem.GroundSettings.html",
+          "hash": "QoDDQnA2tFTGn3/35ONXTz02ilSIZxTmVqfGxdScPCQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.AnimalSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.AnimalSystem.html",
+          "hash": "YHu00kQSdLwJtuHC1mDG/etyGgI4pqGNIZr74wORZms="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.AnimalType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.AnimalType.html",
+          "hash": "eWg5b8J8SsCxRsgGMagkd+d+cnTeVr+92Pe5vn3tdhk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Editor.BlenderToCC3SkeletonPostProcessStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Editor.BlenderToCC3SkeletonPostProcessStep.html",
+          "hash": "MgHZfFvCLNzd1o2B85wrs5nFBz1NiYT1oPgP1sTRODU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Editor.HumanBaseMeshCC3PostProcessStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Editor.HumanBaseMeshCC3PostProcessStep.html",
+          "hash": "7PNgzKqK7n3s63bkzx31GjArqyNY8DZqzz4hx2YPGfg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Editor.OptimizeBonesPostProcessStep.BoneWeightData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Editor.OptimizeBonesPostProcessStep.BoneWeightData.html",
+          "hash": "Cf+ZXAvjDSWvIeTwNkaMxt8MLAkVu3ObWrUSaknDjdw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Editor.OptimizeBonesPostProcessStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Editor.OptimizeBonesPostProcessStep.html",
+          "hash": "78B2ioFyT+5UM8NdaLSzX+B/s9JmG+fYumuJcrklRYw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Editor.RemapSkeletonPostProcessStep.Mode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Editor.RemapSkeletonPostProcessStep.Mode.html",
+          "hash": "V2KSpfwmmEPCHr0VHhUCx0PYvnyr7KqAVUgg6Jabilg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Editor.RemapSkeletonPostProcessStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Editor.RemapSkeletonPostProcessStep.html",
+          "hash": "jfg1aQQO4g609EM72/5YGxMN3wj4jcG5RAXBLi2axX4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Editor.SetJawMusclePostprocessStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Editor.SetJawMusclePostprocessStep.html",
+          "hash": "/4yxTQ/4G3SBw8rwfTabMb0bqJuP5XX6E8Bha9Lq/rg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Editor.html",
+          "hash": "l3qA2jFNWpwhdTLc94z0jxOwWM4g6G2/Vf6YEfl0fr8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.EnumComparison.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.EnumComparison.html",
+          "hash": "ZEL6M265opbIFEK6e7V8MtIOQ9pnpzzkqRAc4ELEPYs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.FillRayCastCommandBipedJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.FillRayCastCommandBipedJob.html",
+          "hash": "NrtbOhBNtIJg4Nw9X3PwPW7MDp410UdpaB4XGUx8RIE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.FillRayCastCommandQuadrupedJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.FillRayCastCommandQuadrupedJob.html",
+          "hash": "2kG2N+g+AKNsaEwPCeIHpOjF6hj3yl8LH/F7rcSA9Ng="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.GroundSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.GroundSettings.html",
+          "hash": "NZb0FrTdvGCeYLPDy0rY+eqNj6AFAm5JjUoteghH6UM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.HerdComponentData.LODFunctionality.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.HerdComponentData.LODFunctionality.html",
+          "hash": "7Iy8G9gE5yFh7N6jqjFF28cw7OBNQmDsnH75tzD3jZ0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.HerdComponentData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.HerdComponentData.html",
+          "hash": "jQpp1cRb9rrhw5rSXWYBROLcnTNHJbXRMmbnwW7ff2A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.HerdData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.HerdData.html",
+          "hash": "k62Na1vcPn/gMkGUtkMBdxPAUys6E1+JHvyVT7v7Fl0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.HerdEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.HerdEntity.html",
+          "hash": "s9CIKEPvn6FBQs7/0nSYQHxL8XQ+/aDIOC7kvABmzlY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.HorseEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.HorseEntity.html",
+          "hash": "rmw2TqARBJ4ryNP7ENfe9j5oMNIKCdavbIiTS2KDax8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.HorseEntityManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.HorseEntityManager.html",
+          "hash": "cEysPdqh0IyLVRU+IEiI0At312v5iVuyYK236eOapVs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.HorseMovementSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.HorseMovementSystem.html",
+          "hash": "a3FqU+ScwGgb0E7TBrKOvYzIq3ioFp9COk91LySfx9I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.HumanEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.HumanEntity.html",
+          "hash": "fsQyzxL3Q8ofdf/V1iyuv0JHYOKjwAJVQd6Dw8BhEEI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.HumanEntityManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.HumanEntityManager.html",
+          "hash": "nUWmWc4NWQXXbIQ9GI4JvV1z+p7QOw6C8FVBDatI4a8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.IActorProcedure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.IActorProcedure.html",
+          "hash": "60Xmy560dAYEI3cg72h3xgvFYkEOMC860bolaiPuH9o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.IHerdEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.IHerdEntity.html",
+          "hash": "LrpfY6PwpV/AyF/f2PWZmY+um7zpkhl0Gkvk/vgdDXs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.IMoveEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.IMoveEntity.html",
+          "hash": "O6PIDYyqL0BtHymJZOiEoMV7dUrtUeSEAb5K7bEfL7k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.IStartAfterActorInitialized.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.IStartAfterActorInitialized.html",
+          "hash": "fwhqGrgxM+I+ezMgZp633SKTuN9TDtp8325HQOvw1z4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Input.ActorsRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Input.ActorsRegistry.html",
+          "hash": "41C7Tf6Azvou/XKXDtmmEvUnGv51XZUfx0rtO/9/BVg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Input.PlayerActorHandlerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Input.PlayerActorHandlerBase.html",
+          "hash": "0yMhFzO17TX1OitKOp4Imz45BrQ79msOZanHBnQ8iAc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Input.PlayerActorInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Input.PlayerActorInfo.html",
+          "hash": "McnHwdkHcUzlMzYvVtDHX+yVeo2Y0rK6j++UZtttu54="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Input.PlayerActorManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Input.PlayerActorManager.html",
+          "hash": "IrsBbQit6fSW6M3hfNtb3aO7FaQdY3DQlpZBZ+X8ZeY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Input.PlayerChannelHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Input.PlayerChannelHandle.html",
+          "hash": "UaddVXbUE/qRJebfYmPo3y/QMh39yjgxAoXAo4ix7Zg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Input.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Input.html",
+          "hash": "NOrLzp8EhQdHWKbrpCE5zGRrgGs2vmP1xMRguYIxAC8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.InputState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.InputState.html",
+          "hash": "Q7YCikA/NuS3Jd2L7J29XsR4LqN1K6zxK34Lp37gHx0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Module.ActorModuleInputHandlerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Module.ActorModuleInputHandlerBase.html",
+          "hash": "uxSCu4tHH5YcHf0gdyNHMujlW3rQ7PPbYXWXh2b4/9Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Module.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Module.html",
+          "hash": "joPOQNZtjZdJg7otLT900J8P3qtnQoeLA4LGF1zE2I4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.MotorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.MotorExtensions.html",
+          "hash": "y8MaPiM6n6G3zW+H53faa57d8gHo6ACViy2bW0+i84M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.MotorFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.MotorFlags.html",
+          "hash": "Z3tHZnboQDLFSPButt1yXDMThK6Ccl6vXj8WuQU/ypc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.MotorState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.MotorState.html",
+          "hash": "vFA8yfQEAq3WNKWe/7Z1Cq4nz5Da0D8jGXY+4V194LM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.MoveComponentData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.MoveComponentData.html",
+          "hash": "wNIy4uMeCcfbfk+R4WYfvxFT4s/OZ/c149Q73mPs8SM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.MoveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.MoveData.html",
+          "hash": "rpA/UnVh4CjYjhaSdZBzHj/rk93ENYesauBQm1yZoVI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.MoveDynamicsSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.MoveDynamicsSettings.html",
+          "hash": "d2DdpPu14/4qjy5Rj3Zw+1WYfTZadMmk/LXrbY3KkRI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.MoveInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.MoveInput.html",
+          "hash": "2ijbgXrJiDTAxjR64Yp20wH8srHSbwSgfQcJoVI9l8s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.MoveInputWriteMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.MoveInputWriteMask.html",
+          "hash": "DQJO9uKKQhrBr7eXWhoEQEG+n6M3IWl1gSD2XB7OhAA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.MoveProcedure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.MoveProcedure.html",
+          "hash": "k3sUY4lw107Lsl7iWDswIVA407r3lZat5Oprkt6drow="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.MoveSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.MoveSettings.html",
+          "hash": "cXu0qv0HJiHRj7GQzFe5NK8EKzFnKm+BFKORajhKsNo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.MovementEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.MovementEntity.html",
+          "hash": "hdzqxvHqfceoGHCjYGT5FhXWCDAAHZ7ThP5ztyAIvHw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.MovementJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.MovementJob.html",
+          "hash": "PdvJZ6DVFFICs2wOPK0bqiIeIHvb6BjBtT2hsNuJasI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.PIDSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.PIDSettings.html",
+          "hash": "hl+TNGLRgjMSlfGiMtkqkoAbnmWE5Btat6qxZ2dFLh0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Procedures.ActorStatusActivator.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Procedures.ActorStatusActivator.Data.html",
+          "hash": "EneI4TLEjvJHKN4qBI0yX9c/k3s5PunI3Slq4QKfxvM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Procedures.ActorStatusActivator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Procedures.ActorStatusActivator.html",
+          "hash": "OxeTM678gUjBP5yoTV/xUV3wTvQBVTED/V3ZBLH5bO8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Procedures.ActorStatusConstraint.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Procedures.ActorStatusConstraint.Data.html",
+          "hash": "Eei9fL9rlNiELRLHB0z48YSV+Hd3YzIrTG5dCV2SzcE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Procedures.ActorStatusConstraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Procedures.ActorStatusConstraint.html",
+          "hash": "p7usVvjVh+SZDISWnvf1s3AdGF8pDPlY/US5bUJYaho="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Procedures.ActorStatusOutput.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Procedures.ActorStatusOutput.Data.html",
+          "hash": "xjrzLYAMfvyxeZJOHzNju02Ph3cyKTzkTB6xW2RAaho="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Procedures.ActorStatusOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Procedures.ActorStatusOutput.html",
+          "hash": "7Pztc6gvpntKVcWv2PUFImuC9HTbXmTSZxEf79LBudI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Procedures.MotorFlagsInstruction.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Procedures.MotorFlagsInstruction.Data.html",
+          "hash": "vG+rn5V6mcGwM56MYTSqxzmQ1isElrNQD+147i1o8Lg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Procedures.MotorFlagsInstruction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Procedures.MotorFlagsInstruction.html",
+          "hash": "qS0DIKAvFT3CXRvhbrA3mEdJArIoEkZMqsjGP0MjJt4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Procedures.MotorInstruction.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Procedures.MotorInstruction.Data.html",
+          "hash": "Q04tyqsmDMxFmfaq5SqvBleZYL2h4Edrjh2XOmY3Xno="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Procedures.MotorInstruction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Procedures.MotorInstruction.html",
+          "hash": "QDqY0zvjkmar8OgnjMZUviVTaKKDREFuMbJPgNPSkac="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Procedures.MotorOutputInstruction.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Procedures.MotorOutputInstruction.Data.html",
+          "hash": "1Z8ZpwsErmMqdbpvf0JhVp1pd9mAYHCG8SnyzWLFqEU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Procedures.MotorOutputInstruction.MotorAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Procedures.MotorOutputInstruction.MotorAction.html",
+          "hash": "TP1I8/xI+oY1JibZyP1nD+P/2lnajRuV5H4B1IX+yo0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Procedures.MotorOutputInstruction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Procedures.MotorOutputInstruction.html",
+          "hash": "N/a2C0n9qb6z+a2zpJHbrgFFGk4KATlzvMo8LL2BFqs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Procedures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Procedures.html",
+          "hash": "OBrX6HqTOtphlprsrIeYeJd/JkQ0HldjPtals7jwa9U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Rendering.ActorRendererComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Rendering.ActorRendererComponent.html",
+          "hash": "avzFihPaeHaOeAk89xqRKTIiPOKZyszItfZxiZ2/c2w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Rendering.ActorRenderers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Rendering.ActorRenderers.html",
+          "hash": "J3/ISyB3WXjuEsdY2ps55MEMGwz8KlgpLFj8wnfUYpI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Rendering.AttachmentComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Rendering.AttachmentComponent.html",
+          "hash": "9mfSghyxqqJ427kEPV9IMKbl/OfNtWbu/fWw6MnT/DE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Rendering.ClothingComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Rendering.ClothingComponent.html",
+          "hash": "Jfr44/pcz//lrc42jejoDyYX3w96mMZFb0HWkPyT02Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Rendering.HairComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Rendering.HairComponent.html",
+          "hash": "auqNcJeCEoAgpPiMYYsk5A8WFeIoZ9hWuNvj902EIrA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Rendering.HairComponentType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Rendering.HairComponentType.html",
+          "hash": "ohYS6X4nYb8AR+WSEYw98viPw6RnqZBjeQbHxUD8crs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Rendering.IHasMaterialColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Rendering.IHasMaterialColor.html",
+          "hash": "5821Wt0x413zM8QIXAUS5YaEuf6UdlvJ2Dxn/XEUVw8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Rendering.IHasTintColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Rendering.IHasTintColor.html",
+          "hash": "Sk3tqXzKUSENuEBVhD7Vuz34b2xaPpONCU0Zj7NoLOY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Rendering.SkinComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Rendering.SkinComponent.html",
+          "hash": "G7ulpSZRGNEbt4JjozvjmCk4S3poRr1bbQmM8kKiZVE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Rendering.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Rendering.html",
+          "hash": "uhdSF2ioN/4ThFAGQLcQl6oHbKfNcV8CDQMQdk/KrXE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.RootMotionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.RootMotionData.html",
+          "hash": "Y2Xy5ABwzyMydVuP9AWq2vAk90D0r4hd/fzo2dh6rHc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Sequencing.ActorStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Sequencing.ActorStep.html",
+          "hash": "I+l7Js2/3xUhJ1vpWrSTKD8Q41EN3t6FVcOdxQVl56k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Sequencing.IHasActor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Sequencing.IHasActor.html",
+          "hash": "YYqNlmVzujfuNwkb+Y2uwrfIW6Ymz4B0I6xCWgfogf8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Sequencing.IHasTargetActor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Sequencing.IHasTargetActor.html",
+          "hash": "Cdcxw5XszrrSYAWRHOTEEBi5M+I1E7z2LNDgdur103c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Sequencing.IHasTargetTransform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Sequencing.IHasTargetTransform.html",
+          "hash": "LPPtDvc23cPPLsrPulTql1gvnH+nTyhZ8f/i8niKGYM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Sequencing.TaskStep-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Sequencing.TaskStep-1.html",
+          "hash": "rskoEN1AGX+9DXWSFlAtHW29tjU4mlvzaeQdYESnrZI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Sequencing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Sequencing.html",
+          "hash": "YcQQtCZMEXRAKO3OiPwH8Gic96R26QdFdjfW2cFTcOY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Softbody.SoftbodyPacker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Softbody.SoftbodyPacker.html",
+          "hash": "fgm3Kvpu6Va+49hqlI8e+XJubLMcMsRhAIpbti/RmtE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Softbody.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Softbody.html",
+          "hash": "VtPuGicQBxqrvnnsFF0cfn4M1eZp5mFTBpwlFnwkDYw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.TiltSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.TiltSettings.html",
+          "hash": "xTQgrePvNWCy1JeH6yf51KfRND1laVNem8ogA2fMWMw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.html",
+          "hash": "xRZ5EOb1o17Mj2ZiE7jD5urK2XsFclcGtNJP7ckm1Bk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "Site/api/Kinstrife.Animation.ActionState-1.StateMachine.yml",
       "output": {
         ".html": {
@@ -4665,7 +5961,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Application.ApplicationFlow.html",
-          "hash": "DGvPwmyoMtec0b+9NFyA1b+EQ2+DTw6CL2qdgvXyKk4="
+          "hash": "MJzMIHMQ5gpTgK0ukaWlHgWCZsoDP+Hobd8p7KQubwA="
         }
       },
       "is_incremental": false,
@@ -4749,7 +6045,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Application.Behaviours.TryChangePrimaryModule.html",
-          "hash": "ccygNhc2XKmTMgrdwhAaMEntZBRgek86PNgVgWMqXRY="
+          "hash": "CYx3n2jGwcvH2KYiwRv4OskkAEo7e/NwCc1UCYLOgmU="
         }
       },
       "is_incremental": false,
@@ -4809,7 +6105,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Application.CampaignDefinition.html",
-          "hash": "yr66VuQMKrRiZRBeXDHHZ4N8rLCsoWpLOzW/SVLFXak="
+          "hash": "T9PaCoh+yxizrOYEGJe26HECFlJ1aXKeiN7Y7erfhbM="
         }
       },
       "is_incremental": false,
@@ -4893,7 +6189,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Application.InstantiateAssetAsync.html",
-          "hash": "R6K96VCLbacKLIwuf/OHzpwBlo9mtWIThfWpEqDr7/c="
+          "hash": "+bFy8+s9LCAYGwi8eYg8hN6mNHCkVLvab1EadO5l1Fk="
         }
       },
       "is_incremental": false,
@@ -4929,7 +6225,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Application.LocationTransition.html",
-          "hash": "Ez5s12KcaQApRbR+yVNAoeSAWe40q0WKhA6JufJ0Iig="
+          "hash": "B66R/cnII2+T+KdC+LWj7ixs61RGdQVkAspdWfTUb04="
         }
       },
       "is_incremental": false,
@@ -4941,7 +6237,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Application.Module.html",
-          "hash": "mqZxQNxNKaga4MDdJ1yZt7OITgsHeq8dOYGKe4S0vP0="
+          "hash": "6y8qcLm1q+0gXdYgt4cMmg7z5K0azGtWJzwPsFirhIo="
         }
       },
       "is_incremental": false,
@@ -4977,7 +6273,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Application.ModuleHandle.html",
-          "hash": "DZEJRgaEiiVGFBO61E4GRsp/pe6Y26q4AfAfmYHdnos="
+          "hash": "Vo/UZn5tO16q273CJIRbED0xkTD4AXWK1yDoXs3ScwI="
         }
       },
       "is_incremental": false,
@@ -5661,7 +6957,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Camera.CinematicModule.html",
-          "hash": "/QlXOj3oMQj3jT0zQuVrlP6wkVtqaAosWMv5dbOFKkg="
+          "hash": "0rdSieJkCMbbI2Y02JNLzFIfE6LX2anCvW9RC2p438M="
         }
       },
       "is_incremental": false,
@@ -6405,7 +7701,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Core.Config.ConfigData.html",
-          "hash": "IuJbBYPWDyoAfrFK9nFpEYbk+Nn6verWj6XEkUDlbPk="
+          "hash": "W3ABT6Y0OzVbBMJNjzCwtv2IZFUJmZem37F0zttvu+Y="
         }
       },
       "is_incremental": false,
@@ -7461,7 +8757,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Core.InspectorSerializables.SerializableDictionary-2.html",
-          "hash": "h53by7VZNgxKsJazGvCOgQa8ldZpU9gGfCVTBxQcGds="
+          "hash": "VZXnqGVhZwhoJLm4ps2aUEFoeXscbPsvEZvqbUNu3ME="
         }
       },
       "is_incremental": false,
@@ -11289,7 +12585,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Messaging.AddressableClient-2.html",
-          "hash": "r3uTFFCUYQkhigJqQh1MDdq13zgTNRpT3ON8HZA+jys="
+          "hash": "pCOwRQL5f0+7k1nK7K3gqnWE+9a0AhbH+EqjoIPL4dY="
         }
       },
       "is_incremental": false,
@@ -11637,7 +12933,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Messaging.ServiceBehaviour-2.html",
-          "hash": "pRnfuQXwJ+ugAv9M+MyoziS5gL/GFW/H/Ao+4WLYEC0="
+          "hash": "oLhCEozefGIai4VsK5APjCZwZ1By3XwKfMFPlf1BmzQ="
         }
       },
       "is_incremental": false,
@@ -12201,7 +13497,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Procedures.ActivatorAuthoring.html",
-          "hash": "mvqCoZ/KNjabhgibicwrUkco1Fthr4GzokU7wFIAyZE="
+          "hash": "odj4RFAMMOxuJJgRLv2PdEDKqLbrrm5+2YTZSlQaARY="
         }
       },
       "is_incremental": false,
@@ -12213,7 +13509,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Procedures.ActivatorInstruction-1.html",
-          "hash": "nj61huv/329a5pAF9RVVWmDuHpGS1+qMoHb3FfIjtJ8="
+          "hash": "bAQ0cNP4iwUiXufue7uVaE5NNy/Ru/x0ZKPjqKfMbmE="
         }
       },
       "is_incremental": false,
@@ -12381,7 +13677,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Procedures.Constraint-1.html",
-          "hash": "YuEA/dGgs9ael1IeZptRkrW4VqYRC9FbR5gtzBIJj/E="
+          "hash": "F3QU/An+NSRJGDID9j1HOxdbJIresM1Zfdkbvf0KkdE="
         }
       },
       "is_incremental": false,
@@ -12393,7 +13689,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Procedures.ConstraintAuthoring.html",
-          "hash": "kzJ+g4649CiyjIIpDNLr3hxQmsehl0X7+FkVQkJoGbE="
+          "hash": "zF5ePL0tDgjJjnCiRSniI8JU5MkDdnBiawto7iDkC9A="
         }
       },
       "is_incremental": false,
@@ -13929,7 +15225,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Procedures.Procedure.html",
-          "hash": "ysJtS6L3TYBAyaRuzWxjsZ2h7inJEZvJPRvqn9IV7xw="
+          "hash": "bHLMQcrkrKu4VRjBV2r8vswNQvSpuHvo8TkxQeA/zkM="
         }
       },
       "is_incremental": false,
@@ -14013,7 +15309,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Procedures.ProcedureComponent.html",
-          "hash": "CfKY+0391kmRK74hwlTjKmrR53xDuGH0j/KVzvcas8M="
+          "hash": "tMveFBshAPyAstV4Dm8nrHEHhl/QYaVLxSJCMybywEo="
         }
       },
       "is_incremental": false,
@@ -15365,6 +16661,186 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Renderers.BodyAttachmentCoverage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Renderers.BodyAttachmentCoverage.html",
+          "hash": "8XA/n0CViQUW2S7ATVyNr5HQj2rx1rkjaGxF92YxEFQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Renderers.BodySubmeshCoverage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Renderers.BodySubmeshCoverage.html",
+          "hash": "rdm4nFGZDYP5hFgP/F6kVR3ABAWnaw2EQ7RuWJxSUes="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Renderers.CoverageData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Renderers.CoverageData.html",
+          "hash": "8HGamwTiL9WMZqaVhI2lulJdiSUGVcIV2b2FZWVg+mk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Renderers.CoverageData2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Renderers.CoverageData2.html",
+          "hash": "TF75LVgGL2q/1I9tTr2LsH4jUnZAfyMDLI77KXV0uTA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Renderers.CoverageLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Renderers.CoverageLayer.html",
+          "hash": "ZstpT66Iik9FWk8fjb+mvNUHP7lgGXL3btfMC0pM/Lo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Renderers.CoverageProfile.InflateMapping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Renderers.CoverageProfile.InflateMapping.html",
+          "hash": "rsxEIfoGf+I8bcH74URbQt7Zyer1oFhfmigWXQDGGBU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Renderers.CoverageProfile.Mapping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Renderers.CoverageProfile.Mapping.html",
+          "hash": "VY8IFkFHe/7aW6O1e7g/zdMgwTM1FHQS/tjLZQ0p77s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Renderers.CoverageProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Renderers.CoverageProfile.html",
+          "hash": "hevhCUkrT+AW6/hzM9LJuR72sKaavGWHembwrD2/XqQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Renderers.HumanRenderersExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Renderers.HumanRenderersExtensions.html",
+          "hash": "X7skr2505AGMdA8doJCivf9dadtMXqV7+7Gl2urw2J4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Renderers.HumanRenderersLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Renderers.HumanRenderersLayer.html",
+          "hash": "rC4hj8ZGrXHaXh/FfsldtqJOAjbPGOFWP09zhBBQb8A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Renderers.HumanRenderersLayerMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Renderers.HumanRenderersLayerMask.html",
+          "hash": "gevXE8dEl1vvqH94vMBQhHVnIe0oJ9TCffzRhLaPRew="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Renderers.LayerInflationData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Renderers.LayerInflationData.html",
+          "hash": "A7/78VBC19AUga85vKoVNjBjIQSp+YiNjaN+QKecSqg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Renderers.RenderersCoverage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Renderers.RenderersCoverage.html",
+          "hash": "+IAh0b8Wpu9GpqMFwERiy8yCHFqHLbY7a0VKPZkPxIw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Renderers.TaperingData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Renderers.TaperingData.html",
+          "hash": "ifI9RHRpG6clxZG/Hi6L5ORg794dxG7uPEJNxrDUCpM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Renderers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Renderers.html",
+          "hash": "8hkEKwjDeHhdQAJcN9UyXxpX/OS4bFhUDfc8GoRbeeA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "Site/api/Kinstrife.Rigging.TransformHandle-1.yml",
       "output": {
         ".html": {
@@ -16101,7 +17577,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Systems.BurstEntityComponentDataStore-1.html",
-          "hash": "0EZYoX3icmD6V8vZ3E6lt/o1S+UgIcs5w1YcYCxEhqU="
+          "hash": "GFWn8yZUrgsWcSsMSI96sWHJRKZRax4dYt3uMSqRooM="
         }
       },
       "is_incremental": false,
@@ -16197,7 +17673,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Systems.EntityHandle.html",
-          "hash": "JNuXFPbnCgSOQmK7bgHNddG5jlwRP+tDYlN7jR9XQDQ="
+          "hash": "+4h+69jsN0gPSuG7Vj4+9pXvPokYJnS4M4kGUr3PUb8="
         }
       },
       "is_incremental": false,
@@ -16221,7 +17697,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Systems.EntityManager-1.html",
-          "hash": "H3Y+jLHB5/1kKrnqdTN2gzLdG6z2Ov6L3IpanDrg9yk="
+          "hash": "gqDU6qVpquR6+dDn2EKgbdxJyNJ8yrO9eJb0dul3pLE="
         }
       },
       "is_incremental": false,
@@ -16449,7 +17925,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Systems.JobSystem-2.html",
-          "hash": "MKKI1YJDozJisszkuYcRpCoKMapckZ7Kujw9XkC5o30="
+          "hash": "wCBr62j6gHO9ONEGg+TZQXNcrjGPws733KhOYFbZoes="
         }
       },
       "is_incremental": false,
@@ -16497,7 +17973,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Systems.KinematicsJobSystem-1.html",
-          "hash": "DfHEn1eZoR2rkZA0uSBrE9310FM2yFricwelNDVtdVU="
+          "hash": "DzDweRzn9OVMqdIB4x6R3l5lv3pPMJzPEi8YtHmVb1E="
         }
       },
       "is_incremental": false,
@@ -16773,7 +18249,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Systems.SystemBase.html",
-          "hash": "LYv+YWIu6LaAIi65eTFt7JksinmVcKT3I+Ls4dM4ptQ="
+          "hash": "PPsxXkwY5nq8k/yb8rpMZXUjf+vqB2O8iV1tFBgB0Rk="
         }
       },
       "is_incremental": false,
@@ -17793,7 +19269,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.UI.MainMenuModule.html",
-          "hash": "zd8NbqX72K4UwODjBZfjXk5lDBFTcmlcJ6/oy/rkQiQ="
+          "hash": "ufKXwVVA/2pnGn42AIaQteKk+qElWEq8wk/kjDzuqs8="
         }
       },
       "is_incremental": false,
@@ -18153,7 +19629,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.UI.UIModule.html",
-          "hash": "trxClv6NTsIVJWJU6xOL+rUvGRXdQlSGDKnap0ioTEk="
+          "hash": "5tW+IAuTkf60G1zxrePoLJtGWFe3nfLSvObM3S3XOnc="
         }
       },
       "is_incremental": false,
@@ -18237,7 +19713,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.UI.UIServiceModule.html",
-          "hash": "mbITlPjt7fo8+39cmvv/1xNTckrj2YO0FQ3/dQSRZIM="
+          "hash": "sszUROexrlBzMl2jgIzTYJZxp1qbxj9QPZ1IbQ65Kms="
         }
       },
       "is_incremental": false,
@@ -18552,7 +20028,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/toc.html",
-          "hash": "C785xSg3VD8EjNv0digYfmyk4xJwtmCeV9jg05BjPiI="
+          "hash": "Cx2jRsBstD61vb+X7yG1Aq44zGJ8kp33NoiyzufeL64="
         }
       },
       "is_incremental": false,
@@ -18660,7 +20136,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/packages/toc.html",
-          "hash": "AiqPehDCkAkmm4XhFXSV3Wo7qigdV7gF7/iJxRnxHI4="
+          "hash": "mOZIuvuTVrlS2eavv0KIyQbIpudstEzAFNCKkiis9es="
         }
       },
       "is_incremental": false,
@@ -18717,13 +20193,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 49,
+          "total_file_count": 50,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1500,
+          "total_file_count": 1622,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
