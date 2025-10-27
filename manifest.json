@@ -13304,6 +13304,282 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.CollideWithMesh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.CollideWithMesh.html",
+          "hash": "xIPix5i8CzAuQX9of3ZLPoKcKAMNJi3roMFDrzxEvdQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.ColliderShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.ColliderShape.html",
+          "hash": "foL3x+WO7zsjttbtmksObtZeKkNvFa8kuBFLEOo25TM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.MeshArrays.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.MeshArrays.html",
+          "hash": "TDmUSUKv9BksO4bZp75xLeeAaZKK1L9wehmxm7WQR2I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.MeshDataAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.MeshDataAsset.html",
+          "hash": "7Kq0rWoEUuj/ss3HyKNORPZrb/dhsXMf4CKBHEK2TJI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.MeshDataCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.MeshDataCache.html",
+          "hash": "p0sGBbTp3WIkDvUVJiEWLDt7XhD5ThYLDzWU4cmjyBA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.MeshDataManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.MeshDataManager.html",
+          "hash": "BTuBs9pQNXyuMUyBz/OEpxlXAH8+e0Q9bjGXlF9sSTg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.MeshExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.MeshExtensions.html",
+          "hash": "g6kiG5rqfcU6XsZDy5hy/9n5sCvEEefdlYMhu+3K/l0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.MeshPaintHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.MeshPaintHandler.html",
+          "hash": "3GJc6dsHrhcENW0caZ0n1Q9tE1MnSn+gIfBPJhmzHg0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.MeshPaintProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.MeshPaintProfile.html",
+          "hash": "nSl7Kx1yOdaAypoqmhNVWNyDM6nL72cWmOPLTc5alhM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.MeshPoolCacheAsset.Element.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.MeshPoolCacheAsset.Element.html",
+          "hash": "nJyJLhwAtngKyZO6Ri+imdtdMdyQC2Eo1GmYndX6yR8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.MeshPoolCacheAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.MeshPoolCacheAsset.html",
+          "hash": "nyVahT6o7A9iG8zi7hwPv2aECIjRlhEY7dpa06qg+uw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.MeshToolsInstaller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.MeshToolsInstaller.html",
+          "hash": "1/FwARaR58DQOSjF86MpOFLTHbm/nj1EEBFu3AUXUT0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.NativeMeshData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.NativeMeshData.html",
+          "hash": "m7LLaP7qhV8WzSnbmfkHiGlEDgAX4PTLwPDRHSR/wl4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.NativeSkinnedStaticMeshData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.NativeSkinnedStaticMeshData.html",
+          "hash": "l05DOBbUXYzMMv+8UXWFMAhUeqZhrxZnL5KsVmMASaI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.ObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.ObjectExtensions.html",
+          "hash": "LQowNc1GaL6P1wDN9JCGaP5Hi7PRf1kVqGyZOFLw0Dk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.PaintMeshBodyPartJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.PaintMeshBodyPartJob.html",
+          "hash": "MScmPZNHGkx5gIEsoP/N+5VkibZxHUczxb9JUvTFTJw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.PaintMeshDebugJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.PaintMeshDebugJob.html",
+          "hash": "buG3yAzCHvypvWIXatFeQxqS/BMQ/p7E0k5iQec+2+Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.PaintMeshDebugger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.PaintMeshDebugger.html",
+          "hash": "YzphVE8f663Ic45gKu5JJYbHzeizthC+NFEI/taqnF0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.PaintMeshJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.PaintMeshJob.html",
+          "hash": "7YTToi2dlR1ny5JQtHojzHCSVEEKiDkdfKwZJCNv30A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.PaintSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.PaintSettings.html",
+          "hash": "+ZJ1EP1STM4wZiW7GLR9aE63RvsbPXVameLRcAsivwQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.StaticMeshData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.StaticMeshData.html",
+          "hash": "c5COYFNoa63kdYYlEyxRXGxJVJKc3PlDn/DB0xJ7Hg4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.VisualizeMeshCollisionJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.VisualizeMeshCollisionJob.html",
+          "hash": "vlcFmPKSsziCJUjJXcARRUSWtYIEl3icjxO8zIckcG4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.MeshTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.MeshTools.html",
+          "hash": "9OymMBzb+cOFZPhGNbrlnggADXrc6MEpmmZ1dxE8Uuc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "Site/api/Kinstrife.Messaging.AddressableClient-2.yml",
       "output": {
         ".html": {
@@ -20751,7 +21027,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/toc.html",
-          "hash": "KPObaOCPOueIga6SBzes5AxKJAGUYf66oZzidUjceAg="
+          "hash": "LR4oT2b205UD7LYHUkk5cspysmy2AUmAQ8QDyKVuS3o="
         }
       },
       "is_incremental": false,
@@ -20922,7 +21198,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1677,
+          "total_file_count": 1700,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
