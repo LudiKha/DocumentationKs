@@ -1,0 +1,1485 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GameState
+   | Kinstrife </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GameState
+   | Kinstrife ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Kinstrife.Core.GameState.GameState">
+  
+  
+  <h1 id="Kinstrife_Core_GameState_GameState" data-uid="Kinstrife.Core.GameState.GameState" class="text-break">Class GameState
+  </h1>
+  <div class="markdown level0 summary"><p>Database storing GameState in singletons and components. Based on Unity's ECS. Only add entities, components and singletons via this interface, not directly through <a class="xref" href="Kinstrife.Core.GameState.GameState.html#Kinstrife_Core_GameState_GameState_EntityManager">EntityManager</a> or <see cref="!:WorldInstance"></see>!</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">GameState</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Kinstrife.Core.GameState.html">Kinstrife.Core.GameState</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Kinstrife_Core_GameState_GameState_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GameState : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState__ctor_" data-uid="Kinstrife.Core.GameState.GameState.#ctor*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState__ctor" data-uid="Kinstrife.Core.GameState.GameState.#ctor">GameState()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameState()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Kinstrife_Core_GameState_GameState_EntityManager" data-uid="Kinstrife.Core.GameState.GameState.EntityManager">EntityManager</h4>
+  <div class="markdown level1 summary"><p>GameState's entity manager. Only use this for entity queries, not for adding/removing components and/or entities!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityManager EntityManager</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.EntityManager.html">EntityManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_Initialized_" data-uid="Kinstrife.Core.GameState.GameState.Initialized*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_Initialized" data-uid="Kinstrife.Core.GameState.GameState.Initialized">Initialized</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Initialized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_MetaData_" data-uid="Kinstrife.Core.GameState.GameState.MetaData*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_MetaData" data-uid="Kinstrife.Core.GameState.GameState.MetaData">MetaData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameStateMetaData MetaData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.GameStateMetaData.html">GameStateMetaData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_Singletons_" data-uid="Kinstrife.Core.GameState.GameState.Singletons*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_Singletons" data-uid="Kinstrife.Core.GameState.GameState.Singletons">Singletons</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;IPersistentSingletonData&gt; Singletons { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="Kinstrife.Identifier.IPersistentSingletonData.html">IPersistentSingletonData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_AddComponent_" data-uid="Kinstrife.Core.GameState.GameState.AddComponent*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_AddComponent__1_Kinstrife_Core_GameState_Entity_" data-uid="Kinstrife.Core.GameState.GameState.AddComponent``1(Kinstrife.Core.GameState.Entity)">AddComponent&lt;T&gt;(Entity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T AddComponent&lt;T&gt;(Entity entity)
+    where T : class, IPersistentComponent, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_AddComponent_" data-uid="Kinstrife.Core.GameState.GameState.AddComponent*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_AddComponent__1_Kinstrife_Core_GameState_Entity___0_" data-uid="Kinstrife.Core.GameState.GameState.AddComponent``1(Kinstrife.Core.GameState.Entity,``0)">AddComponent&lt;T&gt;(Entity, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddComponent&lt;T&gt;(Entity entity, T component)
+    where T : class, IPersistentComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_CreateEntity_" data-uid="Kinstrife.Core.GameState.GameState.CreateEntity*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_CreateEntity" data-uid="Kinstrife.Core.GameState.GameState.CreateEntity">CreateEntity()</h4>
+  <div class="markdown level1 summary"><p>Create persistent entity that will be serialized with GameState-</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity CreateEntity()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td><p>Created entity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_CreateEntityForGuid_" data-uid="Kinstrife.Core.GameState.GameState.CreateEntityForGuid*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_CreateEntityForGuid_System_Guid_" data-uid="Kinstrife.Core.GameState.GameState.CreateEntityForGuid(System.Guid)">CreateEntityForGuid(Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity CreateEntityForGuid(Guid guid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_Deserialize_" data-uid="Kinstrife.Core.GameState.GameState.Deserialize*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_Deserialize_System_Byte___Kinstrife_Database_DatabaseAccessor_" data-uid="Kinstrife.Core.GameState.GameState.Deserialize(System.Byte[],Kinstrife.Database.DatabaseAccessor)">Deserialize(Byte[], DatabaseAccessor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Deserialize(byte[] serializedData, DatabaseAccessor databaseAccessor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">serializedData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Database.DatabaseAccessor.html">DatabaseAccessor</a></td>
+        <td><span class="parametername">databaseAccessor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_DestroyEntity_" data-uid="Kinstrife.Core.GameState.GameState.DestroyEntity*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_DestroyEntity_Kinstrife_Core_GameState_Entity_" data-uid="Kinstrife.Core.GameState.GameState.DestroyEntity(Kinstrife.Core.GameState.Entity)">DestroyEntity(Entity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DestroyEntity(Entity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_Dispose_" data-uid="Kinstrife.Core.GameState.GameState.Dispose*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_Dispose" data-uid="Kinstrife.Core.GameState.GameState.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_EntityComponentData_" data-uid="Kinstrife.Core.GameState.GameState.EntityComponentData*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_EntityComponentData_Kinstrife_Core_GameState_Entity_" data-uid="Kinstrife.Core.GameState.GameState.EntityComponentData(Kinstrife.Core.GameState.Entity)">EntityComponentData(Entity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IComponentData&gt; EntityComponentData(Entity e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Kinstrife.Identifier.IComponentData.html">IComponentData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_Enumerate_" data-uid="Kinstrife.Core.GameState.GameState.Enumerate*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_Enumerate_Kinstrife_Core_GameState_Entity_" data-uid="Kinstrife.Core.GameState.GameState.Enumerate(Kinstrife.Core.GameState.Entity)">Enumerate(Entity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IPersistentComponent&gt; Enumerate(Entity e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Kinstrife.Identifier.IPersistentComponent.html">IPersistentComponent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_FlagDirty_" data-uid="Kinstrife.Core.GameState.GameState.FlagDirty*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_FlagDirty" data-uid="Kinstrife.Core.GameState.GameState.FlagDirty">FlagDirty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FlagDirty()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_GetAllComponentsForEntity_" data-uid="Kinstrife.Core.GameState.GameState.GetAllComponentsForEntity*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_GetAllComponentsForEntity_Kinstrife_Core_GameState_Entity_" data-uid="Kinstrife.Core.GameState.GameState.GetAllComponentsForEntity(Kinstrife.Core.GameState.Entity)">GetAllComponentsForEntity(Entity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;IPersistentComponent&gt; GetAllComponentsForEntity(Entity e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="Kinstrife.Identifier.IPersistentComponent.html">IPersistentComponent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_GetAllComponentsForEntity_" data-uid="Kinstrife.Core.GameState.GameState.GetAllComponentsForEntity*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_GetAllComponentsForEntity_System_Guid_" data-uid="Kinstrife.Core.GameState.GameState.GetAllComponentsForEntity(System.Guid)">GetAllComponentsForEntity(Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;IPersistentComponent&gt; GetAllComponentsForEntity(Guid guid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="Kinstrife.Identifier.IPersistentComponent.html">IPersistentComponent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_GetComponent_" data-uid="Kinstrife.Core.GameState.GameState.GetComponent*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_GetComponent__1_Kinstrife_Core_GameState_Entity_" data-uid="Kinstrife.Core.GameState.GameState.GetComponent``1(Kinstrife.Core.GameState.Entity)">GetComponent&lt;T&gt;(Entity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetComponent&lt;T&gt;(Entity entity)
+    where T : class, IPersistentComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_GetComponentsOfType_" data-uid="Kinstrife.Core.GameState.GameState.GetComponentsOfType*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_GetComponentsOfType__1" data-uid="Kinstrife.Core.GameState.GameState.GetComponentsOfType``1">GetComponentsOfType&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; GetComponentsOfType&lt;T&gt;()
+    where T : class, IPersistentComponent</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_GetOrAddComponent_" data-uid="Kinstrife.Core.GameState.GameState.GetOrAddComponent*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_GetOrAddComponent__1_Kinstrife_Core_GameState_Entity_" data-uid="Kinstrife.Core.GameState.GameState.GetOrAddComponent``1(Kinstrife.Core.GameState.Entity)">GetOrAddComponent&lt;T&gt;(Entity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetOrAddComponent&lt;T&gt;(Entity entity)
+    where T : class, IPersistentComponent, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_GetOrCreateSingleton_" data-uid="Kinstrife.Core.GameState.GameState.GetOrCreateSingleton*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_GetOrCreateSingleton__1" data-uid="Kinstrife.Core.GameState.GameState.GetOrCreateSingleton``1">GetOrCreateSingleton&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetOrCreateSingleton&lt;T&gt;()
+    where T : class, IPersistentSingletonData, new()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_HasComponent_" data-uid="Kinstrife.Core.GameState.GameState.HasComponent*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_HasComponent__1_Kinstrife_Core_GameState_Entity_" data-uid="Kinstrife.Core.GameState.GameState.HasComponent``1(Kinstrife.Core.GameState.Entity)">HasComponent&lt;T&gt;(Entity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasComponent&lt;T&gt;(Entity e)
+    where T : class, IPersistentComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_RemoveComponent_" data-uid="Kinstrife.Core.GameState.GameState.RemoveComponent*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_RemoveComponent__1_Kinstrife_Core_GameState_Entity_" data-uid="Kinstrife.Core.GameState.GameState.RemoveComponent``1(Kinstrife.Core.GameState.Entity)">RemoveComponent&lt;T&gt;(Entity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveComponent&lt;T&gt;(Entity e)
+    where T : class, IPersistentComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_Serialize_" data-uid="Kinstrife.Core.GameState.GameState.Serialize*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_Serialize" data-uid="Kinstrife.Core.GameState.GameState.Serialize">Serialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] Serialize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_SerializeJSON_" data-uid="Kinstrife.Core.GameState.GameState.SerializeJSON*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_SerializeJSON" data-uid="Kinstrife.Core.GameState.GameState.SerializeJSON">SerializeJSON()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SerializeJSON()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_TryCreateEntity_" data-uid="Kinstrife.Core.GameState.GameState.TryCreateEntity*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_TryCreateEntity_System_Guid_Kinstrife_Core_GameState_Entity__" data-uid="Kinstrife.Core.GameState.GameState.TryCreateEntity(System.Guid,Kinstrife.Core.GameState.Entity@)">TryCreateEntity(Guid, out Entity)</h4>
+  <div class="markdown level1 summary"><p>Tries to create a new persistent entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryCreateEntity(Guid guid, out Entity e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td><p>The Guid of the entity</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The newly created entity, or existing entity</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if new entity was created. False if entity exists</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_TryGetComponent_" data-uid="Kinstrife.Core.GameState.GameState.TryGetComponent*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_TryGetComponent__1_Kinstrife_Core_GameState_Entity___0__" data-uid="Kinstrife.Core.GameState.GameState.TryGetComponent``1(Kinstrife.Core.GameState.Entity,``0@)">TryGetComponent&lt;T&gt;(Entity, out T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetComponent&lt;T&gt;(Entity e, out T data)
+    where T : class, IPersistentComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_TryGetComponent_" data-uid="Kinstrife.Core.GameState.GameState.TryGetComponent*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_TryGetComponent__1_System_Guid___0__" data-uid="Kinstrife.Core.GameState.GameState.TryGetComponent``1(System.Guid,``0@)">TryGetComponent&lt;T&gt;(Guid, out T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetComponent&lt;T&gt;(Guid guid, out T data)
+    where T : class, IPersistentComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_TryGetEntity_" data-uid="Kinstrife.Core.GameState.GameState.TryGetEntity*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_TryGetEntity_System_Guid_Kinstrife_Core_GameState_Entity__" data-uid="Kinstrife.Core.GameState.GameState.TryGetEntity(System.Guid,Kinstrife.Core.GameState.Entity@)">TryGetEntity(Guid, out Entity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetEntity(Guid guid, out Entity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_TryGetEntityGuid_" data-uid="Kinstrife.Core.GameState.GameState.TryGetEntityGuid*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_TryGetEntityGuid_Kinstrife_Core_GameState_Entity_System_Guid__" data-uid="Kinstrife.Core.GameState.GameState.TryGetEntityGuid(Kinstrife.Core.GameState.Entity,System.Guid@)">TryGetEntityGuid(Entity, out Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetEntityGuid(Entity entity, out Guid guid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_TryGetName_" data-uid="Kinstrife.Core.GameState.GameState.TryGetName*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_TryGetName_Kinstrife_Core_GameState_Entity_System_String__" data-uid="Kinstrife.Core.GameState.GameState.TryGetName(Kinstrife.Core.GameState.Entity,System.String@)">TryGetName(Entity, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetName(Entity e, out string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_TryGetName_" data-uid="Kinstrife.Core.GameState.GameState.TryGetName*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_TryGetName_System_Guid_System_String__" data-uid="Kinstrife.Core.GameState.GameState.TryGetName(System.Guid,System.String@)">TryGetName(Guid, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetName(Guid guid, out string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_TryGetSingleton_" data-uid="Kinstrife.Core.GameState.GameState.TryGetSingleton*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_TryGetSingleton__1___0__" data-uid="Kinstrife.Core.GameState.GameState.TryGetSingleton``1(``0@)">TryGetSingleton&lt;T&gt;(out T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetSingleton&lt;T&gt;(out T result)
+    where T : class, IPersistentSingletonData, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_GameState_GameState_TrySetName_" data-uid="Kinstrife.Core.GameState.GameState.TrySetName*"></a>
+  <h4 id="Kinstrife_Core_GameState_GameState_TrySetName_Kinstrife_Core_GameState_Entity_System_String_" data-uid="Kinstrife.Core.GameState.GameState.TrySetName(Kinstrife.Core.GameState.Entity,System.String)">TrySetName(Entity, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrySetName(Entity e, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.GameState.Entity.html">Entity</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

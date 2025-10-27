@@ -278,6 +278,33 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "../../Packages/Core/GameState/Documentation~/internals.md",
+      "output": {
+        ".html": {
+          "relative_path": "GameState/Documentation~/internals.html",
+          "hash": "MYLslrPETnxIYWGQsh40XklFoVLbTumRIzOiBjbnZSQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "codesnippet-not-found"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "../../Packages/Core/GameState/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "GameState/index.html",
+          "hash": "PLfQq2oBQUYlAfITEKBuDfz4NB8RmFWp+OYwkuHhfQE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "../../Packages/Core/Identification/index.md",
       "output": {
         ".html": {
@@ -8398,6 +8425,162 @@
         ".html": {
           "relative_path": "Site/api/Kinstrife.Core.DependencyInjection.html",
           "hash": "XybPMxG9vFTR/kDJNQybKslRhlVqZndOEFnPpmMGKSI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.GameState.CovarianceExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.GameState.CovarianceExtensions.html",
+          "hash": "rV0WrnYXizSHnp9mvXLOGc7WmWIk2zqUYl7n1OtlOUQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.GameState.DiskFormat.SerializedGameState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.GameState.DiskFormat.SerializedGameState.html",
+          "hash": "YfUWn3AFe/vZJKqD4JTO/9V5BB7q/500NOX/fMXOtcc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.GameState.DiskFormat.SerializedObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.GameState.DiskFormat.SerializedObject.html",
+          "hash": "78JoumlvqJUwspkNa1akn8xeVXXgd8tQS2/VCvgGquM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.GameState.DiskFormat.SerializedTypeArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.GameState.DiskFormat.SerializedTypeArray.html",
+          "hash": "uIP2VGl3L2M0b5Y0SY/dMTS3d5dYWqEWW4wkgyJ3idk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.GameState.DiskFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.GameState.DiskFormat.html",
+          "hash": "8gu0Bmy5Xbe/s2hxf65KKC4Ojo5tFRVuXJUs4Ub812o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.GameState.Entity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.GameState.Entity.html",
+          "hash": "s0/R0YLTPMQ69wjylIHWycx7swt8dYHnAvuDVxyIKy8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.GameState.EntityManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.GameState.EntityManager.html",
+          "hash": "bMdY9WsEOFhVxOG8Uz/lC7HnPjeBIEB/qmMUrygDtKI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.GameState.GameState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.GameState.GameState.html",
+          "hash": "DsYMX75YVJyEN+s2nCSVpv51uGSaaJmev9NQJA7XbLI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.GameState.GameStateAppFlow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.GameState.GameStateAppFlow.html",
+          "hash": "u6Cnz/W7WQrpuAiX5v6tXYtLs6gVvxIOfeeGNw4YsZA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.GameState.GameStateManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.GameState.GameStateManager.html",
+          "hash": "fZqZCs4teasj5gsuFCO0llwCwuE/aWl6O6CV1it4gyI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.GameState.GameStateMetaData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.GameState.GameStateMetaData.html",
+          "hash": "DfD5NN3j1+aLTd6VuvroXTudV1/YYdJfewaOh0u70UM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.GameState.SerializerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.GameState.SerializerOptions.html",
+          "hash": "S42r8/IW1xZpa6Q5FBvSo0QLXD6vxQbQLZ4Hm7JH6Y4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.GameState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.GameState.html",
+          "hash": "CVXgdiv8zL4i5VAzWMmvJL5BaGctWmgwQYxrdeXJdSI="
         }
       },
       "is_incremental": false,
@@ -20148,7 +20331,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/toc.html",
-          "hash": "OVjzx3a+8bvaJk95xOUIxFDRhHHq/lkZpVhq0RHVC0w="
+          "hash": "nljieX01Er2exy5aK+4v+KCOiXjKe2lIIZ4JwR4gT9E="
         }
       },
       "is_incremental": false,
@@ -20256,7 +20439,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/packages/toc.html",
-          "hash": "OOIjYTwJ+qBsTEezlXqpx6AvmKBaJ7y3DsXS6/3T/E0="
+          "hash": "lDzBLBqVzH4caixTa7HQHhALGFJhlaXdOuWrE/p8FPE="
         }
       },
       "is_incremental": false,
@@ -20313,13 +20496,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 52,
+          "total_file_count": 54,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1630,
+          "total_file_count": 1643,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
