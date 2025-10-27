@@ -623,11 +623,35 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "../../Packages/Core/SplineNetwork/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "SplineNetwork/index.html",
+          "hash": "5TCpWNkers6ArSRtdvzXdmMiEzyBmO+QXglUQFJjXc0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "../../Packages/Core/Systems/index.md",
       "output": {
         ".html": {
           "relative_path": "Systems/index.html",
           "hash": "PW8EAUu1OSEkBkAMoS+z4lK8rXL6YtzrLuG5GODJOtY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../../Packages/Core/TechArt Core/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "TechArt Core/index.html",
+          "hash": "yoa52aJagW+v84tYWSIE248tEdEHwW5s5IgWwCmLcSw="
         }
       },
       "is_incremental": false,
@@ -664,6 +688,18 @@
         ".html": {
           "relative_path": "UserInterface/index.html",
           "hash": "m3BAMZw+bVgYTZW2r7chVk7ZSq2wFUSMYODy4NVDTOg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../../Packages/Core/WebMercator/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "WebMercator/index.html",
+          "hash": "+6Fu1Qw2awhqMSG/DWKiMnyeu0R7M9ltl57YSGt5kqA="
         }
       },
       "is_incremental": false,
@@ -9844,6 +9880,318 @@
         ".html": {
           "relative_path": "Site/api/Kinstrife.Core.ReflectionHelpers.html",
           "hash": "rf5C++vkBPb1RTlNTVhcgh953wGClJRSlo+vbkaBDQI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.ConnectedSpline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.ConnectedSpline.html",
+          "hash": "xNSlGQmYMVrCjGZ9XXFsRKswAje93dAQr4YmyIrhV28="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.Edge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.Edge.html",
+          "hash": "ewNarZkn0/lUQZG3aPUuy3FrscQ35oFdOPal1tPNcQk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.Graph.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.Graph.html",
+          "hash": "VQwDWN4LEjKZAVMV1RI7tT6Ps0BolUf8soTQk5wE9VY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.IEdge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.IEdge.html",
+          "hash": "6GnfEaOF5gk15InQk7n3JevshiTwpgohPKq8Woh9/RI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.IGraph.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.IGraph.html",
+          "hash": "+hxMZkX3gLaO6fcLEbYidwdv/0zyWHrUylrJU7y+weM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.INode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.INode.html",
+          "hash": "6s0lJPEk4Dv75r/ONOqKoi1BTKU5JyrcvJsPEbfrypY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.MiniAStar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.MiniAStar.html",
+          "hash": "SoFS82mrC65sczpFt3qVrA0bSlBdYjaXMI2M/ch5LsU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.Node.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.Node.html",
+          "hash": "oSMnluy3ebpeL3W7fdmoaVFKu5PuFOv+3Ob9nhvHXAM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplineJunction.JunctionPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplineJunction.JunctionPoint.html",
+          "hash": "ZORXzxps827A/R7xaaPeWaUWDojjFwX7RGyYNHN60xQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplineJunction.JunctionPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplineJunction.JunctionPosition.html",
+          "hash": "2ZOQ4v4QOG1JiYvDpS+5h2PGw72cvr+BwhtFb80HJuY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplineJunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplineJunction.html",
+          "hash": "ybosBSQ5OkM+x/NCmwOMx7B0HVG8spNpO4zSCtLy5dc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplineJunctionContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplineJunctionContainer.html",
+          "hash": "TMFX9dm1ryGiEJX0EScy4GMdpCOw8wrMwn3hjqFn37c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplineNetwork.SplineEdge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplineNetwork.SplineEdge.html",
+          "hash": "jJOWvXww+MWFyLO+UhVotDiowpJjCBTldIPbcvhvbUc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplineNetwork.SplineNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplineNetwork.SplineNode.html",
+          "hash": "TVMhvJX3pCRPxkYYiXPDtDu8PHegybWrZs4tnjMvqps="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplineNetwork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplineNetwork.html",
+          "hash": "Fv1e05kQN5g4iIpZjuD5NL3ewVbSvpTknuDZVVmjnVc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplinePoint.DistanceMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplinePoint.DistanceMode.html",
+          "hash": "uf1Yoz+pobM9AwwexX5fpw8uWzBO+kOJJhfSS/QgHk4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplinePoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplinePoint.html",
+          "hash": "MrC31HGfyCe7DuCI9WgyMOtKGsD3A88ph9z/lPqK4LI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplinePointContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.SplinePointContainer.html",
+          "hash": "gPgZczt44dbTOQCWXg78ZUWaeMV/yts7OJTk+m2buRU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.SplineNetwork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.SplineNetwork.html",
+          "hash": "FozW+ySBkmtmoWNHqjDuF2v1jFc3N/L5odHCrDI8pkk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.WebMercator.SceneQuadTree.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.WebMercator.SceneQuadTree.html",
+          "hash": "k0KO70LMUf9H+UFNWEBLc4e2mslAi8YosZhVte4PDH0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.WebMercator.Tile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.WebMercator.Tile.html",
+          "hash": "3xA0P2UovJjFapl+rIdUoGhvfEp5g1GaMapF21KHT04="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.WebMercator.TileQuadTree.TileQuadTreeNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.WebMercator.TileQuadTree.TileQuadTreeNode.html",
+          "hash": "y//hQmcfS7MDqdfkTn3YAHHGemBvTedGokA+Dptxq1g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.WebMercator.TileQuadTree.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.WebMercator.TileQuadTree.html",
+          "hash": "wZGAOffHXR4OWucDi8z3jV8ux5MxRkejAUT5iZP39kY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.WebMercator.Vector2d.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.WebMercator.Vector2d.html",
+          "hash": "rHWxh2F5Ya9iriu9f4UNRMcTG0K9FnK+9wga2KTDoYc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.WebMercator.WebMercator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.WebMercator.WebMercator.html",
+          "hash": "XMwo82TjM3ruhUg0QAmv38/yHvfhmC6WRkNtO9ATOuU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.WebMercator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.WebMercator.html",
+          "hash": "0hLOrZkWXlb/u/AHOVOuwAR1X8/J94BJbGJixU81z64="
         }
       },
       "is_incremental": false,
@@ -22590,7 +22938,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/toc.html",
-          "hash": "2mI23csjpNXUbesFi1GRkIzpS++nCzhcKQiMsRE/XqM="
+          "hash": "DrnDHc1u2tUOhoW5t/QQ4HfrrPR50x72N+1SzEEebBU="
         }
       },
       "is_incremental": false,
@@ -22698,7 +23046,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/packages/toc.html",
-          "hash": "HP72mkwvE/ygSAG9SdyILhLvO7Akm6Atea0DIH0FiWM="
+          "hash": "XLnfji0MjrimT3glSFtAS2ywiUhcqX0juM6ucdNdqB8="
         }
       },
       "is_incremental": false,
@@ -22755,13 +23103,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 60,
+          "total_file_count": 63,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1825,
+          "total_file_count": 1851,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
