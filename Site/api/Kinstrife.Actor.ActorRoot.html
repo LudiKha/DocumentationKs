@@ -83,9 +83,10 @@
   <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Kinstrife.Core.DependencyInjection.ICacheReferences.html">ICacheReferences</a></div>
-    <div><span class="xref">IActor</span></div>
+    <div><a class="xref" href="Kinstrife.Actor.Interfaces.IActor.html">IActor</a></div>
+    <div><a class="xref" href="Kinstrife.Actor.Interfaces.ITeleportable.html">ITeleportable</a></div>
     <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall-1.html">IInstall</a>&lt;<a class="xref" href="Kinstrife.Actor.ActorRoot.html">ActorRoot</a>&gt;</div>
-    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall-1.html">IInstall</a>&lt;<span class="xref">IActor</span>&gt;</div>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall-1.html">IInstall</a>&lt;<a class="xref" href="Kinstrife.Actor.Interfaces.IActor.html">IActor</a>&gt;</div>
     <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall.html">IInstall</a></div>
     <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IReset.html">IReset</a></div>
     <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IInitializable.html">IInitializable</a></div>
@@ -96,7 +97,7 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="Kinstrife_Actor_ActorRoot_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class ActorRoot : MonoBehaviour, ICacheReferences, IInstall&lt;ActorRoot&gt;, IInstall&lt;IActor&gt;, IInstall, IReset, IInitializable, IDependent, IHasProceduresManager</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class ActorRoot : MonoBehaviour, ICacheReferences, IActor, ITeleportable, IInstall&lt;ActorRoot&gt;, IInstall&lt;IActor&gt;, IInstall, IReset, IInitializable, IDependent, IHasProceduresManager</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -714,7 +715,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ActorStatus</span></td>
+        <td><a class="xref" href="Kinstrife.Actor.Interfaces.ActorStatus.html">ActorStatus</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -952,7 +953,7 @@
   
   
   <a id="Kinstrife_Actor_ActorRoot_SameTeam_" data-uid="Kinstrife.Actor.ActorRoot.SameTeam*"></a>
-  <h4 id="Kinstrife_Actor_ActorRoot_SameTeam_IActor_" data-uid="Kinstrife.Actor.ActorRoot.SameTeam(IActor)">SameTeam(IActor)</h4>
+  <h4 id="Kinstrife_Actor_ActorRoot_SameTeam_Kinstrife_Actor_Interfaces_IActor_" data-uid="Kinstrife.Actor.ActorRoot.SameTeam(Kinstrife.Actor.Interfaces.IActor)">SameTeam(IActor)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -970,7 +971,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IActor</span></td>
+        <td><a class="xref" href="Kinstrife.Actor.Interfaces.IActor.html">IActor</a></td>
         <td><span class="parametername">other</span></td>
         <td></td>
       </tr>
@@ -1216,7 +1217,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">IActor</span>, <span class="xref">System.Single</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Kinstrife.Actor.Interfaces.IActor.html">IActor</a>, <span class="xref">System.Single</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1276,7 +1277,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event ActorStatusEvent StatusChanged</code></pre>
+    <pre><code class="lang-csharp hljs">public event IActor.ActorStatusEvent StatusChanged</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1288,7 +1289,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ActorStatusEvent</span></td>
+        <td><a class="xref" href="Kinstrife.Actor.Interfaces.IActor.ActorStatusEvent.html">IActor.ActorStatusEvent</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1298,7 +1299,10 @@
       <a class="xref" href="Kinstrife.Core.DependencyInjection.ICacheReferences.html">ICacheReferences</a>
   </div>
   <div>
-      <span class="xref">IActor</span>
+      <a class="xref" href="Kinstrife.Actor.Interfaces.IActor.html">IActor</a>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.Actor.Interfaces.ITeleportable.html">ITeleportable</a>
   </div>
   <div>
       <a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall-1.html">IInstall&lt;T&gt;</a>

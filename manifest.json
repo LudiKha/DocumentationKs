@@ -2856,7 +2856,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Actor.ActorRoot.html",
-          "hash": "iQ18LF4HFz88k/qCfl5ACd8lOt5dtIDTIRNoVssAILM="
+          "hash": "9Cpds2tyGY9e1ezsakad70vqM5lB8ElAXdVTqv7ZHd0="
         }
       },
       "is_incremental": false,
@@ -2868,7 +2868,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Actor.ActorSpawnService.html",
-          "hash": "A3gh+zEYTfG1JHATUb5Wf2UF+IqHxoLX1nu5/kIw6/Q="
+          "hash": "bIhu/64d1LkiEBAyqc2qYIYfC7KUspNNyH/idjzgOQM="
         }
       },
       "is_incremental": false,
@@ -3348,7 +3348,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Actor.Input.ActorsRegistry.html",
-          "hash": "41C7Tf6Azvou/XKXDtmmEvUnGv51XZUfx0rtO/9/BVg="
+          "hash": "LMakgGWrdBLAcyVXqJXxzUlx/VKZvLePorzp90y73Sc="
         }
       },
       "is_incremental": false,
@@ -3384,7 +3384,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Actor.Input.PlayerActorManager.html",
-          "hash": "IrsBbQit6fSW6M3hfNtb3aO7FaQdY3DQlpZBZ+X8ZeY="
+          "hash": "9/3idcosL4zYqccQ9kVSwSmV8/Z6gP56uBwaWBWYDRM="
         }
       },
       "is_incremental": false,
@@ -3421,6 +3421,114 @@
         ".html": {
           "relative_path": "Site/api/Kinstrife.Actor.InputState.html",
           "hash": "Q7YCikA/NuS3Jd2L7J29XsR4LqN1K6zxK34Lp37gHx0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Interfaces.ActorDebug.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Interfaces.ActorDebug.html",
+          "hash": "MR2aKoz2a2QR9dc4Rm/MicTWeKp2oHbpRw29a/Kx75s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Interfaces.ActorSpawnServiceHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Interfaces.ActorSpawnServiceHandle.html",
+          "hash": "JPznCXnegaplWe2UcAbbX0xVWKPVpkjkcZ2X7KeF59g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Interfaces.ActorStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Interfaces.ActorStatus.html",
+          "hash": "by58Mjpfdj9Rkddt4Pa68lUIqLHTPJdojh4mPOxoes8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Interfaces.IActor.ActorStatusEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Interfaces.IActor.ActorStatusEvent.html",
+          "hash": "dUrlr6HjW2a4M2dMupyT411RSxObj5mI7tN0Uq/tfl4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Interfaces.IActor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Interfaces.IActor.html",
+          "hash": "CGemrclU8cz7AzRZw71FTspsjtykw9jP6D90+cNYn9Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Interfaces.IActorController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Interfaces.IActorController.html",
+          "hash": "uzQ1mL1OoobDDVaBJVnN7H2JVy8zHpAFc4tFGUHaaO8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Interfaces.ITeleportable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Interfaces.ITeleportable.html",
+          "hash": "WCVOTbdcZb8BFATaVHbCQYapDv4gbOiwyTK6Qegky1A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Interfaces.SpawnArguments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Interfaces.SpawnArguments.html",
+          "hash": "94a9Iawj4juTjjWAJfoBjPkb0YyVtTgLInWvl8W7bqM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.Interfaces.html",
+          "hash": "6MhrbadF3iN+UHKxgM913FlG1NT3jf2scxsQTuqE1BA="
         }
       },
       "is_incremental": false,
@@ -3608,11 +3716,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Actor.PlayerActor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Actor.PlayerActor.html",
+          "hash": "4sBiLaPYMX7Co0RW3dEhCLSzBIg/8AYm/K4ZidVMRFI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "Site/api/Kinstrife.Actor.Procedures.ActorStatusActivator.Data.yml",
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Actor.Procedures.ActorStatusActivator.Data.html",
-          "hash": "EneI4TLEjvJHKN4qBI0yX9c/k3s5PunI3Slq4QKfxvM="
+          "hash": "EdK3SoKmKCr97hNarSL4dQNUAMrEkxqQv7Gt/0ARWQc="
         }
       },
       "is_incremental": false,
@@ -3636,7 +3756,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Actor.Procedures.ActorStatusConstraint.Data.html",
-          "hash": "Eei9fL9rlNiELRLHB0z48YSV+Hd3YzIrTG5dCV2SzcE="
+          "hash": "8IBBLwCSxZK6K11Mlym2bSYluYRZXdDmHpWeJOW+B7k="
         }
       },
       "is_incremental": false,
@@ -4020,7 +4140,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/Kinstrife.Actor.html",
-          "hash": "xRZ5EOb1o17Mj2ZiE7jD5urK2XsFclcGtNJP7ckm1Bk="
+          "hash": "PNdlr2XaU3KtwmdOg+AtxiEd1HlLCMySpPTPquSJJpA="
         }
       },
       "is_incremental": false,
@@ -20631,7 +20751,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/toc.html",
-          "hash": "VD9rY7Wj6EiD2AmYTo1t3KPC7YsfnRsigOtY8wc15bA="
+          "hash": "KPObaOCPOueIga6SBzes5AxKJAGUYf66oZzidUjceAg="
         }
       },
       "is_incremental": false,
@@ -20802,7 +20922,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1667,
+          "total_file_count": 1677,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
