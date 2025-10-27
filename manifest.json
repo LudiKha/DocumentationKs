@@ -329,6 +329,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "../../Packages/Core/InventoryManagement/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "InventoryManagement/index.html",
+          "hash": "bs0+EUtRSpQdzuLXQzNO64Yn4fUmnbOTcWnpOa4FzV0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "../../Packages/Core/LevelOfDetail/index.md",
       "output": {
         ".html": {
@@ -12428,6 +12440,294 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.IHasInventory-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.IHasInventory-2.html",
+          "hash": "gqq5QzpQCbz7BDijA+XiMUAxk6/W7Y793uunZjEo37c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.IInventory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.IInventory-1.html",
+          "hash": "DzuLsNVZAQCPFPN0irXbrqgCS46RewfK8cRoaG3wXaw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.ILimitedInventory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.ILimitedInventory-1.html",
+          "hash": "LRW1YnZUcJ7Ru0uNV5oz77tpH4oqObR5TgdbIDquKBk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.INotifyInventoryChanged-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.INotifyInventoryChanged-1.html",
+          "hash": "t5HRHnLQut6P7zs8Lj5RIuaJwoR3Mw8Mg5efQ45svvE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.INotifySlotInventoryChanged-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.INotifySlotInventoryChanged-2.html",
+          "hash": "fzeCKP2HA1hdqPdhVIhsg+07Ut8OXNlLG/cfVWyw1FE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.ISlotItem-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.ISlotItem-1.html",
+          "hash": "x6YPYW3Z53rmjj/eFOdsp8sl5qdWn8k0GadNsXVs5bc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.IStackableSlotInventory-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.IStackableSlotInventory-2.html",
+          "hash": "jNLmtfL1ePl2Wq6ATE11dQrc2D2MBzXTSUiOrG6W7l4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.InventoryBehaviour-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.InventoryBehaviour-2.html",
+          "hash": "w7oASfKTmhsR1PB2i9TkEQHU8Ene6saF793nlnx8Veo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.InventoryBehaviourBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.InventoryBehaviourBase.html",
+          "hash": "hjPTRLMQxlm5rLJESacPQjcg92tUT3wRCZxMhb/1kIc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.LayeredSlotInventory-2.Slot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.LayeredSlotInventory-2.Slot.html",
+          "hash": "1rCjTXsI98RqNk1Fo+9rXPZv2JOfguzoDU1Op3RYlHY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.LayeredSlotInventory-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.LayeredSlotInventory-2.html",
+          "hash": "sBiFKYy6Ufs3op8msT7QMQoxtNI0OdqXQKqC/boxWPc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.LayeredSlotInventoryBehaviour-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.LayeredSlotInventoryBehaviour-3.html",
+          "hash": "pIGuviOUNzPGzYCWhN9fgXkHfQ+hVJNys8okOVowU5w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.LimitedInventory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.LimitedInventory-1.html",
+          "hash": "kmx2IvFAgHD/8gyFqFr8JACLGeyAY11Eptawx/Gscqw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.ObjectSlotInventoryBehaviour-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.ObjectSlotInventoryBehaviour-5.html",
+          "hash": "g9o2tpXicBvtU5Kfkjh42xqVKVRaGag0uaOvscktl6o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.SingleSlotInventory-2.Slot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.SingleSlotInventory-2.Slot.html",
+          "hash": "JwuYo5vODsqQc5F7zHd8DGyBHImWnUOhLTDAK8ssf2M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.SingleSlotInventory-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.SingleSlotInventory-2.html",
+          "hash": "Ds82+8xHcklveZRh3US7+1g0d6jCclm4BkgibqbddfM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.SingleSlotInventoryBehaviour-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.SingleSlotInventoryBehaviour-3.html",
+          "hash": "cc+ENtMoaHUkA2gFrF3C3rjZHDOhTojOf0PvqV/2+PA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.SingleSlotObjectInventoryBehaviour-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.SingleSlotObjectInventoryBehaviour-4.html",
+          "hash": "RsvrzUeenDK4MY0dgkgzrDB/opnecYZJsq9GQmrVJtE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.SlotInventory-3.SlotEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.SlotInventory-3.SlotEntry.html",
+          "hash": "odPZSbh8mq8RJpKI9VlYRc8On8BkYSk+H0/Ke9UjAeM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.SlotInventory-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.SlotInventory-3.html",
+          "hash": "MG86/OAtnEKnTTglbZs51HMjbd+2F5UBh8MXM7l1fP4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.SlotInventoryBehaviour-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.SlotInventoryBehaviour-4.html",
+          "hash": "Lz4Gk6xA2LKrPnp/FFr0t4Z55WeCPwwHHq9cDMKmpgE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.Transfer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.Transfer.html",
+          "hash": "pzRC/aIVo8jEyXvrqDxze7UNC//dimmTBAfmxiXzKAI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.UnlimitedInventory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.UnlimitedInventory-1.html",
+          "hash": "Mby+aaoQ0RAtXYlIF5GzboCB2gCB1egf5ypJf+4H2KM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.InventoryManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.InventoryManagement.html",
+          "hash": "U6ppsLfBf1IJnLWA43g6oPtJYm5U060LyoZ6Feyyz0k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "Site/api/Kinstrife.LOD.ILODComponents.yml",
       "output": {
         ".html": {
@@ -20331,7 +20631,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/toc.html",
-          "hash": "nljieX01Er2exy5aK+4v+KCOiXjKe2lIIZ4JwR4gT9E="
+          "hash": "VD9rY7Wj6EiD2AmYTo1t3KPC7YsfnRsigOtY8wc15bA="
         }
       },
       "is_incremental": false,
@@ -20439,7 +20739,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/packages/toc.html",
-          "hash": "lDzBLBqVzH4caixTa7HQHhALGFJhlaXdOuWrE/p8FPE="
+          "hash": "WsSHjm0K2YMVWksbqW56mw4dcGWV5zjQ040lmG6VpUg="
         }
       },
       "is_incremental": false,
@@ -20496,13 +20796,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 54,
+          "total_file_count": 55,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1643,
+          "total_file_count": 1667,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
