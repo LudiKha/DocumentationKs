@@ -1,0 +1,496 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HologramGizmo
+   | Kinstrife </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HologramGizmo
+   | Kinstrife ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Kinstrife.Gizmos.HologramGizmo">
+  
+  
+  <h1 id="Kinstrife_Gizmos_HologramGizmo" data-uid="Kinstrife.Gizmos.HologramGizmo" class="text-break">Class HologramGizmo
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Kinstrife.Gizmos.Gizmo.html">Gizmo</a></div>
+    <div class="level2"><span class="xref">HologramGizmo</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Kinstrife.Gizmos.Gizmo.html#Kinstrife_Gizmos_Gizmo_drawingParams">Gizmo.drawingParams</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Gizmos.Gizmo.html#Kinstrife_Gizmos_Gizmo_drawingMode">Gizmo.drawingMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Gizmos.Gizmo.html#Kinstrife_Gizmos_Gizmo_drawingStyle">Gizmo.drawingStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Gizmos.Gizmo.html#Kinstrife_Gizmos_Gizmo_advancedSettings">Gizmo.advancedSettings</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Gizmos.Gizmo.html#Kinstrife_Gizmos_Gizmo_CustomLineColor">Gizmo.CustomLineColor</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Gizmos.Gizmo.html#Kinstrife_Gizmos_Gizmo_CustomFillColor">Gizmo.CustomFillColor</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Gizmos.Gizmo.html#Kinstrife_Gizmos_Gizmo_TargetDrawParams">Gizmo.TargetDrawParams</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Gizmos.Gizmo.html#Kinstrife_Gizmos_Gizmo_TargetDrawMode">Gizmo.TargetDrawMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Gizmos.Gizmo.html#Kinstrife_Gizmos_Gizmo_IsEditorOnly">Gizmo.IsEditorOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Gizmos.Gizmo.html#Kinstrife_Gizmos_Gizmo_IsSelectedOnly">Gizmo.IsSelectedOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Gizmos.Gizmo.html#Kinstrife_Gizmos_Gizmo_Draw">Gizmo.Draw</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Gizmos.Gizmo.html#Kinstrife_Gizmos_Gizmo_HasCustomGizmo">Gizmo.HasCustomGizmo</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Gizmos.Gizmo.html#Kinstrife_Gizmos_Gizmo_DrawGizmos">Gizmo.DrawGizmos()</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Gizmos.Gizmo.html#Kinstrife_Gizmos_Gizmo_InternalRegisterBuiltinComponent_Kinstrife_Gizmos_GizmoComponentType_Component_System_Action_">Gizmo.InternalRegisterBuiltinComponent(GizmoComponentType, Component, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Gizmos.Gizmo.html#Kinstrife_Gizmos_Gizmo_RegisterDrawAction_Component_System_Action_">Gizmo.RegisterDrawAction(Component, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Gizmos.Gizmo.html#Kinstrife_Gizmos_Gizmo_GetEffectiveScale">Gizmo.GetEffectiveScale()</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Gizmos.Gizmo.html#Kinstrife_Gizmos_Gizmo_builtinTypeMapping">Gizmo.builtinTypeMapping</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Kinstrife.Gizmos.html">Kinstrife.Gizmos</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Kinstrife_Gizmos_HologramGizmo_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HologramGizmo : Gizmo</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Kinstrife_Gizmos_HologramGizmo_hologramSettings" data-uid="Kinstrife.Gizmos.HologramGizmo.hologramSettings">hologramSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HologramSettings hologramSettings</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Gizmos.HologramSettings.html">HologramSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_Gizmos_HologramGizmo_prefab" data-uid="Kinstrife.Gizmos.HologramGizmo.prefab">prefab</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject prefab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_Gizmos_HologramGizmo_proxy" data-uid="Kinstrife.Gizmos.HologramGizmo.proxy">proxy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject proxy</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_Gizmos_HologramGizmo_syncTransform" data-uid="Kinstrife.Gizmos.HologramGizmo.syncTransform">syncTransform</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool syncTransform</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Kinstrife_Gizmos_HologramGizmo_canDrawProxy_" data-uid="Kinstrife.Gizmos.HologramGizmo.canDrawProxy*"></a>
+  <h4 id="Kinstrife_Gizmos_HologramGizmo_canDrawProxy" data-uid="Kinstrife.Gizmos.HologramGizmo.canDrawProxy">canDrawProxy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool canDrawProxy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Gizmos_HologramGizmo_shouldDrawProxy_" data-uid="Kinstrife.Gizmos.HologramGizmo.shouldDrawProxy*"></a>
+  <h4 id="Kinstrife_Gizmos_HologramGizmo_shouldDrawProxy" data-uid="Kinstrife.Gizmos.HologramGizmo.shouldDrawProxy">shouldDrawProxy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool shouldDrawProxy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Kinstrife_Gizmos_HologramGizmo_CreateProxy_" data-uid="Kinstrife.Gizmos.HologramGizmo.CreateProxy*"></a>
+  <h4 id="Kinstrife_Gizmos_HologramGizmo_CreateProxy_GameObject_" data-uid="Kinstrife.Gizmos.HologramGizmo.CreateProxy(GameObject)">CreateProxy(GameObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject CreateProxy(GameObject prefab)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Gizmos_HologramGizmo_DestroyProxy_" data-uid="Kinstrife.Gizmos.HologramGizmo.DestroyProxy*"></a>
+  <h4 id="Kinstrife_Gizmos_HologramGizmo_DestroyProxy" data-uid="Kinstrife.Gizmos.HologramGizmo.DestroyProxy">DestroyProxy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DestroyProxy()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Gizmos_HologramGizmo_GetOrCreateProxy_" data-uid="Kinstrife.Gizmos.HologramGizmo.GetOrCreateProxy*"></a>
+  <h4 id="Kinstrife_Gizmos_HologramGizmo_GetOrCreateProxy_GameObject_" data-uid="Kinstrife.Gizmos.HologramGizmo.GetOrCreateProxy(GameObject)">GetOrCreateProxy(GameObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject GetOrCreateProxy(GameObject prefab)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Gizmos_HologramGizmo_OnDestroy_" data-uid="Kinstrife.Gizmos.HologramGizmo.OnDestroy*"></a>
+  <h4 id="Kinstrife_Gizmos_HologramGizmo_OnDestroy" data-uid="Kinstrife.Gizmos.HologramGizmo.OnDestroy">OnDestroy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDestroy()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Gizmos_HologramGizmo_OnDisable_" data-uid="Kinstrife.Gizmos.HologramGizmo.OnDisable*"></a>
+  <h4 id="Kinstrife_Gizmos_HologramGizmo_OnDisable" data-uid="Kinstrife.Gizmos.HologramGizmo.OnDisable">OnDisable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDisable()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Gizmos_HologramGizmo_OnEnable_" data-uid="Kinstrife.Gizmos.HologramGizmo.OnEnable*"></a>
+  <h4 id="Kinstrife_Gizmos_HologramGizmo_OnEnable" data-uid="Kinstrife.Gizmos.HologramGizmo.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnEnable()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Gizmos_HologramGizmo_Reset_" data-uid="Kinstrife.Gizmos.HologramGizmo.Reset*"></a>
+  <h4 id="Kinstrife_Gizmos_HologramGizmo_Reset" data-uid="Kinstrife.Gizmos.HologramGizmo.Reset">Reset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Reset()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Gizmos_HologramGizmo_SyncProxyWithTransform_" data-uid="Kinstrife.Gizmos.HologramGizmo.SyncProxyWithTransform*"></a>
+  <h4 id="Kinstrife_Gizmos_HologramGizmo_SyncProxyWithTransform" data-uid="Kinstrife.Gizmos.HologramGizmo.SyncProxyWithTransform">SyncProxyWithTransform()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SyncProxyWithTransform()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Gizmos_HologramGizmo_TryDrawProxy_" data-uid="Kinstrife.Gizmos.HologramGizmo.TryDrawProxy*"></a>
+  <h4 id="Kinstrife_Gizmos_HologramGizmo_TryDrawProxy" data-uid="Kinstrife.Gizmos.HologramGizmo.TryDrawProxy">TryDrawProxy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryDrawProxy()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Gizmos_HologramGizmo_TryUnloadProxy_" data-uid="Kinstrife.Gizmos.HologramGizmo.TryUnloadProxy*"></a>
+  <h4 id="Kinstrife_Gizmos_HologramGizmo_TryUnloadProxy" data-uid="Kinstrife.Gizmos.HologramGizmo.TryUnloadProxy">TryUnloadProxy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryUnloadProxy()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,853 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AssetSelectViewModel&lt;T&gt;
+   | Kinstrife </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AssetSelectViewModel&lt;T&gt;
+   | Kinstrife ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Kinstrife.UI.AssetSelectViewModel`1">
+  
+  
+  <h1 id="Kinstrife_UI_AssetSelectViewModel_1" data-uid="Kinstrife.UI.AssetSelectViewModel`1" class="text-break">Class AssetSelectViewModel&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Kinstrife.UI.AssetSelectViewModel.html">AssetSelectViewModel</a></div>
+    <div class="level2"><span class="xref">AssetSelectViewModel&lt;T&gt;</span></div>
+      <div class="level3"><a class="xref" href="Kinstrife.UI.ListSelectViewModel-1.html">ListSelectViewModel&lt;T&gt;</a></div>
+      <div class="level3"><a class="xref" href="Kinstrife.UI.SelectViewModel-1.html">SelectViewModel&lt;T&gt;</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IModel</span></div>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IInitializable.html">IInitializable</a></div>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IDependent.html">IDependent</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Kinstrife.UI.AssetSelectViewModel.html#Kinstrife_UI_AssetSelectViewModel_DisableIfEmpty">AssetSelectViewModel.DisableIfEmpty</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.UI.AssetSelectViewModel.html#Kinstrife_UI_AssetSelectViewModel_bindableData">AssetSelectViewModel.bindableData</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.UI.AssetSelectViewModel.html#Kinstrife_UI_AssetSelectViewModel_DefaultControlType">AssetSelectViewModel.DefaultControlType</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.UI.AssetSelectViewModel.html#Kinstrife_UI_AssetSelectViewModel_onSelectObject">AssetSelectViewModel.onSelectObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.UI.AssetSelectViewModel.html#Kinstrife_UI_AssetSelectViewModel_AddData_ContextBindableObject_">AssetSelectViewModel.AddData(ContextBindableObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.UI.AssetSelectViewModel.html#Kinstrife_UI_AssetSelectViewModel_ClearData">AssetSelectViewModel.ClearData()</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.UI.AssetSelectViewModel.html#Kinstrife_UI_AssetSelectViewModel_IsEmpty">AssetSelectViewModel.IsEmpty</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.UI.AssetSelectViewModel.html#Kinstrife_UI_AssetSelectViewModel_SelectedIndices">AssetSelectViewModel.SelectedIndices</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Kinstrife.UI.html">Kinstrife.UI</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Kinstrife_UI_AssetSelectViewModel_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class AssetSelectViewModel&lt;T&gt; : AssetSelectViewModel, IInitializable, IDependent</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_lastSelectedEntry" data-uid="Kinstrife.UI.AssetSelectViewModel`1.lastSelectedEntry">lastSelectedEntry</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected T lastSelectedEntry</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_lastSelectedIndex" data-uid="Kinstrife.UI.AssetSelectViewModel`1.lastSelectedIndex">lastSelectedIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int lastSelectedIndex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_loadMode" data-uid="Kinstrife.UI.AssetSelectViewModel`1.loadMode">loadMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetSelectViewModel&lt;T&gt;.LoadMode loadMode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.UI.AssetSelectViewModel-1.LoadMode.html">AssetSelectViewModel.LoadMode</a>&lt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_SourceData" data-uid="Kinstrife.UI.AssetSelectViewModel`1.SourceData">SourceData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public IEnumerable&lt;T&gt; SourceData</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_hardRefresh_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.hardRefresh*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_hardRefresh" data-uid="Kinstrife.UI.AssetSelectViewModel`1.hardRefresh">hardRefresh</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool hardRefresh { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_hasActiveState_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.hasActiveState*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_hasActiveState" data-uid="Kinstrife.UI.AssetSelectViewModel`1.hasActiveState">hasActiveState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool hasActiveState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_isAsync_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.isAsync*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_isAsync" data-uid="Kinstrife.UI.AssetSelectViewModel`1.isAsync">isAsync</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool isAsync { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_SelectedEntry_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.SelectedEntry*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_SelectedEntry" data-uid="Kinstrife.UI.AssetSelectViewModel`1.SelectedEntry">SelectedEntry</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T SelectedEntry { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_SelectedIndex_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.SelectedIndex*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_SelectedIndex" data-uid="Kinstrife.UI.AssetSelectViewModel`1.SelectedIndex">SelectedIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SelectedIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_EntryIsActive_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.EntryIsActive*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_EntryIsActive_System_Int32__0_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.EntryIsActive(System.Int32,`0)">EntryIsActive(Int32, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool EntryIsActive(int i, T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_Initialize_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.Initialize*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_Initialize" data-uid="Kinstrife.UI.AssetSelectViewModel`1.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_Initialize_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.Initialize*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_Initialize_VisualElement_Plate_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.Initialize(VisualElement,Plate)">Initialize(VisualElement, Plate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Initialize(VisualElement container, Plate plate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VisualElement</span></td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Plate</span></td>
+        <td><span class="parametername">plate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_InitItem_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.InitItem*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_InitItem_System_Int32__0_ContextBindableObject_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.InitItem(System.Int32,`0,ContextBindableObject)">InitItem(Int32, T, ContextBindableObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitItem(int i, T source, ContextBindableObject bindable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ContextBindableObject</span></td>
+        <td><span class="parametername">bindable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_LoadSourceData_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.LoadSourceData*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_LoadSourceData" data-uid="Kinstrife.UI.AssetSelectViewModel`1.LoadSourceData">LoadSourceData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;T&gt; LoadSourceData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_LoadSourceData_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.LoadSourceData*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_LoadSourceData_System_Boolean_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.LoadSourceData(System.Boolean)">LoadSourceData(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async UniTask LoadSourceData(bool force)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">force</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_LoadSourceDataAsync_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.LoadSourceDataAsync*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_LoadSourceDataAsync" data-uid="Kinstrife.UI.AssetSelectViewModel`1.LoadSourceDataAsync">LoadSourceDataAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual UniTask&lt;IEnumerable&lt;T&gt;&gt; LoadSourceDataAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<span class="xref">IEnumerable</span>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_OnSelectEntry_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.OnSelectEntry*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_OnSelectEntry_System_Int32__0_MouseButton_System_Int32_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.OnSelectEntry(System.Int32,`0,MouseButton,System.Int32)">OnSelectEntry(Int32, T, MouseButton, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSelectEntry(int index, T item, MouseButton btn, int clickCount = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">MouseButton</span></td>
+        <td><span class="parametername">btn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">clickCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_PostInitializeItems_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.PostInitializeItems*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_PostInitializeItems" data-uid="Kinstrife.UI.AssetSelectViewModel`1.PostInitializeItems">PostInitializeItems()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void PostInitializeItems()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_RefreshActiveState_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.RefreshActiveState*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_RefreshActiveState" data-uid="Kinstrife.UI.AssetSelectViewModel`1.RefreshActiveState">RefreshActiveState()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RefreshActiveState()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_RefreshSourceData_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.RefreshSourceData*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_RefreshSourceData" data-uid="Kinstrife.UI.AssetSelectViewModel`1.RefreshSourceData">RefreshSourceData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RefreshSourceData()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Kinstrife.UI.AssetSelectViewModel.html#Kinstrife_UI_AssetSelectViewModel_RefreshSourceData">AssetSelectViewModel.RefreshSourceData()</a></div>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_SelectEntryAt_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.SelectEntryAt*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_SelectEntryAt_System_Int32_MouseButton_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.SelectEntryAt(System.Int32,MouseButton)">SelectEntryAt(Int32, MouseButton)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectEntryAt(int index, MouseButton btn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">MouseButton</span></td>
+        <td><span class="parametername">btn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_TryAddSourceData_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.TryAddSourceData*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_TryAddSourceData_System_Int32__0_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.TryAddSourceData(System.Int32,`0)">TryAddSourceData(Int32, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool TryAddSourceData(int i, T source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_UI_AssetSelectViewModel_1_ValidateItem_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.ValidateItem*"></a>
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_ValidateItem__0_" data-uid="Kinstrife.UI.AssetSelectViewModel`1.ValidateItem(`0)">ValidateItem(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool ValidateItem(T source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="Kinstrife_UI_AssetSelectViewModel_1_onSelectItem" data-uid="Kinstrife.UI.AssetSelectViewModel`1.onSelectItem">onSelectItem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;int, T, MouseButton&gt; onSelectItem</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">System.Int32</span>, T, <span class="xref">MouseButton</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IModel</span>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.Core.DependencyInjection.IInitializable.html">IInitializable</a>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.Core.DependencyInjection.IDependent.html">IDependent</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

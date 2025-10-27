@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MultiFormViewModel
+   | Kinstrife </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MultiFormViewModel
+   | Kinstrife ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Graphene.ViewModel.MultiFormViewModel">
+  
+  
+  <h1 id="Graphene_ViewModel_MultiFormViewModel" data-uid="Graphene.ViewModel.MultiFormViewModel" class="text-break">Class MultiFormViewModel
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Graphene.GrapheneComponent.html">GrapheneComponent</a></div>
+    <div class="level2"><a class="xref" href="Graphene.ViewModel.ViewModelComponent.html">ViewModelComponent</a></div>
+    <div class="level3"><a class="xref" href="Graphene.ViewModel.FormViewModel.html">FormViewModel</a></div>
+    <div class="level4"><span class="xref">MultiFormViewModel</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Graphene.IGrapheneInjectable.html">IGrapheneInjectable</a></div>
+    <div><a class="xref" href="Graphene.IStateInterpreter-1.html">IStateInterpreter</a>&lt;<span class="xref">System.String</span>&gt;</div>
+    <div><a class="xref" href="Graphene.IGrapheneInitializable.html">IGrapheneInitializable</a></div>
+    <div><a class="xref" href="Graphene.IGrapheneDependent.html">IGrapheneDependent</a></div>
+    <div><a class="xref" href="Graphene.IStateInterpreter.html">IStateInterpreter</a></div>
+    <div><a class="xref" href="Graphene.ViewModel.IFormViewModel.html">IFormViewModel</a></div>
+    <div><a class="xref" href="Graphene.IModel.html">IModel</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_onSubmit">FormViewModel.onSubmit</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_onCancel">FormViewModel.onCancel</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_onReset">FormViewModel.onReset</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_submitBinding">FormViewModel.submitBinding</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_cancelBinding">FormViewModel.cancelBinding</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_resetBinding">FormViewModel.resetBinding</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_IsModelDirty">FormViewModel.IsModelDirty</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_BlockRoutingOnDirty">FormViewModel.BlockRoutingOnDirty</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_HideButtons">FormViewModel.HideButtons</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_Awake">FormViewModel.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_Initialize">FormViewModel.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_TrySubmit">FormViewModel.TrySubmit()</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_TryCancel">FormViewModel.TryCancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_TryReset">FormViewModel.TryReset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_Graphene_IStateInterpreter_CanCatch_System_Object_">FormViewModel.IStateInterpreter.CanCatch(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_CanCatch_System_String_">FormViewModel.CanCatch(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_Graphene_IStateInterpreter_TryCatch_System_Object_">FormViewModel.IStateInterpreter.TryCatch(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_TryCatch_System_String_">FormViewModel.TryCatch(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_MarkDirty_System_Boolean_">FormViewModel.MarkDirty(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_UpdateFormButtonsState_System_Boolean_System_Boolean_">FormViewModel.UpdateFormButtonsState(Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_CanSubmit">FormViewModel.CanSubmit()</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_CanCancel">FormViewModel.CanCancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_CanReset">FormViewModel.CanReset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_renderer">ViewModelComponent.renderer</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_Renderer">ViewModelComponent.Renderer</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_plate">ViewModelComponent.plate</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_Plate">ViewModelComponent.Plate</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_Title">ViewModelComponent.Title</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_HasContent">ViewModelComponent.HasContent</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_Render">ViewModelComponent.Render</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_onModelChange">ViewModelComponent.onModelChange</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_PlateIsActive">ViewModelComponent.PlateIsActive</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_Inject_Graphene_Graphene_">ViewModelComponent.Inject(Graphene)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_OnShow">ViewModelComponent.OnShow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_OnHide">ViewModelComponent.OnHide()</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_ModelChange">ViewModelComponent.ModelChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_Refresh_VisualElement_">ViewModelComponent.Refresh(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_DebugName">GrapheneComponent.DebugName</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_graphene">GrapheneComponent.graphene</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_Graphene">GrapheneComponent.Graphene</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_BindingsManager">GrapheneComponent.BindingsManager</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Graphene.ViewModel.html">Graphene.ViewModel</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Graphene_ViewModel_MultiFormViewModel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MultiFormViewModel : FormViewModel, IGrapheneInjectable, IStateInterpreter&lt;string&gt;, IGrapheneInitializable, IGrapheneDependent, IStateInterpreter, IFormViewModel, IModel</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Graphene_ViewModel_MultiFormViewModel_Cancel_" data-uid="Graphene.ViewModel.MultiFormViewModel.Cancel*"></a>
+  <h4 id="Graphene_ViewModel_MultiFormViewModel_Cancel" data-uid="Graphene.ViewModel.MultiFormViewModel.Cancel">Cancel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Cancel()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_Cancel">FormViewModel.Cancel()</a></div>
+  
+  
+  <a id="Graphene_ViewModel_MultiFormViewModel_Initialize_" data-uid="Graphene.ViewModel.MultiFormViewModel.Initialize*"></a>
+  <h4 id="Graphene_ViewModel_MultiFormViewModel_Initialize_VisualElement_Graphene_Plate_" data-uid="Graphene.ViewModel.MultiFormViewModel.Initialize(VisualElement,Graphene.Plate)">Initialize(VisualElement, Plate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Initialize(VisualElement container, Plate plate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VisualElement</span></td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Graphene.Plate.html">Plate</a></td>
+        <td><span class="parametername">plate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_Initialize_VisualElement_Graphene_Plate_">ViewModelComponent.Initialize(VisualElement, Plate)</a></div>
+  
+  
+  <a id="Graphene_ViewModel_MultiFormViewModel_PromptReset_" data-uid="Graphene.ViewModel.MultiFormViewModel.PromptReset*"></a>
+  <h4 id="Graphene_ViewModel_MultiFormViewModel_PromptReset" data-uid="Graphene.ViewModel.MultiFormViewModel.PromptReset">PromptReset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void PromptReset()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_PromptReset">FormViewModel.PromptReset()</a></div>
+  
+  
+  <a id="Graphene_ViewModel_MultiFormViewModel_Reset_" data-uid="Graphene.ViewModel.MultiFormViewModel.Reset*"></a>
+  <h4 id="Graphene_ViewModel_MultiFormViewModel_Reset" data-uid="Graphene.ViewModel.MultiFormViewModel.Reset">Reset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Reset()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_Reset">FormViewModel.Reset()</a></div>
+  
+  
+  <a id="Graphene_ViewModel_MultiFormViewModel_SetButtonsDirty_" data-uid="Graphene.ViewModel.MultiFormViewModel.SetButtonsDirty*"></a>
+  <h4 id="Graphene_ViewModel_MultiFormViewModel_SetButtonsDirty_System_Boolean_" data-uid="Graphene.ViewModel.MultiFormViewModel.SetButtonsDirty(System.Boolean)">SetButtonsDirty(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SetButtonsDirty(bool dirty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">dirty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_SetButtonsDirty_System_Boolean_">FormViewModel.SetButtonsDirty(Boolean)</a></div>
+  
+  
+  <a id="Graphene_ViewModel_MultiFormViewModel_Submit_" data-uid="Graphene.ViewModel.MultiFormViewModel.Submit*"></a>
+  <h4 id="Graphene_ViewModel_MultiFormViewModel_Submit" data-uid="Graphene.ViewModel.MultiFormViewModel.Submit">Submit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Submit()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Graphene.ViewModel.FormViewModel.html#Graphene_ViewModel_FormViewModel_Submit">FormViewModel.Submit()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Graphene.IGrapheneInjectable.html">IGrapheneInjectable</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IStateInterpreter-1.html">IStateInterpreter&lt;TStateType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IGrapheneInitializable.html">IGrapheneInitializable</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IGrapheneDependent.html">IGrapheneDependent</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IStateInterpreter.html">IStateInterpreter</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.ViewModel.IFormViewModel.html">IFormViewModel</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IModel.html">IModel</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

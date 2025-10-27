@@ -1,0 +1,809 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CameraRig
+   | Kinstrife </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CameraRig
+   | Kinstrife ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Kinstrife.Core.Camera.CameraRig">
+  
+  
+  <h1 id="Kinstrife_Core_Camera_CameraRig" data-uid="Kinstrife.Core.Camera.CameraRig" class="text-break">Class CameraRig
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Kinstrife.Messaging.ServiceBehaviour-2.html">ServiceBehaviour</a>&lt;<span class="xref">System.Boolean</span>, <a class="xref" href="Kinstrife.Camera.CameraState.html">CameraState</a>&gt;</div>
+    <div class="level2"><span class="xref">CameraRig</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IInjectable.html">IInjectable</a></div>
+    <div><a class="xref" href="Kinstrife.IPostFixedUpdate.html">IPostFixedUpdate</a></div>
+    <div><a class="xref" href="Kinstrife.ICustomUpdateable.html">ICustomUpdateable</a></div>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IDependent.html">IDependent</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.ServiceBehaviour-2.html#Kinstrife_Messaging_ServiceBehaviour_2_server">ServiceBehaviour&lt;Boolean, CameraState&gt;.server</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.ServiceBehaviour-2.html#Kinstrife_Messaging_ServiceBehaviour_2_descriptor">ServiceBehaviour&lt;Boolean, CameraState&gt;.descriptor</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.ServiceBehaviour-2.html#Kinstrife_Messaging_ServiceBehaviour_2_Inject_Kinstrife_Messaging_IServiceServer__0_Kinstrife_Messaging_Request__1___">ServiceBehaviour&lt;Boolean, CameraState&gt;.Inject(IServiceServer&lt;Boolean, Request&lt;CameraState&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.ServiceBehaviour-2.html#Kinstrife_Messaging_ServiceBehaviour_2_AllowConcurrency">ServiceBehaviour&lt;Boolean, CameraState&gt;.AllowConcurrency</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.ServiceBehaviour-2.html#Kinstrife_Messaging_ServiceBehaviour_2_lastRequest">ServiceBehaviour&lt;Boolean, CameraState&gt;.lastRequest</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.ServiceBehaviour-2.html#Kinstrife_Messaging_ServiceBehaviour_2_TryHandleRequest_Kinstrife_Messaging_Request__1__">ServiceBehaviour&lt;Boolean, CameraState&gt;.TryHandleRequest(Request&lt;CameraState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.ServiceBehaviour-2.html#Kinstrife_Messaging_ServiceBehaviour_2_HandleRequest_Kinstrife_Messaging_Request__1__">ServiceBehaviour&lt;Boolean, CameraState&gt;.HandleRequest(Request&lt;CameraState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.ServiceBehaviour-2.html#Kinstrife_Messaging_ServiceBehaviour_2_OnDestroy">ServiceBehaviour&lt;Boolean, CameraState&gt;.OnDestroy()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Kinstrife.Core.Camera.html">Kinstrife.Core.Camera</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Kinstrife_Core_Camera_CameraRig_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CameraRig : ServiceBehaviour&lt;bool, CameraState&gt;, IInjectable, IPostFixedUpdate, ICustomUpdateable, IDependent</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Kinstrife_Core_Camera_CameraRig_activeVirtualCamera" data-uid="Kinstrife.Core.Camera.CameraRig.activeVirtualCamera">activeVirtualCamera</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtualCameraHandle activeVirtualCamera</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Camera.VirtualCameraHandle.html">VirtualCameraHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_Core_Camera_CameraRig_brain" data-uid="Kinstrife.Core.Camera.CameraRig.brain">brain</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CinemachineBrain brain</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CinemachineBrain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_Core_Camera_CameraRig_Camera" data-uid="Kinstrife.Core.Camera.CameraRig.Camera">Camera</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camera Camera</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_Core_Camera_CameraRig_CullingDistances" data-uid="Kinstrife.Core.Camera.CameraRig.CullingDistances">CullingDistances</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;CameraRig.CullingDistance&gt; CullingDistances</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Kinstrife.Core.Camera.CameraRig.CullingDistance.html">CameraRig.CullingDistance</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_Core_Camera_CameraRig_followTarget" data-uid="Kinstrife.Core.Camera.CameraRig.followTarget">followTarget</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform followTarget</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_Core_Camera_CameraRig_inputManager" data-uid="Kinstrife.Core.Camera.CameraRig.inputManager">inputManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraInputManager inputManager</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.Camera.Systems.CameraInputManager.html">CameraInputManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_Core_Camera_CameraRig_Lens" data-uid="Kinstrife.Core.Camera.CameraRig.Lens">Lens</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraLensState Lens</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.Camera.CameraLensState.html">CameraLensState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_Core_Camera_CameraRig_lookTarget" data-uid="Kinstrife.Core.Camera.CameraRig.lookTarget">lookTarget</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform lookTarget</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_Core_Camera_CameraRig_targetManager" data-uid="Kinstrife.Core.Camera.CameraRig.targetManager">targetManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraTargetManager targetManager</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.Camera.CameraTargetManager.html">CameraTargetManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_Core_Camera_CameraRig_virtualCameraManager" data-uid="Kinstrife.Core.Camera.CameraRig.virtualCameraManager">virtualCameraManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtualCameraManager virtualCameraManager</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.Camera.VirtualCameraManager.html">VirtualCameraManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Kinstrife_Core_Camera_CameraRig_activeBlendTime_" data-uid="Kinstrife.Core.Camera.CameraRig.activeBlendTime*"></a>
+  <h4 id="Kinstrife_Core_Camera_CameraRig_activeBlendTime" data-uid="Kinstrife.Core.Camera.CameraRig.activeBlendTime">activeBlendTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float activeBlendTime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_Camera_CameraRig_ActiveState_" data-uid="Kinstrife.Core.Camera.CameraRig.ActiveState*"></a>
+  <h4 id="Kinstrife_Core_Camera_CameraRig_ActiveState" data-uid="Kinstrife.Core.Camera.CameraRig.ActiveState">ActiveState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraState ActiveState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Camera.CameraState.html">CameraState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_Camera_CameraRig_AllowConcurrency_" data-uid="Kinstrife.Core.Camera.CameraRig.AllowConcurrency*"></a>
+  <h4 id="Kinstrife_Core_Camera_CameraRig_AllowConcurrency" data-uid="Kinstrife.Core.Camera.CameraRig.AllowConcurrency">AllowConcurrency</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AllowConcurrency { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Kinstrife.Messaging.ServiceBehaviour&lt;System.Boolean, Kinstrife.Camera.CameraState&gt;.AllowConcurrency</span></div>
+  
+  
+  <a id="Kinstrife_Core_Camera_CameraRig_Config_" data-uid="Kinstrife.Core.Camera.CameraRig.Config*"></a>
+  <h4 id="Kinstrife_Core_Camera_CameraRig_Config" data-uid="Kinstrife.Core.Camera.CameraRig.Config">Config</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraConfig Config { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.Camera.CameraConfig.html">CameraConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_Camera_CameraRig_descriptor_" data-uid="Kinstrife.Core.Camera.CameraRig.descriptor*"></a>
+  <h4 id="Kinstrife_Core_Camera_CameraRig_descriptor" data-uid="Kinstrife.Core.Camera.CameraRig.descriptor">descriptor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override ServiceDescriptor descriptor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Messaging.ServiceDescriptor.html">ServiceDescriptor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Kinstrife.Messaging.ServiceBehaviour&lt;System.Boolean, Kinstrife.Camera.CameraState&gt;.descriptor</span></div>
+  
+  
+  <a id="Kinstrife_Core_Camera_CameraRig_HardCut_" data-uid="Kinstrife.Core.Camera.CameraRig.HardCut*"></a>
+  <h4 id="Kinstrife_Core_Camera_CameraRig_HardCut" data-uid="Kinstrife.Core.Camera.CameraRig.HardCut">HardCut</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HardCut { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_Camera_CameraRig_PreviousState_" data-uid="Kinstrife.Core.Camera.CameraRig.PreviousState*"></a>
+  <h4 id="Kinstrife_Core_Camera_CameraRig_PreviousState" data-uid="Kinstrife.Core.Camera.CameraRig.PreviousState">PreviousState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraState PreviousState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Camera.CameraState.html">CameraState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_Camera_CameraRig_StartingState_" data-uid="Kinstrife.Core.Camera.CameraRig.StartingState*"></a>
+  <h4 id="Kinstrife_Core_Camera_CameraRig_StartingState" data-uid="Kinstrife.Core.Camera.CameraRig.StartingState">StartingState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraState StartingState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Camera.CameraState.html">CameraState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Kinstrife_Core_Camera_CameraRig_GetReferences_" data-uid="Kinstrife.Core.Camera.CameraRig.GetReferences*"></a>
+  <h4 id="Kinstrife_Core_Camera_CameraRig_GetReferences" data-uid="Kinstrife.Core.Camera.CameraRig.GetReferences">GetReferences()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetReferences()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Core_Camera_CameraRig_HandleRequest_" data-uid="Kinstrife.Core.Camera.CameraRig.HandleRequest*"></a>
+  <h4 id="Kinstrife_Core_Camera_CameraRig_HandleRequest_Kinstrife_Messaging_Request_Kinstrife_Camera_CameraState__" data-uid="Kinstrife.Core.Camera.CameraRig.HandleRequest(Kinstrife.Messaging.Request{Kinstrife.Camera.CameraState})">HandleRequest(Request&lt;CameraState&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override async UniTask&lt;bool&gt; HandleRequest(Request&lt;CameraState&gt; payload)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Messaging.Request-1.html">Request</a>&lt;<a class="xref" href="Kinstrife.Camera.CameraState.html">CameraState</a>&gt;</td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Kinstrife.Messaging.ServiceBehaviour&lt;System.Boolean, Kinstrife.Camera.CameraState&gt;.HandleRequest(Kinstrife.Messaging.Request&lt;Kinstrife.Camera.CameraState&gt;)</span></div>
+  
+  
+  <a id="Kinstrife_Core_Camera_CameraRig_Initialize_" data-uid="Kinstrife.Core.Camera.CameraRig.Initialize*"></a>
+  <h4 id="Kinstrife_Core_Camera_CameraRig_Initialize" data-uid="Kinstrife.Core.Camera.CameraRig.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Core_Camera_CameraRig_Inject_" data-uid="Kinstrife.Core.Camera.CameraRig.Inject*"></a>
+  <h4 id="Kinstrife_Core_Camera_CameraRig_Inject_Kinstrife_Contracts_Application_IApplicationFlow_Kinstrife_Messaging_IServiceServer_System_Boolean_Kinstrife_Messaging_Request_Kinstrife_Camera_CameraState___Kinstrife_Core_Camera_CameraConfig_Kinstrife_Messaging_IPublisher_Kinstrife_Camera_CameraState__" data-uid="Kinstrife.Core.Camera.CameraRig.Inject(Kinstrife.Contracts.Application.IApplicationFlow,Kinstrife.Messaging.IServiceServer{System.Boolean,Kinstrife.Messaging.Request{Kinstrife.Camera.CameraState}},Kinstrife.Core.Camera.CameraConfig,Kinstrife.Messaging.IPublisher{Kinstrife.Camera.CameraState})">Inject(IApplicationFlow, IServiceServer&lt;Boolean, Request&lt;CameraState&gt;&gt;, CameraConfig, IPublisher&lt;CameraState&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Inject(IApplicationFlow flow, IServiceServer&lt;bool, Request&lt;CameraState&gt;&gt; server, CameraConfig config, IPublisher&lt;CameraState&gt; publisher)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Contracts.Application.IApplicationFlow.html">IApplicationFlow</a></td>
+        <td><span class="parametername">flow</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Messaging.IServiceServer-2.html">IServiceServer</a>&lt;<span class="xref">System.Boolean</span>, <a class="xref" href="Kinstrife.Messaging.Request-1.html">Request</a>&lt;<a class="xref" href="Kinstrife.Camera.CameraState.html">CameraState</a>&gt;&gt;</td>
+        <td><span class="parametername">server</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.Camera.CameraConfig.html">CameraConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Messaging.IPublisher-1.html">IPublisher</a>&lt;<a class="xref" href="Kinstrife.Camera.CameraState.html">CameraState</a>&gt;</td>
+        <td><span class="parametername">publisher</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="Kinstrife_Core_Camera_CameraRig_onNewState" data-uid="Kinstrife.Core.Camera.CameraRig.onNewState">onNewState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;CameraState&gt; onNewState</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Kinstrife.Camera.CameraState.html">CameraState</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Kinstrife_Core_Camera_CameraRig_Kinstrife_ICustomUpdateable_ShouldUpdate_" data-uid="Kinstrife.Core.Camera.CameraRig.Kinstrife#ICustomUpdateable#ShouldUpdate*"></a>
+  <h4 id="Kinstrife_Core_Camera_CameraRig_Kinstrife_ICustomUpdateable_ShouldUpdate" data-uid="Kinstrife.Core.Camera.CameraRig.Kinstrife#ICustomUpdateable#ShouldUpdate">ICustomUpdateable.ShouldUpdate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ICustomUpdateable.ShouldUpdate { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Core_Camera_CameraRig_Kinstrife_IPostFixedUpdate_OnUpdate_" data-uid="Kinstrife.Core.Camera.CameraRig.Kinstrife#IPostFixedUpdate#OnUpdate*"></a>
+  <h4 id="Kinstrife_Core_Camera_CameraRig_Kinstrife_IPostFixedUpdate_OnUpdate_System_Single_" data-uid="Kinstrife.Core.Camera.CameraRig.Kinstrife#IPostFixedUpdate#OnUpdate(System.Single)">IPostFixedUpdate.OnUpdate(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IPostFixedUpdate.OnUpdate(float deltaTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">deltaTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Kinstrife.Core.DependencyInjection.IInjectable.html">IInjectable</a>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.IPostFixedUpdate.html">IPostFixedUpdate</a>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.ICustomUpdateable.html">ICustomUpdateable</a>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.Core.DependencyInjection.IDependent.html">IDependent</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

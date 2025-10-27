@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ModuleNavigationInputHandler
+   | Kinstrife </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ModuleNavigationInputHandler
+   | Kinstrife ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Kinstrife.Input.ModuleNavigationInputHandler">
+  
+  
+  <h1 id="Kinstrife_Input_ModuleNavigationInputHandler" data-uid="Kinstrife.Input.ModuleNavigationInputHandler" class="text-break">Class ModuleNavigationInputHandler
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Kinstrife.Messaging.SubscriberBehaviour-1.html">SubscriberBehaviour</a>&lt;<a class="xref" href="Kinstrife.Input.InputFocusState.html">InputFocusState</a>&gt;</div>
+    <div class="level2"><a class="xref" href="Kinstrife.Messaging.MessageValidator-1.html">MessageValidator</a>&lt;<a class="xref" href="Kinstrife.Input.InputFocusState.html">InputFocusState</a>&gt;</div>
+    <div class="level3"><a class="xref" href="Kinstrife.Input.InputFocusSubscriber.html">InputFocusSubscriber</a></div>
+    <div class="level4"><span class="xref">ModuleNavigationInputHandler</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IInitializable.html">IInitializable</a></div>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IInjectable.html">IInjectable</a></div>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall-1.html">IInstall</a>&lt;<a class="xref" href="Kinstrife.Input.ModuleNavigationInputHandler.html">ModuleNavigationInputHandler</a>&gt;</div>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall.html">IInstall</a></div>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IDependent.html">IDependent</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Kinstrife.Input.InputFocusSubscriber.html#Kinstrife_Input_InputFocusSubscriber_channelDescriptor">InputFocusSubscriber.channelDescriptor</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Input.InputFocusSubscriber.html#Kinstrife_Input_InputFocusSubscriber_SetActive">InputFocusSubscriber.SetActive</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Input.InputFocusSubscriber.html#Kinstrife_Input_InputFocusSubscriber_Activate_Kinstrife_Input_InputFocusState_">InputFocusSubscriber.Activate(InputFocusState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Input.InputFocusSubscriber.html#Kinstrife_Input_InputFocusSubscriber_Deactivate_Kinstrife_Input_InputFocusState_">InputFocusSubscriber.Deactivate(InputFocusState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.MessageValidator-1.html#Kinstrife_Messaging_MessageValidator_1_SetGameObjectActive">MessageValidator&lt;InputFocusState&gt;.SetGameObjectActive</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.MessageValidator-1.html#Kinstrife_Messaging_MessageValidator_1_onValidMessage">MessageValidator&lt;InputFocusState&gt;.onValidMessage</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.MessageValidator-1.html#Kinstrife_Messaging_MessageValidator_1_onInvalidMessage">MessageValidator&lt;InputFocusState&gt;.onInvalidMessage</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.MessageValidator-1.html#Kinstrife_Messaging_MessageValidator_1_ChannelReaction__0_">MessageValidator&lt;InputFocusState&gt;.ChannelReaction(InputFocusState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.MessageValidator-1.html#Kinstrife_Messaging_MessageValidator_1_Validate__0_">MessageValidator&lt;InputFocusState&gt;.Validate(InputFocusState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.SubscriberBehaviour-1.html#Kinstrife_Messaging_SubscriberBehaviour_1_lastMessage">SubscriberBehaviour&lt;InputFocusState&gt;.lastMessage</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.SubscriberBehaviour-1.html#Kinstrife_Messaging_SubscriberBehaviour_1_LastMessage">SubscriberBehaviour&lt;InputFocusState&gt;.LastMessage</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.SubscriberBehaviour-1.html#Kinstrife_Messaging_SubscriberBehaviour_1_Initialized">SubscriberBehaviour&lt;InputFocusState&gt;.Initialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.SubscriberBehaviour-1.html#Kinstrife_Messaging_SubscriberBehaviour_1_Inject_Kinstrife_Messaging_ISubscriber__0__">SubscriberBehaviour&lt;InputFocusState&gt;.Inject(ISubscriber&lt;InputFocusState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.SubscriberBehaviour-1.html#Kinstrife_Messaging_SubscriberBehaviour_1_IsInvalid__0_">SubscriberBehaviour&lt;InputFocusState&gt;.IsInvalid(InputFocusState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.SubscriberBehaviour-1.html#Kinstrife_Messaging_SubscriberBehaviour_1_GetLastMessage">SubscriberBehaviour&lt;InputFocusState&gt;.GetLastMessage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.SubscriberBehaviour-1.html#Kinstrife_Messaging_SubscriberBehaviour_1_OnDestroy">SubscriberBehaviour&lt;InputFocusState&gt;.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.Messaging.SubscriberBehaviour-1.html#Kinstrife_Messaging_SubscriberBehaviour_1_onReceiveMessage">SubscriberBehaviour&lt;InputFocusState&gt;.onReceiveMessage</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Kinstrife.Input.html">Kinstrife.Input</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Kinstrife_Input_ModuleNavigationInputHandler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ModuleNavigationInputHandler : InputFocusSubscriber, IInitializable, IInjectable, IInstall&lt;ModuleNavigationInputHandler&gt;, IInstall, IDependent</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Kinstrife_Input_ModuleNavigationInputHandler_InputActions_" data-uid="Kinstrife.Input.ModuleNavigationInputHandler.InputActions*"></a>
+  <h4 id="Kinstrife_Input_ModuleNavigationInputHandler_InputActions" data-uid="Kinstrife.Input.ModuleNavigationInputHandler.InputActions">InputActions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KinstrifeInputActions InputActions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Input.KinstrifeInputActions.html">KinstrifeInputActions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Kinstrife_Input_ModuleNavigationInputHandler_ClearOverrides_" data-uid="Kinstrife.Input.ModuleNavigationInputHandler.ClearOverrides*"></a>
+  <h4 id="Kinstrife_Input_ModuleNavigationInputHandler_ClearOverrides" data-uid="Kinstrife.Input.ModuleNavigationInputHandler.ClearOverrides">ClearOverrides()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearOverrides()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Input_ModuleNavigationInputHandler_Initialize_" data-uid="Kinstrife.Input.ModuleNavigationInputHandler.Initialize*"></a>
+  <h4 id="Kinstrife_Input_ModuleNavigationInputHandler_Initialize" data-uid="Kinstrife.Input.ModuleNavigationInputHandler.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Initialize()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Kinstrife.Messaging.SubscriberBehaviour&lt;Kinstrife.Input.InputFocusState&gt;.Initialize()</span></div>
+  
+  
+  <a id="Kinstrife_Input_ModuleNavigationInputHandler_Inject_" data-uid="Kinstrife.Input.ModuleNavigationInputHandler.Inject*"></a>
+  <h4 id="Kinstrife_Input_ModuleNavigationInputHandler_Inject_Kinstrife_Input_KinstrifeInputActions_Kinstrife_Application_ApplicationFlow_Kinstrife_Messaging_ISubscriber_Kinstrife_Input_InputFocusState__" data-uid="Kinstrife.Input.ModuleNavigationInputHandler.Inject(Kinstrife.Input.KinstrifeInputActions,Kinstrife.Application.ApplicationFlow,Kinstrife.Messaging.ISubscriber{Kinstrife.Input.InputFocusState})">Inject(KinstrifeInputActions, ApplicationFlow, ISubscriber&lt;InputFocusState&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Inject(KinstrifeInputActions inputActions, ApplicationFlow applicationFlow, ISubscriber&lt;InputFocusState&gt; sub)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Input.KinstrifeInputActions.html">KinstrifeInputActions</a></td>
+        <td><span class="parametername">inputActions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Application.ApplicationFlow.html">ApplicationFlow</a></td>
+        <td><span class="parametername">applicationFlow</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Messaging.ISubscriber-1.html">ISubscriber</a>&lt;<a class="xref" href="Kinstrife.Input.InputFocusState.html">InputFocusState</a>&gt;</td>
+        <td><span class="parametername">sub</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Input_ModuleNavigationInputHandler_SetOverrides_" data-uid="Kinstrife.Input.ModuleNavigationInputHandler.SetOverrides*"></a>
+  <h4 id="Kinstrife_Input_ModuleNavigationInputHandler_SetOverrides_IList_Kinstrife_Input_Mapping_InputActionReference_Kinstrife_Application_ModuleDefinition___" data-uid="Kinstrife.Input.ModuleNavigationInputHandler.SetOverrides(IList{Kinstrife.Input.Mapping{InputActionReference,Kinstrife.Application.ModuleDefinition}})">SetOverrides(IList&lt;Mapping&lt;InputActionReference, ModuleDefinition&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOverrides(IList&lt;Mapping&lt;InputActionReference, ModuleDefinition&gt;&gt; entries)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="Kinstrife.Input.Mapping-2.html">Mapping</a>&lt;<span class="xref">InputActionReference</span>, <a class="xref" href="Kinstrife.Application.ModuleDefinition.html">ModuleDefinition</a>&gt;&gt;</td>
+        <td><span class="parametername">entries</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Kinstrife.Core.DependencyInjection.IInitializable.html">IInitializable</a>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.Core.DependencyInjection.IInjectable.html">IInjectable</a>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall-1.html">IInstall&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall.html">IInstall</a>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.Core.DependencyInjection.IDependent.html">IDependent</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

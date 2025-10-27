@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BindingsManager
+   | Kinstrife </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BindingsManager
+   | Kinstrife ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Graphene.BindingsManager">
+  
+  
+  <h1 id="Graphene_BindingsManager" data-uid="Graphene.BindingsManager" class="text-break">Class BindingsManager
+  </h1>
+  <div class="markdown level0 summary"><p>Manages the creation, updating, and disposal of bindings between UI elements and data contexts.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Graphene.GrapheneComponent.html">GrapheneComponent</a></div>
+    <div class="level2"><span class="xref">BindingsManager</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Graphene.IGrapheneInjectable.html">IGrapheneInjectable</a></div>
+    <div><a class="xref" href="Graphene.IGrapheneDependent.html">IGrapheneDependent</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_DebugName">GrapheneComponent.DebugName</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_graphene">GrapheneComponent.graphene</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_Graphene">GrapheneComponent.Graphene</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_BindingsManager">GrapheneComponent.BindingsManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_Inject_Graphene_Graphene_">GrapheneComponent.Inject(Graphene)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_Awake">GrapheneComponent.Awake()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Graphene.html">Graphene</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Graphene_BindingsManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BindingsManager : GrapheneComponent, IGrapheneInjectable, IGrapheneDependent</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Graphene_BindingsManager_OnUpdate_" data-uid="Graphene.BindingsManager.OnUpdate*"></a>
+  <h4 id="Graphene_BindingsManager_OnUpdate" data-uid="Graphene.BindingsManager.OnUpdate">OnUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnUpdate()</code></pre>
+  </div>
+  
+  
+  <a id="Graphene_BindingsManager_TryCreate_" data-uid="Graphene.BindingsManager.TryCreate*"></a>
+  <h4 id="Graphene_BindingsManager_TryCreate_TextElement_System_Object__Kinstrife_Core_ReflectionHelpers_ValueWithAttribute_Graphene_BindAttribute___Graphene_Plate_" data-uid="Graphene.BindingsManager.TryCreate(TextElement,System.Object@,Kinstrife.Core.ReflectionHelpers.ValueWithAttribute{Graphene.BindAttribute}@,Graphene.Plate)">TryCreate(TextElement, ref Object, in ValueWithAttribute&lt;BindAttribute&gt;, Plate)</h4>
+  <div class="markdown level1 summary"><p>Creates a continuous binding between a TextElement and a member variable on a context (scope) and panel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryCreate(TextElement el, ref object context, in ValueWithAttribute&lt;BindAttribute&gt; member, Plate panel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TextElement</span></td>
+        <td><span class="parametername">el</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.ReflectionHelpers.ValueWithAttribute-1.html">ValueWithAttribute</a>&lt;<a class="xref" href="Graphene.BindAttribute.html">BindAttribute</a>&gt;</td>
+        <td><span class="parametername">member</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Graphene.Plate.html">Plate</a></td>
+        <td><span class="parametername">panel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_BindingsManager_TryCreate_" data-uid="Graphene.BindingsManager.TryCreate*"></a>
+  <h4 id="Graphene_BindingsManager_TryCreate__1_BaseField___0__System_Object__Kinstrife_Core_ReflectionHelpers_ValueWithAttribute_Graphene_BindAttribute___Graphene_Plate_" data-uid="Graphene.BindingsManager.TryCreate``1(BaseField{``0},System.Object@,Kinstrife.Core.ReflectionHelpers.ValueWithAttribute{Graphene.BindAttribute}@,Graphene.Plate)">TryCreate&lt;TValueType&gt;(BaseField&lt;TValueType&gt;, in Object, in ValueWithAttribute&lt;BindAttribute&gt;, Plate)</h4>
+  <div class="markdown level1 summary"><p>Creates a continuous binding between a BaseField<code data-dev-comment-type="typeparamref" class="typeparamref">TValueType</code> and a member variable on a context (scope) and panel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryCreate&lt;TValueType&gt;(BaseField&lt;TValueType&gt; el, in object context, in ValueWithAttribute&lt;BindAttribute&gt; member, Plate panel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BaseField</span>&lt;TValueType&gt;</td>
+        <td><span class="parametername">el</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.ReflectionHelpers.ValueWithAttribute-1.html">ValueWithAttribute</a>&lt;<a class="xref" href="Graphene.BindAttribute.html">BindAttribute</a>&gt;</td>
+        <td><span class="parametername">member</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Graphene.Plate.html">Plate</a></td>
+        <td><span class="parametername">panel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TValueType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_BindingsManager_TryCreate_" data-uid="Graphene.BindingsManager.TryCreate*"></a>
+  <h4 id="Graphene_BindingsManager_TryCreate__1_BindableElement_System_Object__Kinstrife_Core_ReflectionHelpers_ValueWithAttribute_Graphene_BindAttribute___Graphene_Plate_" data-uid="Graphene.BindingsManager.TryCreate``1(BindableElement,System.Object@,Kinstrife.Core.ReflectionHelpers.ValueWithAttribute{Graphene.BindAttribute}@,Graphene.Plate)">TryCreate&lt;TValueType&gt;(BindableElement, in Object, in ValueWithAttribute&lt;BindAttribute&gt;, Plate)</h4>
+  <div class="markdown level1 summary"><p>Creates a continuous binding between a TextElement and a member variable on a context (scope) and panel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryCreate&lt;TValueType&gt;(BindableElement el, in object context, in ValueWithAttribute&lt;BindAttribute&gt; member, Plate panel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BindableElement</span></td>
+        <td><span class="parametername">el</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Core.ReflectionHelpers.ValueWithAttribute-1.html">ValueWithAttribute</a>&lt;<a class="xref" href="Graphene.BindAttribute.html">BindAttribute</a>&gt;</td>
+        <td><span class="parametername">member</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Graphene.Plate.html">Plate</a></td>
+        <td><span class="parametername">panel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TValueType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Graphene.IGrapheneInjectable.html">IGrapheneInjectable</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IGrapheneDependent.html">IGrapheneDependent</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

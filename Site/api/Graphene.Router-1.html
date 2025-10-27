@@ -1,0 +1,1187 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Router&lt;T&gt;
+   | Kinstrife </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Router&lt;T&gt;
+   | Kinstrife ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Graphene.Router`1">
+  
+  
+  <h1 id="Graphene_Router_1" data-uid="Graphene.Router`1" class="text-break">Class Router&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Graphene.GrapheneComponent.html">GrapheneComponent</a></div>
+    <div class="level2"><a class="xref" href="Graphene.Router.html">Router</a></div>
+    <div class="level3"><span class="xref">Router&lt;T&gt;</span></div>
+      <div class="level4"><a class="xref" href="Graphene.StringRouter.html">StringRouter</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Graphene.IGrapheneInjectable.html">IGrapheneInjectable</a></div>
+    <div><a class="xref" href="Graphene.IGrapheneInitializable.html">IGrapheneInitializable</a></div>
+    <div><a class="xref" href="Graphene.IGrapheneLateInitializable.html">IGrapheneLateInitializable</a></div>
+    <div><a class="xref" href="Graphene.IGrapheneDependent.html">IGrapheneDependent</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Graphene.Router.html#Graphene_Router_activeInterpreters">Router.activeInterpreters</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.Router.html#Graphene_Router_allInterpreters">Router.allInterpreters</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.Router.html#Graphene_Router_RegisterInterpreter_Graphene_IStateInterpreter_">Router.RegisterInterpreter(IStateInterpreter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.Router.html#Graphene_Router_UnregisterInterpreter_Graphene_IStateInterpreter_">Router.UnregisterInterpreter(IStateInterpreter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.Router.html#Graphene_Router_IsBlocked">Router.IsBlocked</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.Router.html#Graphene_Router_onRoutingBlocked">Router.onRoutingBlocked</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.Router.html#Graphene_Router_onRoutingUnblocked">Router.onRoutingUnblocked</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.Router.html#Graphene_Router_TryBlock_Object_">Router.TryBlock(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.Router.html#Graphene_Router_TryUnblock_Object_">Router.TryUnblock(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.Router.html#Graphene_Router_OnValidate">Router.OnValidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_DebugName">GrapheneComponent.DebugName</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_graphene">GrapheneComponent.graphene</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_Graphene">GrapheneComponent.Graphene</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_BindingsManager">GrapheneComponent.BindingsManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_Inject_Graphene_Graphene_">GrapheneComponent.Inject(Graphene)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_Awake">GrapheneComponent.Awake()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Graphene.html">Graphene</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Graphene_Router_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Router&lt;T&gt; : Router, IGrapheneInjectable, IGrapheneInitializable, IGrapheneLateInitializable, IGrapheneDependent</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Graphene_Router_1_startingState" data-uid="Graphene.Router`1.startingState">startingState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T startingState</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Graphene_Router_1_ActiveStates_" data-uid="Graphene.Router`1.ActiveStates*"></a>
+  <h4 id="Graphene_Router_1_ActiveStates" data-uid="Graphene.Router`1.ActiveStates">ActiveStates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;T&gt; ActiveStates { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_CurrentState_" data-uid="Graphene.Router`1.CurrentState*"></a>
+  <h4 id="Graphene_Router_1_CurrentState" data-uid="Graphene.Router`1.CurrentState">CurrentState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T CurrentState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_Initialized_" data-uid="Graphene.Router`1.Initialized*"></a>
+  <h4 id="Graphene_Router_1_Initialized" data-uid="Graphene.Router`1.Initialized">Initialized</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Initialized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_LateInitialized_" data-uid="Graphene.Router`1.LateInitialized*"></a>
+  <h4 id="Graphene_Router_1_LateInitialized" data-uid="Graphene.Router`1.LateInitialized">LateInitialized</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LateInitialized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_StartingState_" data-uid="Graphene.Router`1.StartingState*"></a>
+  <h4 id="Graphene_Router_1_StartingState" data-uid="Graphene.Router`1.StartingState">StartingState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T StartingState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_States_" data-uid="Graphene.Router`1.States*"></a>
+  <h4 id="Graphene_Router_1_States" data-uid="Graphene.Router`1.States">States</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SortedDictionary&lt;T, T&gt; States { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SortedDictionary</span>&lt;T, T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_TraversedStates_" data-uid="Graphene.Router`1.TraversedStates*"></a>
+  <h4 id="Graphene_Router_1_TraversedStates" data-uid="Graphene.Router`1.TraversedStates">TraversedStates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;T&gt; TraversedStates { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Graphene_Router_1_AddressExists_" data-uid="Graphene.Router`1.AddressExists*"></a>
+  <h4 id="Graphene_Router_1_AddressExists__0_" data-uid="Graphene.Router`1.AddressExists(`0)">AddressExists(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool AddressExists(T address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">address</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_BindRoute_" data-uid="Graphene.Router`1.BindRoute*"></a>
+  <h4 id="Graphene_Router_1_BindRoute_Graphene_Elements_Route_System_Object_" data-uid="Graphene.Router`1.BindRoute(Graphene.Elements.Route,System.Object)">BindRoute(Route, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BindRoute(Route el, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Graphene.Elements.Route.html">Route</a></td>
+        <td><span class="parametername">el</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Graphene.Router.html#Graphene_Router_BindRoute_Graphene_Elements_Route_System_Object_">Router.BindRoute(Route, Object)</a></div>
+  
+  
+  <a id="Graphene_Router_1_BindRouteToContext_" data-uid="Graphene.Router`1.BindRouteToContext*"></a>
+  <h4 id="Graphene_Router_1_BindRouteToContext_BindableElement_System_Object_" data-uid="Graphene.Router`1.BindRouteToContext(BindableElement,System.Object)">BindRouteToContext(BindableElement, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BindRouteToContext(BindableElement el, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BindableElement</span></td>
+        <td><span class="parametername">el</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Graphene.Router.html#Graphene_Router_BindRouteToContext_BindableElement_System_Object_">Router.BindRouteToContext(BindableElement, Object)</a></div>
+  
+  
+  <a id="Graphene_Router_1_GetActiveStateHierarchy_" data-uid="Graphene.Router`1.GetActiveStateHierarchy*"></a>
+  <h4 id="Graphene_Router_1_GetActiveStateHierarchy__0_" data-uid="Graphene.Router`1.GetActiveStateHierarchy(`0)">GetActiveStateHierarchy(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract T[] GetActiveStateHierarchy(T state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_GetStatesFromAddress_" data-uid="Graphene.Router`1.GetStatesFromAddress*"></a>
+  <h4 id="Graphene_Router_1_GetStatesFromAddress__0_" data-uid="Graphene.Router`1.GetStatesFromAddress(`0)">GetStatesFromAddress(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract T[] GetStatesFromAddress(T address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">address</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_Initialize_" data-uid="Graphene.Router`1.Initialize*"></a>
+  <h4 id="Graphene_Router_1_Initialize" data-uid="Graphene.Router`1.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Initialize()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Graphene.Router.html#Graphene_Router_Initialize">Router.Initialize()</a></div>
+  
+  
+  <a id="Graphene_Router_1_InjectIntoHierarchy_" data-uid="Graphene.Router`1.InjectIntoHierarchy*"></a>
+  <h4 id="Graphene_Router_1_InjectIntoHierarchy" data-uid="Graphene.Router`1.InjectIntoHierarchy">InjectIntoHierarchy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InjectIntoHierarchy()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Graphene.Router.html#Graphene_Router_InjectIntoHierarchy">Router.InjectIntoHierarchy()</a></div>
+  
+  
+  <a id="Graphene_Router_1_InterpreterDestroyed_" data-uid="Graphene.Router`1.InterpreterDestroyed*"></a>
+  <h4 id="Graphene_Router_1_InterpreterDestroyed_Graphene_IStateInterpreter__0__" data-uid="Graphene.Router`1.InterpreterDestroyed(Graphene.IStateInterpreter{`0})">InterpreterDestroyed(IStateInterpreter&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InterpreterDestroyed(IStateInterpreter&lt;T&gt; stateInterpreter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Graphene.IStateInterpreter-1.html">IStateInterpreter</a>&lt;T&gt;</td>
+        <td><span class="parametername">stateInterpreter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_IsSiblingState_" data-uid="Graphene.Router`1.IsSiblingState*"></a>
+  <h4 id="Graphene_Router_1_IsSiblingState__0__0_" data-uid="Graphene.Router`1.IsSiblingState(`0,`0)">IsSiblingState(T, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSiblingState(T state, T otherState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">otherState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_IsSiblingToCurrentState_" data-uid="Graphene.Router`1.IsSiblingToCurrentState*"></a>
+  <h4 id="Graphene_Router_1_IsSiblingToCurrentState__0_" data-uid="Graphene.Router`1.IsSiblingToCurrentState(`0)">IsSiblingToCurrentState(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSiblingToCurrentState(T state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_LateInitialize_" data-uid="Graphene.Router`1.LateInitialize*"></a>
+  <h4 id="Graphene_Router_1_LateInitialize" data-uid="Graphene.Router`1.LateInitialize">LateInitialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LateInitialize()</code></pre>
+  </div>
+  
+  
+  <a id="Graphene_Router_1_LeafStateFromAddress_" data-uid="Graphene.Router`1.LeafStateFromAddress*"></a>
+  <h4 id="Graphene_Router_1_LeafStateFromAddress__0_" data-uid="Graphene.Router`1.LeafStateFromAddress(`0)">LeafStateFromAddress(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract T LeafStateFromAddress(T address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">address</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_RegisterInterpreter_" data-uid="Graphene.Router`1.RegisterInterpreter*"></a>
+  <h4 id="Graphene_Router_1_RegisterInterpreter_Graphene_IStateInterpreter__0__" data-uid="Graphene.Router`1.RegisterInterpreter(Graphene.IStateInterpreter{`0})">RegisterInterpreter(IStateInterpreter&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterInterpreter(IStateInterpreter&lt;T&gt; stateInterpreter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Graphene.IStateInterpreter-1.html">IStateInterpreter</a>&lt;T&gt;</td>
+        <td><span class="parametername">stateInterpreter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_RegisterState_" data-uid="Graphene.Router`1.RegisterState*"></a>
+  <h4 id="Graphene_Router_1_RegisterState__0__0_" data-uid="Graphene.Router`1.RegisterState(`0,`0)">RegisterState(T, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterState(T state, T parentState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">parentState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_ResetState_" data-uid="Graphene.Router`1.ResetState*"></a>
+  <h4 id="Graphene_Router_1_ResetState" data-uid="Graphene.Router`1.ResetState">ResetState()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ResetState()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Graphene.Router.html#Graphene_Router_ResetState">Router.ResetState()</a></div>
+  
+  
+  <a id="Graphene_Router_1_StateIsActive_" data-uid="Graphene.Router`1.StateIsActive*"></a>
+  <h4 id="Graphene_Router_1_StateIsActive__0_" data-uid="Graphene.Router`1.StateIsActive(`0)">StateIsActive(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StateIsActive(T state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_TryChangeState_" data-uid="Graphene.Router`1.TryChangeState*"></a>
+  <h4 id="Graphene_Router_1_TryChangeState__0_" data-uid="Graphene.Router`1.TryChangeState(`0)">TryChangeState(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TryChangeState(T state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_TryGoToNextState_" data-uid="Graphene.Router`1.TryGoToNextState*"></a>
+  <h4 id="Graphene_Router_1_TryGoToNextState" data-uid="Graphene.Router`1.TryGoToNextState">TryGoToNextState()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TryGoToNextState()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Graphene.Router.html#Graphene_Router_TryGoToNextState">Router.TryGoToNextState()</a></div>
+  
+  
+  <a id="Graphene_Router_1_TryGoToPreviousState_" data-uid="Graphene.Router`1.TryGoToPreviousState*"></a>
+  <h4 id="Graphene_Router_1_TryGoToPreviousState" data-uid="Graphene.Router`1.TryGoToPreviousState">TryGoToPreviousState()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TryGoToPreviousState()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Graphene.Router.html#Graphene_Router_TryGoToPreviousState">Router.TryGoToPreviousState()</a></div>
+  
+  
+  <a id="Graphene_Router_1_TryGoUpOneState_" data-uid="Graphene.Router`1.TryGoUpOneState*"></a>
+  <h4 id="Graphene_Router_1_TryGoUpOneState" data-uid="Graphene.Router`1.TryGoUpOneState">TryGoUpOneState()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TryGoUpOneState()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Graphene.Router.html#Graphene_Router_TryGoUpOneState">Router.TryGoUpOneState()</a></div>
+  
+  
+  <a id="Graphene_Router_1_UnregisterInterpreter_" data-uid="Graphene.Router`1.UnregisterInterpreter*"></a>
+  <h4 id="Graphene_Router_1_UnregisterInterpreter_Graphene_IStateInterpreter__0__" data-uid="Graphene.Router`1.UnregisterInterpreter(Graphene.IStateInterpreter{`0})">UnregisterInterpreter(IStateInterpreter&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterInterpreter(IStateInterpreter&lt;T&gt; stateInterpreter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Graphene.IStateInterpreter-1.html">IStateInterpreter</a>&lt;T&gt;</td>
+        <td><span class="parametername">stateInterpreter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_UnregisterState_" data-uid="Graphene.Router`1.UnregisterState*"></a>
+  <h4 id="Graphene_Router_1_UnregisterState__0_" data-uid="Graphene.Router`1.UnregisterState(`0)">UnregisterState(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterState(T state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_UpdateTraversedStates_" data-uid="Graphene.Router`1.UpdateTraversedStates*"></a>
+  <h4 id="Graphene_Router_1_UpdateTraversedStates__0_" data-uid="Graphene.Router`1.UpdateTraversedStates(`0)">UpdateTraversedStates(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdateTraversedStates(T newState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">newState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_ValidateAddress_" data-uid="Graphene.Router`1.ValidateAddress*"></a>
+  <h4 id="Graphene_Router_1_ValidateAddress__0_" data-uid="Graphene.Router`1.ValidateAddress(`0)">ValidateAddress(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidateAddress(T state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_Router_1_ValidState_" data-uid="Graphene.Router`1.ValidState*"></a>
+  <h4 id="Graphene_Router_1_ValidState__0_" data-uid="Graphene.Router`1.ValidState(`0)">ValidState(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool ValidState(T state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="Graphene_Router_1_onStateChange" data-uid="Graphene.Router`1.onStateChange">onStateChange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;T&gt; onStateChange</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Graphene.IGrapheneInjectable.html">IGrapheneInjectable</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IGrapheneInitializable.html">IGrapheneInitializable</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IGrapheneLateInitializable.html">IGrapheneLateInitializable</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IGrapheneDependent.html">IGrapheneDependent</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

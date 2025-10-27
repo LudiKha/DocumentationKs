@@ -1,0 +1,919 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FormViewModel
+   | Kinstrife </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FormViewModel
+   | Kinstrife ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Graphene.ViewModel.FormViewModel">
+  
+  
+  <h1 id="Graphene_ViewModel_FormViewModel" data-uid="Graphene.ViewModel.FormViewModel" class="text-break">Class FormViewModel
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Graphene.GrapheneComponent.html">GrapheneComponent</a></div>
+    <div class="level2"><a class="xref" href="Graphene.ViewModel.ViewModelComponent.html">ViewModelComponent</a></div>
+    <div class="level3"><span class="xref">FormViewModel</span></div>
+      <div class="level4"><a class="xref" href="Graphene.ViewModel.FormViewModel-1.html">FormViewModel&lt;T&gt;</a></div>
+      <div class="level4"><a class="xref" href="Graphene.ViewModel.MultiFormViewModel.html">MultiFormViewModel</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Graphene.IGrapheneInjectable.html">IGrapheneInjectable</a></div>
+    <div><a class="xref" href="Graphene.ViewModel.IFormViewModel.html">IFormViewModel</a></div>
+    <div><a class="xref" href="Graphene.IModel.html">IModel</a></div>
+    <div><a class="xref" href="Graphene.IStateInterpreter-1.html">IStateInterpreter</a>&lt;<span class="xref">System.String</span>&gt;</div>
+    <div><a class="xref" href="Graphene.IStateInterpreter.html">IStateInterpreter</a></div>
+    <div><a class="xref" href="Graphene.IGrapheneInitializable.html">IGrapheneInitializable</a></div>
+    <div><a class="xref" href="Graphene.IGrapheneDependent.html">IGrapheneDependent</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_renderer">ViewModelComponent.renderer</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_Renderer">ViewModelComponent.Renderer</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_plate">ViewModelComponent.plate</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_Plate">ViewModelComponent.Plate</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_Title">ViewModelComponent.Title</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_HasContent">ViewModelComponent.HasContent</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_Render">ViewModelComponent.Render</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_onModelChange">ViewModelComponent.onModelChange</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_PlateIsActive">ViewModelComponent.PlateIsActive</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_Inject_Graphene_Graphene_">ViewModelComponent.Inject(Graphene)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_Initialize_VisualElement_Graphene_Plate_">ViewModelComponent.Initialize(VisualElement, Plate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_OnShow">ViewModelComponent.OnShow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_OnHide">ViewModelComponent.OnHide()</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_ModelChange">ViewModelComponent.ModelChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_Refresh_VisualElement_">ViewModelComponent.Refresh(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_DebugName">GrapheneComponent.DebugName</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_graphene">GrapheneComponent.graphene</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_Graphene">GrapheneComponent.Graphene</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.GrapheneComponent.html#Graphene_GrapheneComponent_BindingsManager">GrapheneComponent.BindingsManager</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Graphene.ViewModel.html">Graphene.ViewModel</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Graphene_ViewModel_FormViewModel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class FormViewModel : ViewModelComponent, IGrapheneInjectable, IFormViewModel, IModel, IStateInterpreter&lt;string&gt;, IStateInterpreter, IGrapheneInitializable, IGrapheneDependent</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Graphene_ViewModel_FormViewModel_cancelBinding" data-uid="Graphene.ViewModel.FormViewModel.cancelBinding">cancelBinding</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Bind(&quot;Cancel&quot;)]
+public BindableObject cancelBinding</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Graphene.ViewModel.BindableObject.html">BindableObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_FormViewModel_resetBinding" data-uid="Graphene.ViewModel.FormViewModel.resetBinding">resetBinding</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Bind(&quot;Reset&quot;)]
+public BindableObject resetBinding</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Graphene.ViewModel.BindableObject.html">BindableObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_FormViewModel_submitBinding" data-uid="Graphene.ViewModel.FormViewModel.submitBinding">submitBinding</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Bind(&quot;Submit&quot;)]
+public BindableObject submitBinding</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Graphene.ViewModel.BindableObject.html">BindableObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_BlockRoutingOnDirty_" data-uid="Graphene.ViewModel.FormViewModel.BlockRoutingOnDirty*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_BlockRoutingOnDirty" data-uid="Graphene.ViewModel.FormViewModel.BlockRoutingOnDirty">BlockRoutingOnDirty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BlockRoutingOnDirty { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_HideButtons_" data-uid="Graphene.ViewModel.FormViewModel.HideButtons*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_HideButtons" data-uid="Graphene.ViewModel.FormViewModel.HideButtons">HideButtons</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HideButtons { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_IsModelDirty_" data-uid="Graphene.ViewModel.FormViewModel.IsModelDirty*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_IsModelDirty" data-uid="Graphene.ViewModel.FormViewModel.IsModelDirty">IsModelDirty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsModelDirty { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_Awake_" data-uid="Graphene.ViewModel.FormViewModel.Awake*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_Awake" data-uid="Graphene.ViewModel.FormViewModel.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Graphene.ViewModel.ViewModelComponent.html#Graphene_ViewModel_ViewModelComponent_Awake">ViewModelComponent.Awake()</a></div>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_CanCancel_" data-uid="Graphene.ViewModel.FormViewModel.CanCancel*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_CanCancel" data-uid="Graphene.ViewModel.FormViewModel.CanCancel">CanCancel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CanCancel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_CanCatch_" data-uid="Graphene.ViewModel.FormViewModel.CanCatch*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_CanCatch_System_String_" data-uid="Graphene.ViewModel.FormViewModel.CanCatch(System.String)">CanCatch(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanCatch(string state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_Cancel_" data-uid="Graphene.ViewModel.FormViewModel.Cancel*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_Cancel" data-uid="Graphene.ViewModel.FormViewModel.Cancel">Cancel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Cancel()</code></pre>
+  </div>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_CanReset_" data-uid="Graphene.ViewModel.FormViewModel.CanReset*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_CanReset" data-uid="Graphene.ViewModel.FormViewModel.CanReset">CanReset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CanReset()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_CanSubmit_" data-uid="Graphene.ViewModel.FormViewModel.CanSubmit*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_CanSubmit" data-uid="Graphene.ViewModel.FormViewModel.CanSubmit">CanSubmit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CanSubmit()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_Initialize_" data-uid="Graphene.ViewModel.FormViewModel.Initialize*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_Initialize" data-uid="Graphene.ViewModel.FormViewModel.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Initialize()</code></pre>
+  </div>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_MarkDirty_" data-uid="Graphene.ViewModel.FormViewModel.MarkDirty*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_MarkDirty_System_Boolean_" data-uid="Graphene.ViewModel.FormViewModel.MarkDirty(System.Boolean)">MarkDirty(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void MarkDirty(bool dirty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">dirty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_PromptReset_" data-uid="Graphene.ViewModel.FormViewModel.PromptReset*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_PromptReset" data-uid="Graphene.ViewModel.FormViewModel.PromptReset">PromptReset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void PromptReset()</code></pre>
+  </div>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_Reset_" data-uid="Graphene.ViewModel.FormViewModel.Reset*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_Reset" data-uid="Graphene.ViewModel.FormViewModel.Reset">Reset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Reset()</code></pre>
+  </div>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_SetButtonsDirty_" data-uid="Graphene.ViewModel.FormViewModel.SetButtonsDirty*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_SetButtonsDirty_System_Boolean_" data-uid="Graphene.ViewModel.FormViewModel.SetButtonsDirty(System.Boolean)">SetButtonsDirty(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetButtonsDirty(bool dirty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">dirty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_Submit_" data-uid="Graphene.ViewModel.FormViewModel.Submit*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_Submit" data-uid="Graphene.ViewModel.FormViewModel.Submit">Submit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Submit()</code></pre>
+  </div>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_TryCancel_" data-uid="Graphene.ViewModel.FormViewModel.TryCancel*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_TryCancel" data-uid="Graphene.ViewModel.FormViewModel.TryCancel">TryCancel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryCancel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_TryCatch_" data-uid="Graphene.ViewModel.FormViewModel.TryCatch*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_TryCatch_System_String_" data-uid="Graphene.ViewModel.FormViewModel.TryCatch(System.String)">TryCatch(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryCatch(string state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_TryReset_" data-uid="Graphene.ViewModel.FormViewModel.TryReset*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_TryReset" data-uid="Graphene.ViewModel.FormViewModel.TryReset">TryReset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryReset()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_TrySubmit_" data-uid="Graphene.ViewModel.FormViewModel.TrySubmit*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_TrySubmit" data-uid="Graphene.ViewModel.FormViewModel.TrySubmit">TrySubmit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrySubmit()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_UpdateFormButtonsState_" data-uid="Graphene.ViewModel.FormViewModel.UpdateFormButtonsState*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_UpdateFormButtonsState_System_Boolean_System_Boolean_" data-uid="Graphene.ViewModel.FormViewModel.UpdateFormButtonsState(System.Boolean,System.Boolean)">UpdateFormButtonsState(Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateFormButtonsState(bool enabled, bool active)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">enabled</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">active</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="Graphene_ViewModel_FormViewModel_onCancel" data-uid="Graphene.ViewModel.FormViewModel.onCancel">onCancel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action onCancel</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_FormViewModel_onReset" data-uid="Graphene.ViewModel.FormViewModel.onReset">onReset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action onReset</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_FormViewModel_onSubmit" data-uid="Graphene.ViewModel.FormViewModel.onSubmit">onSubmit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action onSubmit</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_Graphene_IStateInterpreter_CanCatch_" data-uid="Graphene.ViewModel.FormViewModel.Graphene#IStateInterpreter#CanCatch*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_Graphene_IStateInterpreter_CanCatch_System_Object_" data-uid="Graphene.ViewModel.FormViewModel.Graphene#IStateInterpreter#CanCatch(System.Object)">IStateInterpreter.CanCatch(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IStateInterpreter.CanCatch(object state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_FormViewModel_Graphene_IStateInterpreter_TryCatch_" data-uid="Graphene.ViewModel.FormViewModel.Graphene#IStateInterpreter#TryCatch*"></a>
+  <h4 id="Graphene_ViewModel_FormViewModel_Graphene_IStateInterpreter_TryCatch_System_Object_" data-uid="Graphene.ViewModel.FormViewModel.Graphene#IStateInterpreter#TryCatch(System.Object)">IStateInterpreter.TryCatch(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IStateInterpreter.TryCatch(object state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Graphene.IGrapheneInjectable.html">IGrapheneInjectable</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.ViewModel.IFormViewModel.html">IFormViewModel</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IModel.html">IModel</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IStateInterpreter-1.html">IStateInterpreter&lt;TStateType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IStateInterpreter.html">IStateInterpreter</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IGrapheneInitializable.html">IGrapheneInitializable</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IGrapheneDependent.html">IGrapheneDependent</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

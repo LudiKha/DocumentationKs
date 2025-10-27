@@ -1,0 +1,602 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BindableObject
+   | Kinstrife </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BindableObject
+   | Kinstrife ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Graphene.ViewModel.BindableObject">
+  
+  
+  <h1 id="Graphene_ViewModel_BindableObject" data-uid="Graphene.ViewModel.BindableObject" class="text-break">Class BindableObject
+  </h1>
+  <div class="markdown level0 summary"><p>BindableObjects are the atomic data units that can be bound to VisualElements. They are used to author data in the inspector, or can be generated at runtime to decouple data from view logic.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Graphene.ViewModel.BindableObjectBase.html">BindableObjectBase</a></div>
+    <div class="level2"><span class="xref">BindableObject</span></div>
+      <div class="level3"><a class="xref" href="Graphene.ViewModel.ContextBindableObject.html">ContextBindableObject</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Graphene.IBindableToVisualElement.html">IBindableToVisualElement</a></div>
+    <div><a class="xref" href="Graphene.IHasTooltip.html">IHasTooltip</a></div>
+    <div><a class="xref" href="Graphene.IRoute.html">IRoute</a></div>
+    <div><a class="xref" href="Graphene.ICustomControlType.html">ICustomControlType</a></div>
+    <div><a class="xref" href="Graphene.ICustomAddClasses.html">ICustomAddClasses</a></div>
+    <div><a class="xref" href="Graphene.ICustomName.html">ICustomName</a></div>
+    <div><a class="xref" href="Graphene.IHasCustomVisualTreeAsset.html">IHasCustomVisualTreeAsset</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_isEnabled">BindableObjectBase.isEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_onSetEnabled">BindableObjectBase.onSetEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_isShown">BindableObjectBase.isShown</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_onShowHide">BindableObjectBase.onShowHide</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_isActive2">BindableObjectBase.isActive2</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_onSetActive">BindableObjectBase.onSetActive</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_boundToElement">BindableObjectBase.boundToElement</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_onBindToElement">BindableObjectBase.onBindToElement</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_SetBinding_VisualElement_">BindableObjectBase.SetBinding(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_Tooltip">BindableObjectBase.Tooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_SetEnabled_System_Boolean_">BindableObjectBase.SetEnabled(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_SetShow_System_Boolean_">BindableObjectBase.SetShow(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_SetActive_System_Boolean_">BindableObjectBase.SetActive(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_ResetCallbacks">BindableObjectBase.ResetCallbacks()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Graphene.ViewModel.html">Graphene.ViewModel</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Graphene_ViewModel_BindableObject_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+[Draw(ControlType.Button, 0)]
+public class BindableObject : BindableObjectBase, IBindableToVisualElement, IHasTooltip, IRoute, ICustomControlType, ICustomAddClasses, ICustomName, IHasCustomVisualTreeAsset</code></pre>
+  </div>
+  <h5 id="Graphene_ViewModel_BindableObject_examples"><strong>Examples</strong></h5>
+  <p>Common use cases include buttons, labels, toggles, sliders etc.</p>
+
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Graphene_ViewModel_BindableObject__ctor_" data-uid="Graphene.ViewModel.BindableObject.#ctor*"></a>
+  <h4 id="Graphene_ViewModel_BindableObject__ctor" data-uid="Graphene.ViewModel.BindableObject.#ctor">BindableObject()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BindableObject()</code></pre>
+  </div>
+  
+  
+  <a id="Graphene_ViewModel_BindableObject__ctor_" data-uid="Graphene.ViewModel.BindableObject.#ctor*"></a>
+  <h4 id="Graphene_ViewModel_BindableObject__ctor_UnityAction_" data-uid="Graphene.ViewModel.BindableObject.#ctor(UnityAction)">BindableObject(UnityAction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BindableObject(UnityAction callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityAction</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Graphene_ViewModel_BindableObject_addClass" data-uid="Graphene.ViewModel.BindableObject.addClass">addClass</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string addClass</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_BindableObject_customName" data-uid="Graphene.ViewModel.BindableObject.customName">customName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string customName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_BindableObject_OnClick" data-uid="Graphene.ViewModel.BindableObject.OnClick">OnClick</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Bind(&quot;&quot;)]
+public UnityEvent OnClick</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_BindableObject_route" data-uid="Graphene.ViewModel.BindableObject.route">route</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Route]
+public string route</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Graphene_ViewModel_BindableObject_ClassesToAdd_" data-uid="Graphene.ViewModel.BindableObject.ClassesToAdd*"></a>
+  <h4 id="Graphene_ViewModel_BindableObject_ClassesToAdd" data-uid="Graphene.ViewModel.BindableObject.ClassesToAdd">ClassesToAdd</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ClassesToAdd { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_BindableObject_ControlType_" data-uid="Graphene.ViewModel.BindableObject.ControlType*"></a>
+  <h4 id="Graphene_ViewModel_BindableObject_ControlType" data-uid="Graphene.ViewModel.BindableObject.ControlType">ControlType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControlType ControlType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Graphene.ControlType.html">ControlType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_BindableObject_CustomName_" data-uid="Graphene.ViewModel.BindableObject.CustomName*"></a>
+  <h4 id="Graphene_ViewModel_BindableObject_CustomName" data-uid="Graphene.ViewModel.BindableObject.CustomName">CustomName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CustomName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_BindableObject_Description_" data-uid="Graphene.ViewModel.BindableObject.Description*"></a>
+  <h4 id="Graphene_ViewModel_BindableObject_Description" data-uid="Graphene.ViewModel.BindableObject.Description">Description</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BindTooltip(&quot;Description&quot;)]
+public string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_BindableObject_Image_" data-uid="Graphene.ViewModel.BindableObject.Image*"></a>
+  <h4 id="Graphene_ViewModel_BindableObject_Image" data-uid="Graphene.ViewModel.BindableObject.Image">Image</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Bind(&quot;Image&quot;)]
+public Texture Image { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Texture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_BindableObject_Name_" data-uid="Graphene.ViewModel.BindableObject.Name*"></a>
+  <h4 id="Graphene_ViewModel_BindableObject_Name" data-uid="Graphene.ViewModel.BindableObject.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Bind(&quot;Label&quot;, BindingMode.OneWay)]
+public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_BindableObject_Value_" data-uid="Graphene.ViewModel.BindableObject.Value*"></a>
+  <h4 id="Graphene_ViewModel_BindableObject_Value" data-uid="Graphene.ViewModel.BindableObject.Value">Value</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Bind(&quot;Value&quot;)]
+public string Value { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_BindableObject_VisualTreeAsset_" data-uid="Graphene.ViewModel.BindableObject.VisualTreeAsset*"></a>
+  <h4 id="Graphene_ViewModel_BindableObject_VisualTreeAsset" data-uid="Graphene.ViewModel.BindableObject.VisualTreeAsset">VisualTreeAsset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VisualTreeAsset VisualTreeAsset { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VisualTreeAsset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Graphene_ViewModel_BindableObject_ToString_" data-uid="Graphene.ViewModel.BindableObject.ToString*"></a>
+  <h4 id="Graphene_ViewModel_BindableObject_ToString" data-uid="Graphene.ViewModel.BindableObject.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Graphene.IBindableToVisualElement.html">IBindableToVisualElement</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IHasTooltip.html">IHasTooltip</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IRoute.html">IRoute</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.ICustomControlType.html">ICustomControlType</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.ICustomAddClasses.html">ICustomAddClasses</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.ICustomName.html">ICustomName</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IHasCustomVisualTreeAsset.html">IHasCustomVisualTreeAsset</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

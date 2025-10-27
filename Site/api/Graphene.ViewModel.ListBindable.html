@@ -1,0 +1,860 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ListBindable
+   | Kinstrife </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ListBindable
+   | Kinstrife ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Graphene.ViewModel.ListBindable">
+  
+  
+  <h1 id="Graphene_ViewModel_ListBindable" data-uid="Graphene.ViewModel.ListBindable" class="text-break">Class ListBindable
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Graphene.ViewModel.BindableObjectBase.html">BindableObjectBase</a></div>
+    <div class="level2"><span class="xref">ListBindable</span></div>
+      <div class="level3"><a class="xref" href="Graphene.ViewModel.ListBindable-1.html">ListBindable&lt;TObjectType&gt;</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Graphene.IBindableToVisualElement.html">IBindableToVisualElement</a></div>
+    <div><a class="xref" href="Graphene.IHasTooltip.html">IHasTooltip</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_isEnabled">BindableObjectBase.isEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_onSetEnabled">BindableObjectBase.onSetEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_isShown">BindableObjectBase.isShown</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_onShowHide">BindableObjectBase.onShowHide</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_isActive2">BindableObjectBase.isActive2</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_onSetActive">BindableObjectBase.onSetActive</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_boundToElement">BindableObjectBase.boundToElement</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_onBindToElement">BindableObjectBase.onBindToElement</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_SetBinding_VisualElement_">BindableObjectBase.SetBinding(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_Tooltip">BindableObjectBase.Tooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_SetEnabled_System_Boolean_">BindableObjectBase.SetEnabled(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_SetShow_System_Boolean_">BindableObjectBase.SetShow(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_SetActive_System_Boolean_">BindableObjectBase.SetActive(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Graphene.ViewModel.BindableObjectBase.html#Graphene_ViewModel_BindableObjectBase_ResetCallbacks">BindableObjectBase.ResetCallbacks()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Graphene.ViewModel.html">Graphene.ViewModel</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Graphene_ViewModel_ListBindable_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ListBindable : BindableObjectBase, IBindableToVisualElement, IHasTooltip</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Graphene_ViewModel_ListBindable_alternatingRowBackground" data-uid="Graphene.ViewModel.ListBindable.alternatingRowBackground">alternatingRowBackground</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AlternatingRowBackground alternatingRowBackground</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AlternatingRowBackground</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_ListBindable_collectionVirtualizationMethod" data-uid="Graphene.ViewModel.ListBindable.collectionVirtualizationMethod">collectionVirtualizationMethod</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CollectionVirtualizationMethod collectionVirtualizationMethod</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CollectionVirtualizationMethod</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_ListBindable_elementsPickable" data-uid="Graphene.ViewModel.ListBindable.elementsPickable">elementsPickable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool elementsPickable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_ListBindable_headerTitle" data-uid="Graphene.ViewModel.ListBindable.headerTitle">headerTitle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string headerTitle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_ListBindable_height" data-uid="Graphene.ViewModel.ListBindable.height">height</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int height</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_ListBindable_listView" data-uid="Graphene.ViewModel.ListBindable.listView">listView</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListView listView</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ListView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_ListBindable_reorderable" data-uid="Graphene.ViewModel.ListBindable.reorderable">reorderable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool reorderable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_ListBindable_reorderMode" data-uid="Graphene.ViewModel.ListBindable.reorderMode">reorderMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListViewReorderMode reorderMode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ListViewReorderMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_ListBindable_selectionType" data-uid="Graphene.ViewModel.ListBindable.selectionType">selectionType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectionType selectionType</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SelectionType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_ListBindable_showAddRemoveFooter" data-uid="Graphene.ViewModel.ListBindable.showAddRemoveFooter">showAddRemoveFooter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool showAddRemoveFooter</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_ListBindable_showBorder" data-uid="Graphene.ViewModel.ListBindable.showBorder">showBorder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool showBorder</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_ListBindable_showCollectionSize" data-uid="Graphene.ViewModel.ListBindable.showCollectionSize">showCollectionSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool showCollectionSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Graphene_ViewModel_ListBindable_showFoldoutHeader" data-uid="Graphene.ViewModel.ListBindable.showFoldoutHeader">showFoldoutHeader</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool showFoldoutHeader</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Graphene_ViewModel_ListBindable_AlternatingRowBackground_" data-uid="Graphene.ViewModel.ListBindable.AlternatingRowBackground*"></a>
+  <h4 id="Graphene_ViewModel_ListBindable_AlternatingRowBackground" data-uid="Graphene.ViewModel.ListBindable.AlternatingRowBackground">AlternatingRowBackground</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AlternatingRowBackground AlternatingRowBackground { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AlternatingRowBackground</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_ListBindable_CollectionVirtualizationMethod_" data-uid="Graphene.ViewModel.ListBindable.CollectionVirtualizationMethod*"></a>
+  <h4 id="Graphene_ViewModel_ListBindable_CollectionVirtualizationMethod" data-uid="Graphene.ViewModel.ListBindable.CollectionVirtualizationMethod">CollectionVirtualizationMethod</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CollectionVirtualizationMethod CollectionVirtualizationMethod { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CollectionVirtualizationMethod</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_ListBindable_ElementsPickable_" data-uid="Graphene.ViewModel.ListBindable.ElementsPickable*"></a>
+  <h4 id="Graphene_ViewModel_ListBindable_ElementsPickable" data-uid="Graphene.ViewModel.ListBindable.ElementsPickable">ElementsPickable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ElementsPickable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_ListBindable_HeaderTitle_" data-uid="Graphene.ViewModel.ListBindable.HeaderTitle*"></a>
+  <h4 id="Graphene_ViewModel_ListBindable_HeaderTitle" data-uid="Graphene.ViewModel.ListBindable.HeaderTitle">HeaderTitle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HeaderTitle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_ListBindable_ItemControlType_" data-uid="Graphene.ViewModel.ListBindable.ItemControlType*"></a>
+  <h4 id="Graphene_ViewModel_ListBindable_ItemControlType" data-uid="Graphene.ViewModel.ListBindable.ItemControlType">ItemControlType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControlType ItemControlType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Graphene.ControlType.html">ControlType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_ListBindable_Reorderable_" data-uid="Graphene.ViewModel.ListBindable.Reorderable*"></a>
+  <h4 id="Graphene_ViewModel_ListBindable_Reorderable" data-uid="Graphene.ViewModel.ListBindable.Reorderable">Reorderable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Reorderable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_ListBindable_ReorderMode_" data-uid="Graphene.ViewModel.ListBindable.ReorderMode*"></a>
+  <h4 id="Graphene_ViewModel_ListBindable_ReorderMode" data-uid="Graphene.ViewModel.ListBindable.ReorderMode">ReorderMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListViewReorderMode ReorderMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ListViewReorderMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_ListBindable_SelectionType_" data-uid="Graphene.ViewModel.ListBindable.SelectionType*"></a>
+  <h4 id="Graphene_ViewModel_ListBindable_SelectionType" data-uid="Graphene.ViewModel.ListBindable.SelectionType">SelectionType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectionType SelectionType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SelectionType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_ListBindable_ShowAddRemoveFooter_" data-uid="Graphene.ViewModel.ListBindable.ShowAddRemoveFooter*"></a>
+  <h4 id="Graphene_ViewModel_ListBindable_ShowAddRemoveFooter" data-uid="Graphene.ViewModel.ListBindable.ShowAddRemoveFooter">ShowAddRemoveFooter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowAddRemoveFooter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_ListBindable_ShowBorder_" data-uid="Graphene.ViewModel.ListBindable.ShowBorder*"></a>
+  <h4 id="Graphene_ViewModel_ListBindable_ShowBorder" data-uid="Graphene.ViewModel.ListBindable.ShowBorder">ShowBorder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowBorder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_ListBindable_ShowCollectionSize_" data-uid="Graphene.ViewModel.ListBindable.ShowCollectionSize*"></a>
+  <h4 id="Graphene_ViewModel_ListBindable_ShowCollectionSize" data-uid="Graphene.ViewModel.ListBindable.ShowCollectionSize">ShowCollectionSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowCollectionSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_ListBindable_ShowFoldoutHeader_" data-uid="Graphene.ViewModel.ListBindable.ShowFoldoutHeader*"></a>
+  <h4 id="Graphene_ViewModel_ListBindable_ShowFoldoutHeader" data-uid="Graphene.ViewModel.ListBindable.ShowFoldoutHeader">ShowFoldoutHeader</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowFoldoutHeader { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Graphene_ViewModel_ListBindable_Apply_" data-uid="Graphene.ViewModel.ListBindable.Apply*"></a>
+  <h4 id="Graphene_ViewModel_ListBindable_Apply_ListView_" data-uid="Graphene.ViewModel.ListBindable.Apply(ListView)">Apply(ListView)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Apply(ListView el)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ListView</span></td>
+        <td><span class="parametername">el</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Graphene_ViewModel_ListBindable_Rebuild_" data-uid="Graphene.ViewModel.ListBindable.Rebuild*"></a>
+  <h4 id="Graphene_ViewModel_ListBindable_Rebuild" data-uid="Graphene.ViewModel.ListBindable.Rebuild">Rebuild()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rebuild()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Graphene.IBindableToVisualElement.html">IBindableToVisualElement</a>
+  </div>
+  <div>
+      <a class="xref" href="Graphene.IHasTooltip.html">IHasTooltip</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
