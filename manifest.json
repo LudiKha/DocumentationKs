@@ -40,6 +40,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "../../Packages/Core/ArtPipeline/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "ArtPipeline/index.html",
+          "hash": "3tEXss6w+qmG54Ja++weh+ksJzL/MrlYs0/hw5YGbsU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "log_codes": [
         "UidNotFound"
       ],
@@ -7378,6 +7390,42 @@
         ".html": {
           "relative_path": "Site/api/Kinstrife.Contracts.Application.html",
           "hash": "smGNNYfkTpJOQS9MdS7+ALXlT6vz7dbc1ubjipWKJ8M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.ArtPipeline.DeformableTriplanarPostprocessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.ArtPipeline.DeformableTriplanarPostprocessor.html",
+          "hash": "BwLK9huHp0hmIGg7cWWd+csmM2wjL3aOjiWtrdwnD/A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.ArtPipeline.TextureArrayDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.ArtPipeline.TextureArrayDefinition.html",
+          "hash": "tgXHFiGGO6+1l2CTD2JVsY7EwoqdnEhdAgsJlvARIwI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Site/api/Kinstrife.Core.ArtPipeline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Site/api/Kinstrife.Core.ArtPipeline.html",
+          "hash": "zVxfx3rUFozEfWKqHEK0djbZne3A9Jt6Z2zvEFlM5Yo="
         }
       },
       "is_incremental": false,
@@ -20028,7 +20076,7 @@
       "output": {
         ".html": {
           "relative_path": "Site/api/toc.html",
-          "hash": "Cx2jRsBstD61vb+X7yG1Aq44zGJ8kp33NoiyzufeL64="
+          "hash": "pN0+CXryN5u69Qd7qeMW08R56MAyZtjhm8dNE7XGKRQ="
         }
       },
       "is_incremental": false,
@@ -20136,7 +20184,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/packages/toc.html",
-          "hash": "mOZIuvuTVrlS2eavv0KIyQbIpudstEzAFNCKkiis9es="
+          "hash": "CjElEMnDgSLQ197guZX2gJcaJuJX6k3ZjcfMBT8jTT0="
         }
       },
       "is_incremental": false,
@@ -20193,13 +20241,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 50,
+          "total_file_count": 51,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 1622,
+          "total_file_count": 1625,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
