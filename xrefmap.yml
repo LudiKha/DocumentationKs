@@ -4,6 +4,9 @@ references:
 - uid: ActorCore
   name: Actor Core
   href: Actor/index.html
+- uid: ActorInterfaces
+  name: Actor Interfaces
+  href: ActorInterfaces/index.html
 - uid: Animation
   name: Animation
   href: Animation/index.html

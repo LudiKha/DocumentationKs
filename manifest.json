@@ -17,6 +17,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "../../Packages/Core/ActorInterfaces/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "ActorInterfaces/index.html",
+          "hash": "OCNEzbhm0lxoKYB1UvKMJ6VB77KgPoyrpW7ZnncOnWc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "../../Packages/Core/Animation/index.md",
       "output": {
         ".html": {
@@ -822,7 +834,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/packages/toc.html",
-          "hash": "XLnfji0MjrimT3glSFtAS2ywiUhcqX0juM6ucdNdqB8="
+          "hash": "3s3M545lKz5GiAxBxj4QxAjhF51NMCCRoPTjQtGpYBo="
         }
       },
       "is_incremental": false,
@@ -879,7 +891,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 63,
+          "total_file_count": 64,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
