@@ -1,0 +1,997 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VfxSystem
+   | Kinstrife </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VfxSystem
+   | Kinstrife ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Kinstrife.Vfx.VfxSystem">
+  
+  
+  <h1 id="Kinstrife_Vfx_VfxSystem" data-uid="Kinstrife.Vfx.VfxSystem" class="text-break">Class VfxSystem
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">VfxSystem</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall-1.html">IInstall</a>&lt;<a class="xref" href="Kinstrife.Vfx.VfxSystem.html">VfxSystem</a>&gt;</div>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall.html">IInstall</a></div>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IDependent.html">IDependent</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Kinstrife.Vfx.html">Kinstrife.Vfx</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Kinstrife_Vfx_VfxSystem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VfxSystem : MonoBehaviour, IInstall&lt;VfxSystem&gt;, IInstall, IDependent</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Kinstrife_Vfx_VfxSystem_spawnScene" data-uid="Kinstrife.Vfx.VfxSystem.spawnScene">spawnScene</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SceneManagement.Scene spawnScene</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.SceneManagement.Scene</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_HasAvailableInstances_" data-uid="Kinstrife.Vfx.VfxSystem.HasAvailableInstances*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_HasAvailableInstances" data-uid="Kinstrife.Vfx.VfxSystem.HasAvailableInstances">HasAvailableInstances</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasAvailableInstances { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_Instance_" data-uid="Kinstrife.Vfx.VfxSystem.Instance*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_Instance" data-uid="Kinstrife.Vfx.VfxSystem.Instance">Instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VfxSystem Instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Vfx.VfxSystem.html">VfxSystem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_NumUsedInstances_" data-uid="Kinstrife.Vfx.VfxSystem.NumUsedInstances*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_NumUsedInstances" data-uid="Kinstrife.Vfx.VfxSystem.NumUsedInstances">NumUsedInstances</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumUsedInstances { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_IsPlayingWithId_" data-uid="Kinstrife.Vfx.VfxSystem.IsPlayingWithId*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_IsPlayingWithId_VisualEffectAsset_System_Int32_" data-uid="Kinstrife.Vfx.VfxSystem.IsPlayingWithId(VisualEffectAsset,System.Int32)">IsPlayingWithId(VisualEffectAsset, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayingWithId(VisualEffectAsset effect, int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VisualEffectAsset</span></td>
+        <td><span class="parametername">effect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_LateUpdate_" data-uid="Kinstrife.Vfx.VfxSystem.LateUpdate*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_LateUpdate" data-uid="Kinstrife.Vfx.VfxSystem.LateUpdate">LateUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LateUpdate()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_OnDestroy_" data-uid="Kinstrife.Vfx.VfxSystem.OnDestroy*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_OnDestroy" data-uid="Kinstrife.Vfx.VfxSystem.OnDestroy">OnDestroy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnDestroy()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_OverrideOrientation_" data-uid="Kinstrife.Vfx.VfxSystem.OverrideOrientation*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_OverrideOrientation_System_Int32_Quaternion_" data-uid="Kinstrife.Vfx.VfxSystem.OverrideOrientation(System.Int32,Quaternion)">OverrideOrientation(Int32, Quaternion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OverrideOrientation(int instanceId, Quaternion orientation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">instanceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Quaternion</span></td>
+        <td><span class="parametername">orientation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_OverridePosition_" data-uid="Kinstrife.Vfx.VfxSystem.OverridePosition*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_OverridePosition_System_Int32_Vector3_" data-uid="Kinstrife.Vfx.VfxSystem.OverridePosition(System.Int32,Vector3)">OverridePosition(Int32, Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OverridePosition(int id, Vector3 position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_OverridePositionOrientation_" data-uid="Kinstrife.Vfx.VfxSystem.OverridePositionOrientation*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_OverridePositionOrientation_System_Int32_Vector3_Quaternion_" data-uid="Kinstrife.Vfx.VfxSystem.OverridePositionOrientation(System.Int32,Vector3,Quaternion)">OverridePositionOrientation(Int32, Vector3, Quaternion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OverridePositionOrientation(int instanceId, Vector3 position, Quaternion orientation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">instanceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Quaternion</span></td>
+        <td><span class="parametername">orientation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_Play_" data-uid="Kinstrife.Vfx.VfxSystem.Play*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_Play_VisualEffectAsset_Vector3_Quaternion_System_Nullable_System_Single__" data-uid="Kinstrife.Vfx.VfxSystem.Play(VisualEffectAsset,Vector3,Quaternion,System.Nullable{System.Single})">Play(VisualEffectAsset, Vector3, Quaternion, Nullable&lt;Single&gt;)</h4>
+  <div class="markdown level1 summary"><p>Play specified VFX at position + orientation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Play(VisualEffectAsset effect, Vector3 position, Quaternion orientation, float? automaticTimeout = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VisualEffectAsset</span></td>
+        <td><span class="parametername">effect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Quaternion</span></td>
+        <td><span class="parametername">orientation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">automaticTimeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_PlayAttached_" data-uid="Kinstrife.Vfx.VfxSystem.PlayAttached*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_PlayAttached_VisualEffectAsset_Transform_Vector3_Quaternion_System_Nullable_System_Single__" data-uid="Kinstrife.Vfx.VfxSystem.PlayAttached(VisualEffectAsset,Transform,Vector3,Quaternion,System.Nullable{System.Single})">PlayAttached(VisualEffectAsset, Transform, Vector3, Quaternion, Nullable&lt;Single&gt;)</h4>
+  <div class="markdown level1 summary"><p>Play VFX and attach it to specified transform. In case the transform/GameObject to attach to is destroyed, the VFX will stop</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PlayAttached(VisualEffectAsset effect, Transform targetTransform, Vector3 positionOffset, Quaternion rotationOffset, float? automaticTimeout = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VisualEffectAsset</span></td>
+        <td><span class="parametername">effect</span></td>
+        <td><p>Effect to play</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">targetTransform</span></td>
+        <td><p>Transform to follow, effect position will be updated to transform position in every frame</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">positionOffset</span></td>
+        <td><p>Position offset in local coordinates of <code data-dev-comment-type="paramref" class="paramref">targetTransform</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Quaternion</span></td>
+        <td><span class="parametername">rotationOffset</span></td>
+        <td><p>Rotation offset in local coordinates of <code data-dev-comment-type="paramref" class="paramref">targetTransform</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">automaticTimeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_SetColor_" data-uid="Kinstrife.Vfx.VfxSystem.SetColor*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_SetColor_System_Int32_ExposedProperty_Color_" data-uid="Kinstrife.Vfx.VfxSystem.SetColor(System.Int32,ExposedProperty,Color)">SetColor(Int32, ExposedProperty, Color)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(int instanceId, ExposedProperty property, Color value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">instanceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ExposedProperty</span></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_SetFloat_" data-uid="Kinstrife.Vfx.VfxSystem.SetFloat*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_SetFloat_System_Int32_ExposedProperty_System_Single_" data-uid="Kinstrife.Vfx.VfxSystem.SetFloat(System.Int32,ExposedProperty,System.Single)">SetFloat(Int32, ExposedProperty, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFloat(int instanceId, ExposedProperty property, float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">instanceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ExposedProperty</span></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_SetGradient_" data-uid="Kinstrife.Vfx.VfxSystem.SetGradient*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_SetGradient_System_Int32_ExposedProperty_Gradient_" data-uid="Kinstrife.Vfx.VfxSystem.SetGradient(System.Int32,ExposedProperty,Gradient)">SetGradient(Int32, ExposedProperty, Gradient)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGradient(int instanceId, ExposedProperty property, Gradient gradient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">instanceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ExposedProperty</span></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Gradient</span></td>
+        <td><span class="parametername">gradient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_SetInt_" data-uid="Kinstrife.Vfx.VfxSystem.SetInt*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_SetInt_System_Int32_ExposedProperty_System_Int32_" data-uid="Kinstrife.Vfx.VfxSystem.SetInt(System.Int32,ExposedProperty,System.Int32)">SetInt(Int32, ExposedProperty, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInt(int instanceId, ExposedProperty property, int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">instanceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ExposedProperty</span></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_SetTexture_" data-uid="Kinstrife.Vfx.VfxSystem.SetTexture*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_SetTexture_System_Int32_ExposedProperty_Texture2D_" data-uid="Kinstrife.Vfx.VfxSystem.SetTexture(System.Int32,ExposedProperty,Texture2D)">SetTexture(Int32, ExposedProperty, Texture2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTexture(int instanceId, ExposedProperty property, Texture2D texture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">instanceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ExposedProperty</span></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Texture2D</span></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_SetVector2_" data-uid="Kinstrife.Vfx.VfxSystem.SetVector2*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_SetVector2_System_Int32_ExposedProperty_Vector2_" data-uid="Kinstrife.Vfx.VfxSystem.SetVector2(System.Int32,ExposedProperty,Vector2)">SetVector2(Int32, ExposedProperty, Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVector2(int instanceId, ExposedProperty property, Vector2 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">instanceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ExposedProperty</span></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_SetVector3_" data-uid="Kinstrife.Vfx.VfxSystem.SetVector3*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_SetVector3_System_Int32_ExposedProperty_Vector3_" data-uid="Kinstrife.Vfx.VfxSystem.SetVector3(System.Int32,ExposedProperty,Vector3)">SetVector3(Int32, ExposedProperty, Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVector3(int instanceId, ExposedProperty property, Vector3 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">instanceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ExposedProperty</span></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_SetVector4_" data-uid="Kinstrife.Vfx.VfxSystem.SetVector4*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_SetVector4_System_Int32_ExposedProperty_Vector4_" data-uid="Kinstrife.Vfx.VfxSystem.SetVector4(System.Int32,ExposedProperty,Vector4)">SetVector4(Int32, ExposedProperty, Vector4)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVector4(int instanceId, ExposedProperty property, Vector4 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">instanceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ExposedProperty</span></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector4</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_StopEffect_" data-uid="Kinstrife.Vfx.VfxSystem.StopEffect*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_StopEffect_System_Int32_" data-uid="Kinstrife.Vfx.VfxSystem.StopEffect(System.Int32)">StopEffect(Int32)</h4>
+  <div class="markdown level1 summary"><p>Stop specified effect with specified ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopEffect(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_StopEffect_" data-uid="Kinstrife.Vfx.VfxSystem.StopEffect*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_StopEffect_System_Int32_VisualEffectAsset_" data-uid="Kinstrife.Vfx.VfxSystem.StopEffect(System.Int32,VisualEffectAsset)">StopEffect(Int32, VisualEffectAsset)</h4>
+  <div class="markdown level1 summary"><p>Stop specified effect with specified ID. If the ID plays another effect, this will be ignored</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopEffect(int id, VisualEffectAsset effect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">VisualEffectAsset</span></td>
+        <td><span class="parametername">effect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_StopEffectWithTimeout_" data-uid="Kinstrife.Vfx.VfxSystem.StopEffectWithTimeout*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_StopEffectWithTimeout_System_Int32_System_Single_System_Boolean_" data-uid="Kinstrife.Vfx.VfxSystem.StopEffectWithTimeout(System.Int32,System.Single,System.Boolean)">StopEffectWithTimeout(Int32, Single, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopEffectWithTimeout(int id, float time, bool overrideExisting = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overrideExisting</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_TriggerEvent_" data-uid="Kinstrife.Vfx.VfxSystem.TriggerEvent*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_TriggerEvent_System_Int32_System_Int32_" data-uid="Kinstrife.Vfx.VfxSystem.TriggerEvent(System.Int32,System.Int32)">TriggerEvent(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerEvent(int instanceId, int eventId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">instanceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">eventId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Vfx_VfxSystem_TriggerEvent_" data-uid="Kinstrife.Vfx.VfxSystem.TriggerEvent*"></a>
+  <h4 id="Kinstrife_Vfx_VfxSystem_TriggerEvent_System_Int32_System_String_" data-uid="Kinstrife.Vfx.VfxSystem.TriggerEvent(System.Int32,System.String)">TriggerEvent(Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerEvent(int instanceId, string eventName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">instanceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall-1.html">IInstall&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall.html">IInstall</a>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.Core.DependencyInjection.IDependent.html">IDependent</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

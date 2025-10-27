@@ -1,0 +1,1277 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Skeleton
+   | Kinstrife </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Skeleton
+   | Kinstrife ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Kinstrife.Rigging.Skeleton">
+  
+  
+  <h1 id="Kinstrife_Rigging_Skeleton" data-uid="Kinstrife.Rigging.Skeleton" class="text-break">Class Skeleton
+  </h1>
+  <div class="markdown level0 summary"><p>Runtime component for mapping bones transforms</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour.html">ContainerBehaviour</a></div>
+    <div class="level2"><a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-3.html">ContainerBehaviour</a>&lt;<a class="xref" href="Kinstrife.Rigging.SkeletonDefinitionAsset.html">SkeletonDefinitionAsset</a>, <span class="xref">System.String</span>, <a class="xref" href="Kinstrife.Rigging.BoneId.html">BoneId</a>&gt;</div>
+    <div class="level3"><a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html">ContainerBehaviour</a>&lt;<a class="xref" href="Kinstrife.Rigging.SkeletonDefinitionAsset.html">SkeletonDefinitionAsset</a>, <span class="xref">System.String</span>, <a class="xref" href="Kinstrife.Rigging.BoneId.html">BoneId</a>, <a class="xref" href="Kinstrife.Rigging.BoneTransform.html">BoneTransform</a>, <span class="xref">Transform</span>&gt;</div>
+    <div class="level4"><a class="xref" href="Kinstrife.DataContainers.TransformsContainer-4.html">TransformsContainer</a>&lt;<a class="xref" href="Kinstrife.Rigging.SkeletonDefinitionAsset.html">SkeletonDefinitionAsset</a>, <span class="xref">System.String</span>, <a class="xref" href="Kinstrife.Rigging.BoneId.html">BoneId</a>, <a class="xref" href="Kinstrife.Rigging.BoneTransform.html">BoneTransform</a>&gt;</div>
+    <div class="level5"><span class="xref">Skeleton</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IInitializable.html">IInitializable</a></div>
+    <div><a class="xref" href="Kinstrife.DataContainers.ITransformsProviderString.html">ITransformsProviderString</a></div>
+    <div><a class="xref" href="Kinstrife.DataContainers.ITransformsProvider-1.html">ITransformsProvider</a>&lt;<span class="xref">System.String</span>&gt;</div>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall-1.html">IInstall</a>&lt;<a class="xref" href="Kinstrife.Rigging.Skeleton.html">Skeleton</a>&gt;</div>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall-1.html">IInstall</a>&lt;<a class="xref" href="Kinstrife.DataContainers.ITransformsProviderString.html">ITransformsProviderString</a>&gt;</div>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall.html">IInstall</a></div>
+    <div><a class="xref" href="Kinstrife.Core.DependencyInjection.IDependent.html">IDependent</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.TransformsContainer-4.html#Kinstrife_DataContainers_TransformsContainer_4_rootOverride">TransformsContainer&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform&gt;.rootOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.TransformsContainer-4.html#Kinstrife_DataContainers_TransformsContainer_4_GetSourceObjects">TransformsContainer&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform&gt;.GetSourceObjects()</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.TransformsContainer-4.html#Kinstrife_DataContainers_TransformsContainer_4_Root">TransformsContainer&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform&gt;.Root</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.TransformsContainer-4.html#Kinstrife_DataContainers_TransformsContainer_4_TryGetValue__1__3__System_Boolean_">TransformsContainer&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform&gt;.TryGetValue(String, BoneTransform, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.TransformsContainer-4.html#Kinstrife_DataContainers_TransformsContainer_4_TryGetTransform__1_Transform__">TransformsContainer&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform&gt;.TryGetTransform(String, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_mapping">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.mapping</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_values">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.values</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_GetSourceObjects">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.GetSourceObjects()</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_CreateInstanceFromSourceObject__4_">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.CreateInstanceFromSourceObject(Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_TryGetExistingInstanceFromSourceObject__4__3__">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.TryGetExistingInstanceFromSourceObject(Transform, BoneTransform)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_OnClearInstance__3_">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.OnClearInstance(BoneTransform)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_GetKey__3_">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.GetKey(BoneTransform)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_GetKey__4_">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.GetKey(Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_GetAssociatedObject__3_">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.GetAssociatedObject(BoneTransform)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_DoPostProcess">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.DoPostProcess()</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_CacheReferences">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.CacheReferences()</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_HasValues">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.HasValues</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_Process">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.Process()</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_Clear">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_TryAddValue__3_System_Boolean_">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.TryAddValue(BoneTransform, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_TryGetValue__1__3__System_Boolean_System_Boolean_">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.TryGetValue(String, BoneTransform, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_TryRemove__3_System_Boolean_">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.TryRemove(BoneTransform, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-5.html#Kinstrife_DataContainers_ContainerBehaviour_5_TryRemove__1_System_Boolean_">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId, BoneTransform, Transform&gt;.TryRemove(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-3.html#Kinstrife_DataContainers_ContainerBehaviour_3_Asset">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId&gt;.Asset</a>
+    </div>
+    <div>
+      <a class="xref" href="Kinstrife.DataContainers.ContainerBehaviour-3.html#Kinstrife_DataContainers_ContainerBehaviour_3_BakeToAsset">ContainerBehaviour&lt;SkeletonDefinitionAsset, String, BoneId&gt;.BakeToAsset()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Kinstrife.Rigging.html">Kinstrife.Rigging</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Kinstrife_Rigging_Skeleton_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Skeleton : TransformsContainer&lt;SkeletonDefinitionAsset, string, BoneId, BoneTransform&gt;, IInitializable, ITransformsProviderString, ITransformsProvider&lt;string&gt;, IInstall&lt;Skeleton&gt;, IInstall&lt;ITransformsProviderString&gt;, IInstall, IDependent</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Kinstrife_Rigging_Skeleton_boneTransforms" data-uid="Kinstrife.Rigging.Skeleton.boneTransforms">boneTransforms</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoneTransformReferences boneTransforms</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.BoneTransformReferences.html">BoneTransformReferences</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_Rigging_Skeleton_computedData" data-uid="Kinstrife.Rigging.Skeleton.computedData">computedData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RuntimeData computedData</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.RuntimeData.html">RuntimeData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_Rigging_Skeleton_humanPoseHandler" data-uid="Kinstrife.Rigging.Skeleton.humanPoseHandler">humanPoseHandler</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HumanPoseHandler humanPoseHandler</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HumanPoseHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Kinstrife_Rigging_Skeleton_retargetingAsset" data-uid="Kinstrife.Rigging.Skeleton.retargetingAsset">retargetingAsset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RetargetingAsset retargetingAsset</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.RetargetingAsset.html">RetargetingAsset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_Animator_" data-uid="Kinstrife.Rigging.Skeleton.Animator*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_Animator" data-uid="Kinstrife.Rigging.Skeleton.Animator">Animator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Animator Animator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Animator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_bones_" data-uid="Kinstrife.Rigging.Skeleton.bones*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_bones" data-uid="Kinstrife.Rigging.Skeleton.bones">bones</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;BoneTransform&gt; bones { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Kinstrife.Rigging.BoneTransform.html">BoneTransform</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_NumBones_" data-uid="Kinstrife.Rigging.Skeleton.NumBones*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_NumBones" data-uid="Kinstrife.Rigging.Skeleton.NumBones">NumBones</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumBones { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_ApplyFromAsset_" data-uid="Kinstrife.Rigging.Skeleton.ApplyFromAsset*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_ApplyFromAsset_Kinstrife_Rigging_SkeletonDefinitionAsset_System_Boolean_" data-uid="Kinstrife.Rigging.Skeleton.ApplyFromAsset(Kinstrife.Rigging.SkeletonDefinitionAsset,System.Boolean)">ApplyFromAsset(SkeletonDefinitionAsset, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyFromAsset(SkeletonDefinitionAsset asset = null, bool applyToTransforms = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.SkeletonDefinitionAsset.html">SkeletonDefinitionAsset</a></td>
+        <td><span class="parametername">asset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">applyToTransforms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_ApplyPoseFromAsset_" data-uid="Kinstrife.Rigging.Skeleton.ApplyPoseFromAsset*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_ApplyPoseFromAsset_Kinstrife_Rigging_SkeletonDefinitionAsset_" data-uid="Kinstrife.Rigging.Skeleton.ApplyPoseFromAsset(Kinstrife.Rigging.SkeletonDefinitionAsset)">ApplyPoseFromAsset(SkeletonDefinitionAsset)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyPoseFromAsset(SkeletonDefinitionAsset asset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.SkeletonDefinitionAsset.html">SkeletonDefinitionAsset</a></td>
+        <td><span class="parametername">asset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_BakeToAsset_" data-uid="Kinstrife.Rigging.Skeleton.BakeToAsset*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_BakeToAsset" data-uid="Kinstrife.Rigging.Skeleton.BakeToAsset">BakeToAsset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void BakeToAsset()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Kinstrife.DataContainers.ContainerBehaviour&lt;Kinstrife.Rigging.SkeletonDefinitionAsset, System.String, Kinstrife.Rigging.BoneId&gt;.BakeToAsset()</span></div>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_CacheReferences_" data-uid="Kinstrife.Rigging.Skeleton.CacheReferences*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_CacheReferences" data-uid="Kinstrife.Rigging.Skeleton.CacheReferences">CacheReferences()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void CacheReferences()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Kinstrife.DataContainers.ContainerBehaviour&lt;Kinstrife.Rigging.SkeletonDefinitionAsset, System.String, Kinstrife.Rigging.BoneId, Kinstrife.Rigging.BoneTransform, Transform&gt;.CacheReferences()</span></div>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_CleanProcess_" data-uid="Kinstrife.Rigging.Skeleton.CleanProcess*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_CleanProcess" data-uid="Kinstrife.Rigging.Skeleton.CleanProcess">CleanProcess()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CleanProcess()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_CopyPoseFromSkeleton_" data-uid="Kinstrife.Rigging.Skeleton.CopyPoseFromSkeleton*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_CopyPoseFromSkeleton_Kinstrife_Rigging_Skeleton_Kinstrife_Rigging_RetargetingAsset_" data-uid="Kinstrife.Rigging.Skeleton.CopyPoseFromSkeleton(Kinstrife.Rigging.Skeleton,Kinstrife.Rigging.RetargetingAsset)">CopyPoseFromSkeleton(Skeleton, RetargetingAsset)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyPoseFromSkeleton(Skeleton other, RetargetingAsset retargetingAsset = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.Skeleton.html">Skeleton</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.RetargetingAsset.html">RetargetingAsset</a></td>
+        <td><span class="parametername">retargetingAsset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_CreateInstanceFromSourceObject_" data-uid="Kinstrife.Rigging.Skeleton.CreateInstanceFromSourceObject*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_CreateInstanceFromSourceObject_Transform_" data-uid="Kinstrife.Rigging.Skeleton.CreateInstanceFromSourceObject(Transform)">CreateInstanceFromSourceObject(Transform)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override BoneTransform CreateInstanceFromSourceObject(Transform sourceObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">sourceObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.BoneTransform.html">BoneTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Kinstrife.DataContainers.ContainerBehaviour&lt;Kinstrife.Rigging.SkeletonDefinitionAsset, System.String, Kinstrife.Rigging.BoneId, Kinstrife.Rigging.BoneTransform, Transform&gt;.CreateInstanceFromSourceObject(Transform)</span></div>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_DoPostProcess_" data-uid="Kinstrife.Rigging.Skeleton.DoPostProcess*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_DoPostProcess" data-uid="Kinstrife.Rigging.Skeleton.DoPostProcess">DoPostProcess()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DoPostProcess()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Kinstrife.DataContainers.ContainerBehaviour&lt;Kinstrife.Rigging.SkeletonDefinitionAsset, System.String, Kinstrife.Rigging.BoneId, Kinstrife.Rigging.BoneTransform, Transform&gt;.DoPostProcess()</span></div>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_GetAssociatedObject_" data-uid="Kinstrife.Rigging.Skeleton.GetAssociatedObject*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_GetAssociatedObject_Kinstrife_Rigging_BoneTransform_" data-uid="Kinstrife.Rigging.Skeleton.GetAssociatedObject(Kinstrife.Rigging.BoneTransform)">GetAssociatedObject(BoneTransform)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Object GetAssociatedObject(BoneTransform instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.BoneTransform.html">BoneTransform</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Kinstrife.DataContainers.ContainerBehaviour&lt;Kinstrife.Rigging.SkeletonDefinitionAsset, System.String, Kinstrife.Rigging.BoneId, Kinstrife.Rigging.BoneTransform, Transform&gt;.GetAssociatedObject(Kinstrife.Rigging.BoneTransform)</span></div>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_GetClosestHumanBodyBone_" data-uid="Kinstrife.Rigging.Skeleton.GetClosestHumanBodyBone*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_GetClosestHumanBodyBone_Transform_HumanBodyBones__" data-uid="Kinstrife.Rigging.Skeleton.GetClosestHumanBodyBone(Transform,HumanBodyBones@)">GetClosestHumanBodyBone(Transform, out HumanBodyBones)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform GetClosestHumanBodyBone(Transform bone, out HumanBodyBones boneId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">bone</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">HumanBodyBones</span></td>
+        <td><span class="parametername">boneId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_GetKey_" data-uid="Kinstrife.Rigging.Skeleton.GetKey*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_GetKey_Kinstrife_Rigging_BoneTransform_" data-uid="Kinstrife.Rigging.Skeleton.GetKey(Kinstrife.Rigging.BoneTransform)">GetKey(BoneTransform)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string GetKey(BoneTransform instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.BoneTransform.html">BoneTransform</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Kinstrife.DataContainers.ContainerBehaviour&lt;Kinstrife.Rigging.SkeletonDefinitionAsset, System.String, Kinstrife.Rigging.BoneId, Kinstrife.Rigging.BoneTransform, Transform&gt;.GetKey(Kinstrife.Rigging.BoneTransform)</span></div>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_GetKey_" data-uid="Kinstrife.Rigging.Skeleton.GetKey*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_GetKey_Transform_" data-uid="Kinstrife.Rigging.Skeleton.GetKey(Transform)">GetKey(Transform)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string GetKey(Transform sourceObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">sourceObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Kinstrife.DataContainers.ContainerBehaviour&lt;Kinstrife.Rigging.SkeletonDefinitionAsset, System.String, Kinstrife.Rigging.BoneId, Kinstrife.Rigging.BoneTransform, Transform&gt;.GetKey(Transform)</span></div>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_GetTransform_" data-uid="Kinstrife.Rigging.Skeleton.GetTransform*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_GetTransform_Kinstrife_Rigging_BoneId_System_Boolean_System_Boolean_" data-uid="Kinstrife.Rigging.Skeleton.GetTransform(Kinstrife.Rigging.BoneId,System.Boolean,System.Boolean)">GetTransform(BoneId, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform GetTransform(BoneId boneAsset, bool tryRetarget = true, bool logNotFound = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.BoneId.html">BoneId</a></td>
+        <td><span class="parametername">boneAsset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">tryRetarget</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">logNotFound</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_Initialize_" data-uid="Kinstrife.Rigging.Skeleton.Initialize*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_Initialize" data-uid="Kinstrife.Rigging.Skeleton.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_OnClearInstance_" data-uid="Kinstrife.Rigging.Skeleton.OnClearInstance*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_OnClearInstance_Kinstrife_Rigging_BoneTransform_" data-uid="Kinstrife.Rigging.Skeleton.OnClearInstance(Kinstrife.Rigging.BoneTransform)">OnClearInstance(BoneTransform)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnClearInstance(BoneTransform instanceData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.BoneTransform.html">BoneTransform</a></td>
+        <td><span class="parametername">instanceData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Kinstrife.DataContainers.ContainerBehaviour&lt;Kinstrife.Rigging.SkeletonDefinitionAsset, System.String, Kinstrife.Rigging.BoneId, Kinstrife.Rigging.BoneTransform, Transform&gt;.OnClearInstance(Kinstrife.Rigging.BoneTransform)</span></div>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_RefreshRuntimeData_" data-uid="Kinstrife.Rigging.Skeleton.RefreshRuntimeData*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_RefreshRuntimeData" data-uid="Kinstrife.Rigging.Skeleton.RefreshRuntimeData">RefreshRuntimeData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshRuntimeData()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_ResetPose_" data-uid="Kinstrife.Rigging.Skeleton.ResetPose*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_ResetPose" data-uid="Kinstrife.Rigging.Skeleton.ResetPose">ResetPose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetPose()</code></pre>
+  </div>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_RotatePoseFromSkeleton_" data-uid="Kinstrife.Rigging.Skeleton.RotatePoseFromSkeleton*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_RotatePoseFromSkeleton_Kinstrife_Rigging_Skeleton_System_Boolean_System_Boolean_Kinstrife_Rigging_RetargetingAsset_Transform___" data-uid="Kinstrife.Rigging.Skeleton.RotatePoseFromSkeleton(Kinstrife.Rigging.Skeleton,System.Boolean,System.Boolean,Kinstrife.Rigging.RetargetingAsset,Transform[])">RotatePoseFromSkeleton(Skeleton, Boolean, Boolean, RetargetingAsset, Transform[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RotatePoseFromSkeleton(Skeleton other, bool rotateTowards, bool setPosition, RetargetingAsset retargetingAsset = null, Transform[] excludeChildren = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.Skeleton.html">Skeleton</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">rotateTowards</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">setPosition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.RetargetingAsset.html">RetargetingAsset</a></td>
+        <td><span class="parametername">retargetingAsset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Transform</span>[]</td>
+        <td><span class="parametername">excludeChildren</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_TryGetBoneTransform_" data-uid="Kinstrife.Rigging.Skeleton.TryGetBoneTransform*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_TryGetBoneTransform_System_String_Kinstrife_Rigging_BoneTransform__System_Boolean_System_Boolean_" data-uid="Kinstrife.Rigging.Skeleton.TryGetBoneTransform(System.String,Kinstrife.Rigging.BoneTransform@,System.Boolean,System.Boolean)">TryGetBoneTransform(String, out BoneTransform, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetBoneTransform(string boneName, out BoneTransform boneTransform, bool tryRetarget = true, bool logNotFound = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">boneName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.BoneTransform.html">BoneTransform</a></td>
+        <td><span class="parametername">boneTransform</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">tryRetarget</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">logNotFound</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_TryGetBoneTransform_" data-uid="Kinstrife.Rigging.Skeleton.TryGetBoneTransform*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_TryGetBoneTransform_System_String_System_Boolean_System_Boolean_" data-uid="Kinstrife.Rigging.Skeleton.TryGetBoneTransform(System.String,System.Boolean,System.Boolean)">TryGetBoneTransform(String, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoneTransform TryGetBoneTransform(string boneName, bool tryRetarget = true, bool logNotFound = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">boneName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">tryRetarget</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">logNotFound</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.BoneTransform.html">BoneTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_TryGetExistingInstanceFromSourceObject_" data-uid="Kinstrife.Rigging.Skeleton.TryGetExistingInstanceFromSourceObject*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_TryGetExistingInstanceFromSourceObject_Transform_Kinstrife_Rigging_BoneTransform__" data-uid="Kinstrife.Rigging.Skeleton.TryGetExistingInstanceFromSourceObject(Transform,Kinstrife.Rigging.BoneTransform@)">TryGetExistingInstanceFromSourceObject(Transform, out BoneTransform)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool TryGetExistingInstanceFromSourceObject(Transform sourceObject, out BoneTransform instanceData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">sourceObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.BoneTransform.html">BoneTransform</a></td>
+        <td><span class="parametername">instanceData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Kinstrife.DataContainers.ContainerBehaviour&lt;Kinstrife.Rigging.SkeletonDefinitionAsset, System.String, Kinstrife.Rigging.BoneId, Kinstrife.Rigging.BoneTransform, Transform&gt;.TryGetExistingInstanceFromSourceObject(Transform, Kinstrife.Rigging.BoneTransform)</span></div>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_TryGetTransform_" data-uid="Kinstrife.Rigging.Skeleton.TryGetTransform*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_TryGetTransform_Kinstrife_Rigging_BoneId_Transform__System_Boolean_System_Boolean_" data-uid="Kinstrife.Rigging.Skeleton.TryGetTransform(Kinstrife.Rigging.BoneId,Transform@,System.Boolean,System.Boolean)">TryGetTransform(BoneId, out Transform, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetTransform(BoneId boneAsset, out Transform bone, bool tryRetarget = true, bool logNotFound = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Kinstrife.Rigging.BoneId.html">BoneId</a></td>
+        <td><span class="parametername">boneAsset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">bone</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">tryRetarget</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">logNotFound</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_TryGetTransform_" data-uid="Kinstrife.Rigging.Skeleton.TryGetTransform*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_TryGetTransform_System_String_Transform__" data-uid="Kinstrife.Rigging.Skeleton.TryGetTransform(System.String,Transform@)">TryGetTransform(String, out Transform)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TryGetTransform(string key, out Transform transform)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Kinstrife.DataContainers.TransformsContainer&lt;Kinstrife.Rigging.SkeletonDefinitionAsset, System.String, Kinstrife.Rigging.BoneId, Kinstrife.Rigging.BoneTransform&gt;.TryGetTransform(System.String, Transform)</span></div>
+  
+  
+  <a id="Kinstrife_Rigging_Skeleton_TryRetarget_" data-uid="Kinstrife.Rigging.Skeleton.TryRetarget*"></a>
+  <h4 id="Kinstrife_Rigging_Skeleton_TryRetarget_System_String_System_String__System_Boolean_" data-uid="Kinstrife.Rigging.Skeleton.TryRetarget(System.String,System.String@,System.Boolean)">TryRetarget(String, out String, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryRetarget(string boneName, out string targetBoneName, bool logNotFound = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">boneName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetBoneName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">logNotFound</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="Kinstrife_Rigging_Skeleton_onStructuralChange" data-uid="Kinstrife.Rigging.Skeleton.onStructuralChange">onStructuralChange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action onStructuralChange</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Kinstrife.Core.DependencyInjection.IInitializable.html">IInitializable</a>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.DataContainers.ITransformsProviderString.html">ITransformsProviderString</a>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.DataContainers.ITransformsProvider-1.html">ITransformsProvider&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall-1.html">IInstall&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall-1.html">IInstall&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.Core.DependencyInjection.IInstall.html">IInstall</a>
+  </div>
+  <div>
+      <a class="xref" href="Kinstrife.Core.DependencyInjection.IDependent.html">IDependent</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
